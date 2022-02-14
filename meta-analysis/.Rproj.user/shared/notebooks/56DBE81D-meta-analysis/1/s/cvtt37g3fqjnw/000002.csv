@@ -1,0 +1,6 @@
+"0","forest("
+"0","  sensitivity.logit,"
+"0","  digits = 3,"
+"0","  rightcols = c('effect','ci'),"
+"0","  xlab = 'Sensitivity'"
+"0",")"

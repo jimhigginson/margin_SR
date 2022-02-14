@@ -1,0 +1,1 @@
+"0","forest(DOR_model, digits=3, rightcols=c('effect', 'ci'), xlab ='Diagnostic Odds Ratio')"
