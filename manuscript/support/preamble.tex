@@ -1,0 +1,111 @@
+%%% --- Initialising document and class --- %%%
+\documentclass[
+    paper=a4, 
+    10pt,
+    headings=small
+]{scrartcl} % report more appropriate, allows abstract
+
+%%% --- Packages to load --- %%%
+
+\usepackage{CormorantGaramond}
+\usepackage[T1]{fontenc}
+% \usepackage[light, condensed]{roboto}
+%%% Using Robot sans serif font from https://tug.org/FontCatalogue/
+%\usepackage{crimson}
+%%% Using Crimson Text font from https://tug.org/FontCatalogue/crimsontext/
+%%% NB this only changes the serif font
+
+\addtokomafont{disposition}{\rmfamily\scshape}
+% changes sections from the ugly koma bold sans to elegant small caps
+\addtokomafont{descriptionlabel}{\rmfamily\scshape}
+% does the same for the labels in the 'description' environment
+
+\usepackage[
+% colorlinks=true 
+hidelinks
+]{hyperref}
+%%% Allows hyperlinks for all cross-references. 'hidelinks' turns off the off-putting colour boxes 
+%% If i want the text to be coloured, but to make this attractive I need to use the xcolor package and adjust them otherwise they'll be red/lime green :-/
+
+\usepackage{siunitx}
+%%% to allow nice presentation of units 
+\sisetup{detect-all}
+%needed to make SI units use text font rather than Maths font, which just looks weird in a body of text to me.
+
+\usepackage{booktabs}
+%%% high quality tables
+
+\usepackage{setspace}
+%\doublespacing
+\onehalfspacing
+%%% sets onehalf spacing as per university requirements
+
+\usepackage[version=4]{mhchem}
+%%% Allows easy typesetting of chemical formulae
+
+\usepackage{comment}
+%%% To allow the comment environment for editing or debugging
+
+\usepackage{graphicx}
+%%% To allow import of images
+
+\usepackage{subcaption}
+%% Allows subfloats, ie multipicture figures. Can have captions for each subfloat plus a global caption.
+
+\usepackage[
+final,
+tracking=smallcaps,
+expansion=alltext,
+protrusion=true,
+]{microtype}
+
+
+%%% from page 52 of LaTeX and friends - does better kerning and smallcaps spacing
+
+%\usepackage{chngcntr}
+%\counterwithout{figure}{chapter}
+%\counterwithout{table}{chapter}
+% allows figures and tables to count consecutively rather than restarting every chapter.
+% was useful for ESA but probably not for thesis.
+
+%\usepackage{makeidx}
+%\makeindex
+%%% Allows generation of an index using the \index{key} and \printindex commands and the `makeindex foo.idx` command
+
+%\usepackage{showidx}
+%%% a proofing tool that shows the index entries in the margin. turn off for final version/easier reading
+
+%%% --- Bibliography using biblatex --- %%%
+\usepackage[
+backend=biber,
+style=authoryear,
+citestyle=authoryear
+%style=chem-acs,
+%citestyle=chem-acs,
+]{biblatex}
+
+ \usepackage{todonotes}
+% Allows todo notes scattered throughout, with a todolist automatically generated at the start.
+% can be slow when compiling a big doc so might be worth changing later on?
+
+\usepackage[noabbrev]{cleveref}
+% An automated referencing package, looks good.
+
+\usepackage[acronym,toc,nogroupskip]{glossaries}
+\setlength{\glslistdottedwidth}{0.3\textwidth}
+
+%\usepackage{minted}
+% package allows typesetting and import of code
+   %% Commented out until needed to make pdflatex run without shell escape
+%\usepackage{pgfgantt}
+%\usepackage{lscape}
+%\usetikzlibrary{shapes,arrows}
+%From irp to allow gantt chart
+
+\addbibresource{Support/references.bib}
+\let\cite\parencite
+\renewcommand*{\bibfont}{\small}
+
+
+
+% \setlength{\parskip}{1em} % Changes paragraph formatting so each starts after a space
