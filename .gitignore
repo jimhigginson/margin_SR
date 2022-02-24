@@ -3,4 +3,4 @@
 *.Rhistory
 *.DS_Store
 *.user
-*.Rproj
+*.Rproj*
