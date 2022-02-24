@@ -4,4 +4,19 @@
 "0","library(ellipse)"
 "0","library(mvmeta)"
 "0","library(meta)"
+"2","Loading 'meta' package (version 5.0-0).
+Type 'help(meta)' for a brief overview.
+Readers of 'Use-R! Meta-Analysis with R' should install
+older version of 'meta' package: https://tinyurl.com/dt4y5drs
+"
+"2","
+Attaching package: ‘meta’
+
+"
+"2","The following object is masked from ‘package:mada’:
+
+    forest
+
+"
+"0","library(ggthemes)"
 "0",""

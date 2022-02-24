@@ -1,7 +1,0 @@
-"0",""
-"0","forest("
-"0","  specificity.logit,"
-"0","  digits = 3,"
-"0","  rightcols = c('effect','ci'),"
-"0","  xlab = 'Specificity'"
-"0",")"

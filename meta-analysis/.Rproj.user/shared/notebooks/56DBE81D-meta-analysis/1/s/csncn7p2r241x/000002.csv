@@ -1,13 +1,3 @@
 "0","detach(package:meta)"
 "0","library(mada) "
-"2","package ‘mada’ was built under R version 4.0.2"
-"2","
-Attaching package: ‘mada’
-
-"
-"2","The following object is masked from ‘package:readr’:
-
-    spec
-
-"
 "0","#needs to be loaded after detaching meta as they clash apparently (see Shim2019)"

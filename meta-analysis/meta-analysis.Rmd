@@ -12,6 +12,7 @@ library(mvtnorm)
 library(ellipse)
 library(mvmeta)
 library(meta)
+library(ggthemes)
 
 ```
 
@@ -21,17 +22,50 @@ Getting the data in
 
 ```{r input data}
 
-frozen.data <- read_csv('test_stats.csv') %>% 
+drop_empty <- function(x) {!all(is.na(x))}
+    # function to be used below to drop any columns that are totally empty.
+cols_to_keep <- c(
+  "Covidence #",
+  "Study ID",
+  "Title...3",
+  "First Author Name",
+  "Year of publication",
+  "Number of patients included",
+  "modality_group",
+#   muting these columns whilst I work out the pivoting to keep it cleaner
+#  "Number of margins included",
+#  "Study design",
+#  "HNSCC sub-sites included in study",
+#  "HPV status of participants",
+#  "Mean age",
+#  "Population description",
+#  "What intraoperative margin tool is being evaluated in this study?",
+  "Modality Diagnostic tool 1",
+#  "Modality Diagnostic tool 2",
+  "True negatives Diagnostic tool 1",
+  "True positives Diagnostic tool 1",
+  "False negatives Diagnostic tool 1",
+  "False positives Diagnostic tool 1"
+)
+
+
+frozen.data <- read_csv('review_120729_20220223033858.csv') %>% 
 # This produces a very wide table, with repeated column titles for four diagnostic modalitiies, even though most papers will only discuss one. 
-select(!ends_with(c("2", "3", "4")))
-# for the initial run with just two studies, this removes modalities 2/3/4
+  select_if(drop_empty) %>% 
+  select(cols_to_keep) %>% 
+  rename(
+  "TN" = "True negatives Diagnostic tool 1",
+  "TP" = "True positives Diagnostic tool 1",
+  "FN" = "False negatives Diagnostic tool 1",
+  "FP" = "False positives Diagnostic tool 1"
+  )
 
 ```
 
 ## Univariate analysis
 
 Hutan recommended using two or three different R packages to evaluate the results to ensure that they are believable.
-I'm running this practice based on shim et al 2019 tutorial
+I'm running this practice based on (Shim et al 2019 tutorial)[https://doi.org/10.4178/epih.e2019007]
 
 ```{r}
 sensitivity.logit <- metaprop(
@@ -40,8 +74,9 @@ sensitivity.logit <- metaprop(
   comb.fixed=FALSE,
   comb.random=TRUE,
   sm = 'PLOGIT',
-  method.ci = 'CP'#,
-  # studlab = frozen.data$`Study ID`
+  method.ci = 'CP',
+  studlab = frozen.data$`Study ID`,
+  byvar = frozen.data$`modality_group`
 )
 
 specificity.logit <- metaprop(
@@ -50,8 +85,9 @@ specificity.logit <- metaprop(
     comb.fixed=FALSE,
   comb.random=TRUE,
   sm = 'PLOGIT',
-  method.ci = 'CP'#,
-  #studlab = frozen.data$`Study ID`
+  method.ci = 'CP',
+  studlab = frozen.data$`Study ID`,
+  byvar = frozen.data$`modality_group`
 )
 
 print(sensitivity.logit, digits=3)
@@ -93,8 +129,8 @@ DOR_model <- metabin(
   comb.fixed=FALSE,
   comb.random=TRUE, 
   method='Inverse', 
-  study, 
-  #byvar=g, 
+  studlab = `Study ID`, 
+  byvar=modality_group, 
   data=frozen.data)
 ```
 ```{r}
@@ -111,7 +147,64 @@ library(mada)
 Now generate the same forest plots using `mada` instead of `meta` - the only difference being that they don't show the overall effec size of the summary stats.
 
 ```{r}
-forest(madad(frozen.data), type='sens', xlab='Sensitivity', snames=frozen.data$study)
+forest(madad(frozen.data), type='sens', xlab='Sensitivity', snames=frozen.data$`Study ID`)
+forest(madad(frozen.data), type='spec', xlab='Specificity', snames=frozen.data$`Study ID`)
+forest(madauni(frozen.data))
 ```
 
 Now create the bivariate model with the `reitsma' function
+```{r}
+fit <- reitsma(frozen.data, correction.control='single')
+plot(fit, sroclwd = 2, xlim = c(0,1), ylim = c(0,1), main = "SROC curve (bivariate model) for Diagnostic Test Accuracy")
+points(fpr(frozen.data), sens(frozen.data), pch=20)
+legend("bottomright", c("data", "summary estimate", "AUC=0.906", "DOR=37.935", "Sensitivity=0.841", "Specificity=0.861"), pch = c(20,1,1000,1000,1000,1000) ) 
+legend("bottomleft", c("SROC", "95% CI region"), lwd = c(2,1))
+```
+
+Now I'm going to try and plot it nicely in ggplot
+
+```{r}
+
+confidence_region <- as_tibble(ROCellipse(fit)$ROCellipse)
+summary_data <- as_tibble(ROCellipse(fit)$fprsens)
+sroc_curve <- as_tibble(sroc(fit)) %>% 
+  add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
+
+ggplot() +
+  geom_line(data = sroc_curve, aes(fpr, V2)) +
+  geom_polygon(data = confidence_region, aes(V1, V2), alpha = 0.3) +
+  geom_point(aes(fpr(frozen.data), sens(frozen.data)), size = 1) +
+  geom_point(data = summary_data, aes(V1, V2), shape = 21) +
+  theme_tufte() +
+  labs(title = 'Summary ROC curve for frozen section studies') +
+  xlab('False positive rate') +
+  ylab('Sensitivity')
+
+
+```
+Should I do the heterogeneity analysis here? Ugh, can't be bothered
+
+```{r}
+diagnostic_heterogeneity <- frozen.data %>% # creates a dataframe suitable for logit transformation
+  mutate(
+    FN = if_else(FN == 0, 0.001, FN),
+    FP = if_else(FP == 0, 0.001, FP),
+    sensitivity = TP/(TP+FN),
+    specificity = TN/(TN+FP),
+    logit_sn = sensitivity/(1-sensitivity),
+    logit_sp = specificity/(1-specificity)
+  )
+
+correlation = cor(diagnostic_heterogeneity$logit_sn, diagnostic_heterogeneity$logit_sp)
+```
+
+
+
+Now the final metaregression analysis
+
+```{r}
+library(meta)
+diagnostic_metaregression <- metareg(DOR_model, modality_group, method.tau = 'REML', digits = 3)
+```
+
+
