@@ -1,3 +1,0 @@
-"0","detach(package:meta)"
-"0","library(mada) "
-"0","#needs to be loaded after detaching meta as they clash apparently (see Shim2019)"
