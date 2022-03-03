@@ -42,20 +42,21 @@ Disagreement regarding article inclusion was resolved by consensus.
 \subsection{Study Quality}
 
 Each study was assessed for methodological quality using two separate validated scoring systems.
+Studies were independently rated for both scoring systems by two investigators (J.A.H. and A.H.P.).
 
 The Quality Assessment of Diagnostic Accuracy Studies 2 (QUADAS--2) checklist was used to provide an transparent rating of bias and applicability \cite{whitingQUADAS2RevisedTool2011}, with a score out of 14 assigned to each primary diagnostic study.
 
-The Strength Of Recommendation Taxonomy (SORT) numerical scale for diagnostic studies scored out of 3.34 
-\cite{ebellStrengthRecommendationTaxonomy2004}
+All of the seven QUADAS-2 questions were used.
+For each question, the study was scored 1 if the risk of bias was low, and 2 if the risk was high or unclear, giving a total score from 7--14.
+
 
 % I think I need to redo the QUADAS and SORT scoring for all of them :-/
 
 
-Both checklists were independently completed by the 2 investigators (E.R.S and R.A.) with agreement and therefore subsequently used to rate all included studies. 
 
-All 7 QUADAS-2 questions were considered relevant for inclusion. 
-For each of the seven QUADAS-2 questions, the study was assigned a score of 1 if there was a low risk of bias, and 2 if the risk was high or unclear.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 To consider the conduct or interpretation of the index test adequate, we required study authors to report the number of margins obtained per specimen, as well as provide information on the embedding, sectioning, and staining of the derived specimen. 
 
 The specialty of the operator (ie, pathologist,surgeon, or radiologist) interpreting the results had to be stated. 
@@ -64,8 +65,11 @@ We defined ‘‘bias’’ of the reference standard as occurring when the prec
 
 We determined a ‘‘bias’’ in flow and timing to have occurred when the number of patients selected for inclusion did not correspond to the number of patients included in the statistical analysis, with the exception of reports for which all patients were accounted for despite not being included in outcome data. 
 
-The SORT scoring system was used to assess the diagnostic quality of the studies. 
-High quality prospective trials or cohort studies were assigned a score of 1, lower quality cohort studies or diagnostic case-control studies were assigned a score of 2.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+The Strength Of Recommendation Taxonomy (SORT) scoring system was used to assess the diagnostic quality of the studies \cite{ebellStrengthRecommendationTaxonomy2004}.
+
+Each study was rated from 1 to 3. High quality prospective trials or cohort studies were assigned a score of 1, lower quality cohort studies or diagnostic case-control studies were assigned a score of 2. Disease-centred research, opinion pieces \&c. were scored 3.
 
 \subsection{Data Collection}
 
@@ -75,4 +79,4 @@ All data were extracted using Covidence \cite{Covidence}
 
 \subsection{Meta-analysis}
 
-Results were synthesised using the meta and mada packages in R. 
+Results were synthesised using the meta \cite{balduzziHowPerformMetaanalysis2019} and mada \cite{doeblerMadaMetaAnalysisDiagnostic2020} packages in R \cite{r-core}. 
