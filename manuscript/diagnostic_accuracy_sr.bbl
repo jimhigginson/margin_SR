@@ -1,0 +1,329 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{balduzziHowPerformMetaanalysis2019}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=461f09c33a9865acd82f8dc37260753e}{%
+           family={Balduzzi},
+           familyi={B\bibinitperiod},
+           given={Sara},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=815a09f6476200010eade40c235586f1}{%
+           family={Rücker},
+           familyi={R\bibinitperiod},
+           given={Gerta},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=58955b0c1987fe9efd74d5cb769aedfa}{%
+           family={Schwarzer},
+           familyi={S\bibinitperiod},
+           given={Guido},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{086bd326297135a1d0e7f3c7c832a64f}
+      \strng{fullhash}{086bd326297135a1d0e7f3c7c832a64f}
+      \strng{bibnamehash}{086bd326297135a1d0e7f3c7c832a64f}
+      \strng{authorbibnamehash}{086bd326297135a1d0e7f3c7c832a64f}
+      \strng{authornamehash}{086bd326297135a1d0e7f3c7c832a64f}
+      \strng{authorfullhash}{086bd326297135a1d0e7f3c7c832a64f}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Evidence-Based Mental Health}
+      \field{number}{22}
+      \field{title}{How to Perform a Meta-Analysis with {{R}}: A Practical Tutorial}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{153\bibrangedash 160}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1136/ebmental-2019-300117
+      \endverb
+    \endentry
+    \entry{Covidence}{software}{}
+      \list{location}{1}{%
+        {Melbourne, Australia}%
+      }
+      \list{organization}{1}{%
+        {Veritas Health Innovation}%
+      }
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{labeldatesource}{nodate}
+      \field{labeltitlesource}{title}
+      \field{title}{Covidence}
+      \verb{urlraw}
+      \verb Available at www.covidence.org
+      \endverb
+      \verb{url}
+      \verb Available%20at%20www.covidence.org
+      \endverb
+    \endentry
+    \entry{doeblerMadaMetaAnalysisDiagnostic2020}{book}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=496bf5d78535ad3ff84fa6e108686058}{%
+           family={Doebler},
+           familyi={D\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{496bf5d78535ad3ff84fa6e108686058}
+      \strng{fullhash}{496bf5d78535ad3ff84fa6e108686058}
+      \strng{bibnamehash}{496bf5d78535ad3ff84fa6e108686058}
+      \strng{authorbibnamehash}{496bf5d78535ad3ff84fa6e108686058}
+      \strng{authornamehash}{496bf5d78535ad3ff84fa6e108686058}
+      \strng{authorfullhash}{496bf5d78535ad3ff84fa6e108686058}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mada: {{Meta-Analysis}} of {{Diagnostic Accuracy}}}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://CRAN.R-project.org/package=mada
+      \endverb
+      \verb{url}
+      \verb https://CRAN.R-project.org/package=mada
+      \endverb
+    \endentry
+    \entry{ebellStrengthRecommendationTaxonomy2004}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=df992a824654e73c2cac5f546fa8cca4}{%
+           family={Ebell},
+           familyi={E\bibinitperiod},
+           given={M.\bibnamedelimi H.},
+           giveni={M\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b1b63afda0de150f605ed0f45991de9e}{%
+           family={Siwek},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8b939b3793394c1148ed9a2b3869c72f}{%
+           family={Weiss},
+           familyi={W\bibinitperiod},
+           given={B.\bibnamedelimi D.},
+           giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1fc44d70349e3d055a4a3f8af0d65b04}{%
+           family={Woolf},
+           familyi={W\bibinitperiod},
+           given={S.\bibnamedelimi H.},
+           giveni={S\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=027aa224b86f362b14c29859f0a386e8}{%
+           family={Susman},
+           familyi={S\bibinitperiod},
+           given={J.},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f2387a5ca88d78ec03031a6bc1d0c360}{%
+           family={Ewigman},
+           familyi={E\bibinitperiod},
+           given={B.},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7a1e6a5b1443e877e1ada47980b8c47d}{%
+           family={Bowman},
+           familyi={B\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{913e0c152fbd0427269ebe8d73d3a552}
+      \strng{fullhash}{51700539f0876ab4f19cbebc1b371f60}
+      \strng{bibnamehash}{913e0c152fbd0427269ebe8d73d3a552}
+      \strng{authorbibnamehash}{913e0c152fbd0427269ebe8d73d3a552}
+      \strng{authornamehash}{913e0c152fbd0427269ebe8d73d3a552}
+      \strng{authorfullhash}{51700539f0876ab4f19cbebc1b371f60}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{1}
+      \field{issn}{1557-2625, 1558-7118}
+      \field{journaltitle}{The Journal of the American Board of Family Medicine}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{shorttitle}{Strength of {{Recommendation Taxonomy}} ({{SORT}})}
+      \field{title}{Strength of {{Recommendation Taxonomy}} ({{SORT}}): {{A Patient-Centered Approach}} to {{Grading Evidence}} in the {{Medical Literature}}}
+      \field{volume}{17}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{pages}{59\bibrangedash 67}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.3122/jabfm.17.1.59
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/F6294U95/Ebell et al. - 2004 - Strength of Recommendation Taxonomy (SORT) A Pati.pdf
+      \endverb
+    \endentry
+    \entry{r-core}{manual}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=dcdebb6b35bff7c0568bf8c50ef8626d}{%
+           family={{R Core Team}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Vienna, Austria}%
+      }
+      \list{organization}{1}{%
+        {R Foundation for Statistical Computing}%
+      }
+      \strng{namehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{fullhash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{bibnamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authorbibnamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authornamehash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \strng{authorfullhash}{dcdebb6b35bff7c0568bf8c50ef8626d}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{R: {{A}} Language and Environment for Statistical Computing}
+      \field{type}{manual}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://www.R-project.org/
+      \endverb
+      \verb{url}
+      \verb https://www.R-project.org/
+      \endverb
+    \endentry
+    \entry{whitingQUADAS2RevisedTool2011}{article}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=6f85f3ef83e91aedcfe723186979a745}{%
+           family={Whiting},
+           familyi={W\bibinitperiod},
+           given={Penny\bibnamedelima F.},
+           giveni={P\bibinitperiod\bibinitdelim F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bd49d1edb4a4870686478ac286a07434}{%
+           family={Rutjes},
+           familyi={R\bibinitperiod},
+           given={Anne\bibnamedelimb W.\bibnamedelimi S.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0fdaec02b2d973630874b0387a4c6bac}{%
+           family={Westwood},
+           familyi={W\bibinitperiod},
+           given={Marie\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a06812e4b56ce8738e4c64a30d82cead}{%
+           family={Mallett},
+           familyi={M\bibinitperiod},
+           given={Susan},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d1309a6469a5d1fabb4952576db24cc7}{%
+           family={Deeks},
+           familyi={D\bibinitperiod},
+           given={Jonathan\bibnamedelima J.},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=35b59df3003f854028d48b203591ae29}{%
+           family={Reitsma},
+           familyi={R\bibinitperiod},
+           given={Johannes\bibnamedelima B.},
+           giveni={J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a8717f4f4d192ab60fb76c1d8b4b4564}{%
+           family={Leeflang},
+           familyi={L\bibinitperiod},
+           given={Mariska\bibnamedelimb M.\bibnamedelimi G.},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44eae464723756680d789b1a193c3efc}{%
+           family={Sterne},
+           familyi={S\bibinitperiod},
+           given={Jonathan\bibnamedelimb A.\bibnamedelimi C.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7c428d456605e02342986b54212b7a4b}{%
+           family={Bossuyt},
+           familyi={B\bibinitperiod},
+           given={Patrick\bibnamedelimb M.\bibnamedelimi M.},
+           giveni={P\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b2ce429807ecfe95d707f194ce7a1d0a}{%
+           family={{QUADAS-2 Group}},
+           familyi={Q\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d016ad5584cf6d34f3c3f35980f7b04}
+      \strng{fullhash}{53b4038c2e9ef316a85e1d05e57738ca}
+      \strng{bibnamehash}{3d016ad5584cf6d34f3c3f35980f7b04}
+      \strng{authorbibnamehash}{3d016ad5584cf6d34f3c3f35980f7b04}
+      \strng{authornamehash}{3d016ad5584cf6d34f3c3f35980f7b04}
+      \strng{authorfullhash}{53b4038c2e9ef316a85e1d05e57738ca}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{In 2003, the QUADAS tool for systematic reviews of diagnostic accuracy studies was developed. Experience, anecdotal reports, and feedback suggested areas for improvement; therefore, QUADAS-2 was developed. This tool comprises 4 domains: patient selection, index test, reference standard, and flow and timing. Each domain is assessed in terms of risk of bias, and the first 3 domains are also assessed in terms of concerns regarding applicability. Signalling questions are included to help judge risk of bias. The QUADAS-2 tool is applied in 4 phases: summarize the review question, tailor the tool and produce review-specific guidance, construct a flow diagram for the primary study, and judge bias and applicability. This tool will allow for more transparent rating of bias and applicability of primary diagnostic accuracy studies.}
+      \field{day}{18}
+      \field{eprinttype}{pmid}
+      \field{issn}{1539-3704}
+      \field{journaltitle}{Ann Intern Med}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{8}
+      \field{shorttitle}{{{QUADAS-2}}}
+      \field{title}{{{QUADAS-2}}: A Revised Tool for the Quality Assessment of Diagnostic Accuracy Studies}
+      \field{volume}{155}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{529\bibrangedash 536}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.7326/0003-4819-155-8-201110180-00009
+      \endverb
+      \verb{eprint}
+      \verb 22007046
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/PBR45444/Whiting et al. - 2011 - QUADAS-2 a revised tool for the quality assessmen.pdf
+      \endverb
+      \keyw{Bias,Diagnosis,Evidence-Based Medicine,Humans,Patient Selection,Quality Control,Reference Standards,Review Literature as Topic,Surveys and Questionnaires,Time Factors}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
