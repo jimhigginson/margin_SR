@@ -2,7 +2,7 @@
 title: "Intraoperative Margin Assessment Systematic Review and Meta-analysis"
 author: "Jim Higginson"
 date: "15/12/2021"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
