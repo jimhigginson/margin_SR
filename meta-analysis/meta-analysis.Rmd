@@ -27,7 +27,7 @@ drop_empty <- function(x) {!all(is.na(x))}
 cols_to_keep <- c(
   "Covidence #",
   "Study ID",
-  "Title...3",
+  "Title",
   "First Author Name",
   "Year of publication",
   "Number of patients included",
@@ -49,16 +49,18 @@ cols_to_keep <- c(
 )
 
 
-frozen.data <- read_csv('review_120729_20220223033858.csv') %>% 
+frozen.data <- read_csv('all_data_unverified_for_testing.csv') %>% 
 # This produces a very wide table, with repeated column titles for four diagnostic modalitiies, even though most papers will only discuss one. 
   select_if(drop_empty) %>% 
+  filter(`Reviewer Name` == 'James Higginson') %>% 
   select(cols_to_keep) %>% 
   rename(
   "TN" = "True negatives Diagnostic tool 1",
   "TP" = "True positives Diagnostic tool 1",
   "FN" = "False negatives Diagnostic tool 1",
   "FP" = "False positives Diagnostic tool 1"
-  )
+  ) %>% 
+  drop_na(TP)
 
 ```
 
@@ -71,23 +73,23 @@ I'm running this practice based on (Shim et al 2019 tutorial)[https://doi.org/10
 sensitivity.logit <- metaprop(
   frozen.data$TP, 
   frozen.data$TP + frozen.data$FN,
-  comb.fixed=FALSE,
-  comb.random=TRUE,
+  fixed=FALSE,
+  random=TRUE,
   sm = 'PLOGIT',
   method.ci = 'CP',
   studlab = frozen.data$`Study ID`,
-  byvar = frozen.data$`modality_group`
+  subgroup = frozen.data$`modality_group`
 )
 
 specificity.logit <- metaprop(
   frozen.data$TN,
   frozen.data$TN + frozen.data$FP,
-    comb.fixed=FALSE,
-  comb.random=TRUE,
+  fixed=FALSE,
+  random=TRUE,
   sm = 'PLOGIT',
   method.ci = 'CP',
   studlab = frozen.data$`Study ID`,
-  byvar = frozen.data$`modality_group`
+  subgroup = frozen.data$`modality_group`
 )
 
 print(sensitivity.logit, digits=3)
