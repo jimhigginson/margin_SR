@@ -32,6 +32,7 @@ cols_to_keep <- c(
   "Year of publication",
   "Number of patients included",
   "modality_group",
+  "frozen_group",
 #   muting these columns whilst I work out the pivoting to keep it cleaner
 #  "Number of margins included",
 #  "Study design",
@@ -49,7 +50,7 @@ cols_to_keep <- c(
 )
 
 
-frozen.data <- read_csv('all_data_unverified_for_testing.csv') %>% 
+meta.data <- read_csv('all_data_unverified_for_testing.csv') %>% 
 # This produces a very wide table, with repeated column titles for four diagnostic modalitiies, even though most papers will only discuss one. 
   select_if(drop_empty) %>% 
   filter(`Reviewer Name` == 'James Higginson') %>% 
@@ -62,6 +63,8 @@ frozen.data <- read_csv('all_data_unverified_for_testing.csv') %>%
   ) %>% 
   drop_na(TP)
 
+
+
 ```
 
 ## Univariate analysis
@@ -71,25 +74,25 @@ I'm running this practice based on (Shim et al 2019 tutorial)[https://doi.org/10
 
 ```{r}
 sensitivity.logit <- metaprop(
-  frozen.data$TP, 
-  frozen.data$TP + frozen.data$FN,
+  meta.data$TP, 
+  meta.data$TP + meta.data$FN,
   fixed=FALSE,
   random=TRUE,
   sm = 'PLOGIT',
   method.ci = 'CP',
-  studlab = frozen.data$`Study ID`,
-  subgroup = frozen.data$`modality_group`
+  studlab = meta.data$`Study ID`,
+  subgroup = meta.data$`modality_group`
 )
 
 specificity.logit <- metaprop(
-  frozen.data$TN,
-  frozen.data$TN + frozen.data$FP,
+  meta.data$TN,
+  meta.data$TN + meta.data$FP,
   fixed=FALSE,
   random=TRUE,
   sm = 'PLOGIT',
   method.ci = 'CP',
-  studlab = frozen.data$`Study ID`,
-  subgroup = frozen.data$`modality_group`
+  studlab = meta.data$`Study ID`,
+  subgroup = meta.data$`modality_group`
 )
 
 print(sensitivity.logit, digits=3)
@@ -100,20 +103,39 @@ print(specificity.logit, digits=3)
 ## forest plot
 
 
-```{r pressure, echo=FALSE}
+```{r sensitivity plot, echo=FALSE}
+pdf('sensitivity_forest.pdf', width = 8, height = 14)
 forest(
   sensitivity.logit,
   digits = 3,
   rightcols = c('effect','ci'),
-  xlab = 'Sensitivity'
+  rightlabs = c('Sensitivity','95% CI'),
+  leftcols = c('studlab','n'),
+  leftlabs = c('Study', 'n'),
+  print.subgroup.name = FALSE,
+  pooled.events = FALSE,
+  colgap.forest.left = '2cm',
+  addrows.below.overall = 2
 )
+dev.off()
 
+```
+
+```{r specificity plot, echo=FALSE}
+pdf('specificity_forest.pdf', width = 8, height = 14)
 forest(
   specificity.logit,
-  digits = 3,
+   digits = 3,
   rightcols = c('effect','ci'),
-  xlab = 'Specificity'
+  rightlabs = c('Specificity','95% CI'),
+  leftcols = c('studlab','n'),
+  leftlabs = c('Study', 'n'),
+  print.subgroup.name = FALSE,
+  pooled.events = FALSE,
+  colgap.forest.left = '2cm',
+  addrows.below.overall = 2
 )
+dev.off()
 ```
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
@@ -133,7 +155,7 @@ DOR_model <- metabin(
   method='Inverse', 
   studlab = `Study ID`, 
   byvar=modality_group, 
-  data=frozen.data)
+  data=meta.data)
 ```
 ```{r}
 forest(DOR_model, digits=3, rightcols=c('effect', 'ci'), xlab ='Diagnostic Odds Ratio')
@@ -149,17 +171,17 @@ library(mada)
 Now generate the same forest plots using `mada` instead of `meta` - the only difference being that they don't show the overall effec size of the summary stats.
 
 ```{r}
-forest(madad(frozen.data), type='sens', xlab='Sensitivity', snames=frozen.data$`Study ID`)
-forest(madad(frozen.data), type='spec', xlab='Specificity', snames=frozen.data$`Study ID`)
-forest(madauni(frozen.data))
+forest(madad(meta.data), type='sens', xlab='Sensitivity', snames=meta.data$`Study ID`)
+forest(madad(meta.data), type='spec', xlab='Specificity', snames=meta.data$`Study ID`)
+forest(madauni(meta.data))
 ```
 
 Now create the bivariate model with the `reitsma' function
 ```{r}
-fit <- reitsma(frozen.data, correction.control='single')
+fit <- reitsma(meta.data, correction.control='single')
 plot(fit, sroclwd = 2, xlim = c(0,1), ylim = c(0,1), main = "SROC curve (bivariate model) for Diagnostic Test Accuracy")
-points(fpr(frozen.data), sens(frozen.data), pch=20)
-legend("bottomright", c("data", "summary estimate", "AUC=0.906", "DOR=37.935", "Sensitivity=0.841", "Specificity=0.861"), pch = c(20,1,1000,1000,1000,1000) ) 
+points(fpr(meta.data), sens(meta.data), pch=20)
+legend("bottomright", c("data", "summary estimate", "AUC=?", "DOR=?", "Sensitivity=?", "Specificity=?"), pch = c(20,1,1000,1000,1000,1000) ) 
 legend("bottomleft", c("SROC", "95% CI region"), lwd = c(2,1))
 ```
 
@@ -175,19 +197,213 @@ sroc_curve <- as_tibble(sroc(fit)) %>%
 ggplot() +
   geom_line(data = sroc_curve, aes(fpr, V2)) +
   geom_polygon(data = confidence_region, aes(V1, V2), alpha = 0.3) +
-  geom_point(aes(fpr(frozen.data), sens(frozen.data)), size = 1) +
+  geom_point(aes(fpr(meta.data), sens(meta.data)), size = 1) +
   geom_point(data = summary_data, aes(V1, V2), shape = 21) +
-  theme_tufte() +
-  labs(title = 'Summary ROC curve for frozen section studies') +
+  labs(title = 'Summary ROC curve for all studies') +
   xlab('False positive rate') +
   ylab('Sensitivity')
 
 
 ```
-Should I do the heterogeneity analysis here? Ugh, can't be bothered
 
 ```{r}
-diagnostic_heterogeneity <- frozen.data %>% # creates a dataframe suitable for logit transformation
+stain.data <- meta.data %>% 
+  filter(modality_group == 'Topical Staining')
+stain.fit <- reitsma(stain.data, correction.control='single')
+stain.confidence_region <- as_tibble(ROCellipse(stain.fit)$ROCellipse)
+stain.summary_data <- as_tibble(ROCellipse(stain.fit)$fprsens)
+stain.sroc_curve <- as_tibble(sroc(stain.fit)) %>% 
+  add_row(fpr = 0, V2 = 0, .before = 1)
+
+
+frozen.data<- meta.data %>% 
+  filter(modality_group == 'Frozen Section')
+frozen.fit <- reitsma(frozen.data, correction.control='single')
+frozen.confidence_region <- as_tibble(ROCellipse(frozen.fit)$ROCellipse)
+frozen.summary_data <- as_tibble(ROCellipse(frozen.fit)$fprsens)
+frozen.sroc_curve <- as_tibble(sroc(frozen.fit)) %>% 
+  add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
+
+
+optical.data<- meta.data %>% 
+  filter(modality_group == 'Optical Techniques')
+optical.fit <- reitsma(optical.data, correction.control='single')
+optical.confidence_region <- as_tibble(ROCellipse(optical.fit)$ROCellipse)
+optical.summary_data <- as_tibble(ROCellipse(optical.fit)$fprsens)
+optical.sroc_curve <- as_tibble(sroc(optical.fit)) %>% 
+  add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
+
+
+chemo.data<- meta.data %>% 
+  filter(modality_group == 'Chemiluminescence')
+chemo.fit <- reitsma(chemo.data, correction.control='single')
+chemo.confidence_region <- as_tibble(ROCellipse(chemo.fit)$ROCellipse)
+chemo.summary_data <- as_tibble(ROCellipse(chemo.fit)$fprsens)
+chemo.sroc_curve <- as_tibble(sroc(chemo.fit)) %>% 
+  add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
+
+tic.data<- meta.data %>% 
+  filter(modality_group == 'Touch Imprint Cytology')
+tic.fit <- reitsma(tic.data, correction.control='single')
+tic.confidence_region <- as_tibble(ROCellipse(tic.fit)$ROCellipse)
+tic.summary_data <- as_tibble(ROCellipse(tic.fit)$fprsens)
+tic.sroc_curve <- as_tibble(sroc(tic.fit)) %>% 
+  add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
+
+auto.data<- meta.data %>% 
+  filter(modality_group == 'Autofluorescence')
+auto.fit <- reitsma(auto.data, correction.control='single')
+auto.confidence_region <- as_tibble(ROCellipse(auto.fit)$ROCellipse)
+auto.summary_data <- as_tibble(ROCellipse(auto.fit)$fprsens)
+auto.sroc_curve <- as_tibble(sroc(auto.fit)) %>% 
+  add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
+
+```
+
+```{r}
+ggplot() +
+  geom_line(data = stain.sroc_curve, aes(fpr, V2)) +
+  geom_polygon(data = stain.confidence_region, aes(V1, V2), alpha = 0.3) +
+  geom_point(aes(fpr(stain.data), sens(stain.data)), size = 1) +
+  geom_point(data = stain.summary_data, aes(V1, V2), shape = 21) +
+  labs(title = 'Summary ROC curve for stain studies') +
+  xlab('False positive rate') +
+  ylab('Sensitivity')
+ggsave('stain_sroc.png')
+```
+```{r}
+ggplot() +
+  geom_line(data = frozen.sroc_curve, aes(fpr, V2)) +
+  geom_polygon(data = frozen.confidence_region, aes(V1, V2), alpha = 0.3) +
+  geom_point(aes(fpr(frozen.data), sens(frozen.data)), size = 1) +
+  geom_point(data = frozen.summary_data, aes(V1, V2), shape = 21) +
+  labs(title = 'Summary ROC curve for frozen studies') +
+  xlab('False positive rate') +
+  ylab('Sensitivity')
+ggsave('frozen_sroc.png')
+```
+
+```{r}
+ggplot() +
+  geom_line(data = chemo.sroc_curve, aes(fpr, V2)) +
+  geom_polygon(data = chemo.confidence_region, aes(V1, V2), alpha = 0.3) +
+  geom_point(aes(fpr(chemo.data), sens(chemo.data)), size = 1) +
+  geom_point(data = chemo.summary_data, aes(V1, V2), shape = 21) +
+  labs(title = 'Summary ROC curve for chemo studies') +
+  xlab('False positive rate') +
+  ylab('Sensitivity')
+ggsave('chemo_sroc.png')
+```
+
+```{r}
+ggplot() +
+  geom_line(data = tic.sroc_curve, aes(fpr, V2)) +
+  geom_polygon(data = tic.confidence_region, aes(V1, V2), alpha = 0.3) +
+  geom_point(aes(fpr(tic.data), sens(tic.data)), size = 1) +
+  geom_point(data = tic.summary_data, aes(V1, V2), shape = 21) +
+  labs(title = 'Summary ROC curve for tic studies') +
+  xlab('False positive rate') +
+  ylab('Sensitivity')
+ggsave('tic_sroc.png')
+```
+
+```{r}
+ggplot() +
+  geom_line(data = optical.sroc_curve, aes(fpr, V2)) +
+  geom_polygon(data = optical.confidence_region, aes(V1, V2), alpha = 0.3) +
+  geom_point(aes(fpr(optical.data), sens(optical.data)), size = 1) +
+  geom_point(data = optical.summary_data, aes(V1, V2), shape = 21) +
+  labs(title = 'Summary ROC curve for optical studies') +
+  xlab('False positive rate') +
+  ylab('Sensitivity')
+ggsave('optical_sroc.png')
+```
+ 
+```{r}
+ggplot() +
+  geom_line(data = auto.sroc_curve, aes(fpr, V2)) +
+  geom_polygon(data = auto.confidence_region, aes(V1, V2), alpha = 0.3) +
+  geom_point(aes(fpr(auto.data), sens(auto.data)), size = 1) +
+  geom_point(data = auto.summary_data, aes(V1, V2), shape = 21) +
+  labs(title = 'Summary ROC curve for auto studies') +
+  xlab('False positive rate') +
+  ylab('Sensitivity')
+ggsave('auto_sroc.png')
+```
+
+
+Now to do the analysis separating specimen from defect driven frozen section.
+
+
+```{r}
+frozen.data <- frozen.data %>% 
+  filter(frozen_group == 'Specimen-driven' | frozen_group == 'Defect-driven')
+
+frozen.sens.logit <- metaprop(
+  frozen.data$TP, 
+  frozen.data$TP + frozen.data$FN,
+  fixed=FALSE,
+  random=TRUE,
+  sm = 'PLOGIT',
+  method.ci = 'CP',
+  studlab = frozen.data$`Study ID`,
+  subgroup = frozen.data$`frozen_group`
+)
+
+frozen.spec.logit <- metaprop(
+  frozen.data$TN,
+  frozen.data$TN + frozen.data$FP,
+  fixed=FALSE,
+  random=TRUE,
+  sm = 'PLOGIT',
+  method.ci = 'CP',
+  studlab = frozen.data$`Study ID`,
+  subgroup = frozen.data$`frozen_group`
+)
+```
+
+```{r}
+pdf('frozen_sensitivity_forest.pdf', width = 8, height = 6)
+forest(
+  frozen.sens.logit,
+  digits = 3,
+  rightcols = c('effect','ci'),
+  rightlabs = c('Sensitivity','95% CI'),
+  leftcols = c('studlab','n'),
+  leftlabs = c('Study', 'n'),
+  print.subgroup.name = FALSE,
+  pooled.events = FALSE,
+  colgap.forest.left = '2cm',
+  addrows.below.overall = 2
+)
+dev.off()
+
+```
+
+```{r}
+pdf('frozen_specificity_forest.pdf', width = 8, height = 6)
+forest(
+  frozen.spec.logit,
+  digits = 3,
+  rightcols = c('effect','ci'),
+  rightlabs = c('Specificity','95% CI'),
+  leftcols = c('studlab','n'),
+  leftlabs = c('Study', 'n'),
+  print.subgroup.name = FALSE,
+  pooled.events = FALSE,
+  colgap.forest.left = '2cm',
+  addrows.below.overall = 2
+)
+dev.off()
+```
+ Should I do the heterogeneity analysis here? Ugh, can't be bothered
+
+
+
+
+
+```{r}
+diagnostic_heterogeneity <- meta.data %>% # creates a dataframe suitable for logit transformation
   mutate(
     FN = if_else(FN == 0, 0.001, FN),
     FP = if_else(FP == 0, 0.001, FP),
