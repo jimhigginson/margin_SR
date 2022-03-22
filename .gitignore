@@ -12,3 +12,5 @@
 *.xml
 .Rproj.user
 *.png
+*.swp
+
