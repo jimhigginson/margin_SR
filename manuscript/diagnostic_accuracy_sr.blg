@@ -1,15 +1,15 @@
 [0] Config.pm:311> INFO - This is Biber 2.16
 [0] Config.pm:314> INFO - Logfile is 'diagnostic_accuracy_sr.blg'
-[108] biber-darwin:340> INFO - === Thu Mar 24, 2022, 21:42:09
-[126] Biber.pm:415> INFO - Reading 'diagnostic_accuracy_sr.bcf'
-[219] Biber.pm:952> INFO - Found 7 citekeys in bib section 0
-[246] Biber.pm:4340> INFO - Processing section 0
-[261] Biber.pm:4531> INFO - Looking for bibtex format file '/Users/jim/Library/CloudStorage/Box-Box/PhD/thesis/support/references.bib' for section 0
-[457] bibtex.pm:1689> INFO - LaTeX decoding ...
-[3184] bibtex.pm:1494> INFO - Found BibTeX data source '/Users/jim/Library/CloudStorage/Box-Box/PhD/thesis/support/references.bib'
-[3497] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[3497] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[3498] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[3498] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
-[3514] bbl.pm:654> INFO - Writing 'diagnostic_accuracy_sr.bbl' with encoding 'UTF-8'
-[3524] bbl.pm:757> INFO - Output to diagnostic_accuracy_sr.bbl
+[119] biber-darwin:340> INFO - === Thu Mar 24, 2022, 21:46:05
+[139] Biber.pm:415> INFO - Reading 'diagnostic_accuracy_sr.bcf'
+[281] Biber.pm:952> INFO - Found 7 citekeys in bib section 0
+[303] Biber.pm:4340> INFO - Processing section 0
+[323] Biber.pm:4531> INFO - Looking for bibtex format file '/Users/jim/Library/CloudStorage/Box-Box/PhD/thesis/support/references.bib' for section 0
+[600] bibtex.pm:1689> INFO - LaTeX decoding ...
+[4525] bibtex.pm:1494> INFO - Found BibTeX data source '/Users/jim/Library/CloudStorage/Box-Box/PhD/thesis/support/references.bib'
+[4909] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[4909] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[4909] Biber.pm:4168> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
+[4909] Biber.pm:4174> INFO - No sort tailoring available for locale 'en-US'
+[4925] bbl.pm:654> INFO - Writing 'diagnostic_accuracy_sr.bbl' with encoding 'UTF-8'
+[4937] bbl.pm:757> INFO - Output to diagnostic_accuracy_sr.bbl
