@@ -225,6 +225,53 @@
       \verb https://www.R-project.org/
       \endverb
     \endentry
+    \entry{vuEfficacyNarrowBand2014}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=b37b1f9fc94f9ed54a75c1574133eb6f}{%
+           family={Vu},
+           familyi={V\bibinitperiod},
+           given={An\bibnamedelima N.},
+           giveni={A\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=10e9c33a2ec652b33b08698b0abecb9e}{%
+           family={Farah},
+           familyi={F\bibinitperiod},
+           given={Camile\bibnamedelima S.},
+           giveni={C\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{469475fc9d4cfbb7b535ad1be04eeb17}
+      \strng{fullhash}{469475fc9d4cfbb7b535ad1be04eeb17}
+      \strng{bibnamehash}{469475fc9d4cfbb7b535ad1be04eeb17}
+      \strng{authorbibnamehash}{469475fc9d4cfbb7b535ad1be04eeb17}
+      \strng{authornamehash}{469475fc9d4cfbb7b535ad1be04eeb17}
+      \strng{authorfullhash}{469475fc9d4cfbb7b535ad1be04eeb17}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Objective: Narrow band imaging (NBI) is an endoscopic technique that enhances the mucosal surface texture, and mucosal and submucosal vascular morphology. This paper systematically reviews the available literature regarding the efficacy of NBI for the detection and monitoring of potentially malignant and malignant lesions in the oral cavity and oropharynx. Methods: Databases searched included PubMed, EMBASE, Web of Science and Scopus (to September 2013). Additional articles were found by conducting an author publication search using PubMed and by scanning the reference lists of relevant articles. Only trials that investigated and evaluated the effectiveness of both white light (WL) and NBI for aiding the detection of only oral potentially malignant lesions, oral squamous cell carcinomas and/or oropharyngeal squamous cell carcinomas were considered for this review. Two reviewers (ANV and CSF) independently assessed retrieved articles against the criteria, and included articles underwent data extraction and risk of bias assessment. Results: Two studies, one retrospective and one prospective, met the inclusion criteria. The sensitivity, specificity, positive predictive value, negative predictive value and accuracy for WL ranged between 56–96\%, 60–100\%, 33–100\%, 87–99\% and 66–89\% respectively, whereas it was 87–96\%, 94–98\%, 73–96\%, 97–98\% and 92–97\% respectively for NBI. Conclusion: While more research is required to determine the full value of NBI, it has great potential in accurately aiding the detection and assessment of neoplastic lesions, and influencing how these lesions are managed.}
+      \field{issn}{13688375}
+      \field{journaltitle}{Oral Oncology}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{5}
+      \field{shorttitle}{Efficacy of Narrow Band Imaging for Detection and Surveillance of Potentially Malignant and Malignant Lesions in the Oral Cavity and Oropharynx}
+      \field{title}{Efficacy of Narrow Band Imaging for Detection and Surveillance of Potentially Malignant and Malignant Lesions in the Oral Cavity and Oropharynx: {{A}} Systematic Review}
+      \field{volume}{50}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{413\bibrangedash 420}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1016/j.oraloncology.2014.02.002
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/QNUI5BNL/Vu and Farah - 2014 - Efficacy of narrow band imaging for detection and .pdf
+      \endverb
+    \endentry
     \entry{whitingQUADAS2RevisedTool2011}{article}{}
       \name{author}{10}{}{%
         {{un=0,uniquepart=base,hash=6f85f3ef83e91aedcfe723186979a745}{%
