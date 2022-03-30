@@ -63,6 +63,46 @@
       \verb 10.1136/ebmental-2019-300117
       \endverb
     \endentry
+    \entry{chowHeadNeckCancer2020}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e92a8060f908b42483986c8fde0e9b8e}{%
+           family={Chow},
+           familyi={C\bibinitperiod},
+           given={Laura\bibnamedelima Q.M.},
+           giveni={L\bibinitperiod\bibinitdelim Q\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{e92a8060f908b42483986c8fde0e9b8e}
+      \strng{fullhash}{e92a8060f908b42483986c8fde0e9b8e}
+      \strng{bibnamehash}{e92a8060f908b42483986c8fde0e9b8e}
+      \strng{authorbibnamehash}{e92a8060f908b42483986c8fde0e9b8e}
+      \strng{authornamehash}{e92a8060f908b42483986c8fde0e9b8e}
+      \strng{authorfullhash}{e92a8060f908b42483986c8fde0e9b8e}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{2}
+      \field{issn}{0028-4793, 1533-4406}
+      \field{journaltitle}{N Engl J Med}
+      \field{langid}{english}
+      \field{month}{1}
+      \field{number}{1}
+      \field{title}{Head and {{Neck Cancer}}}
+      \field{volume}{382}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{60\bibrangedash 72}
+      \range{pages}{13}
+      \verb{doi}
+      \verb 10.1056/NEJMra1715715
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/JFKUFX29/Chow - 2020 - Head and Neck Cancer.pdf
+      \endverb
+    \endentry
     \entry{Covidence}{software}{}
       \list{location}{1}{%
         {Melbourne, Australia}%
