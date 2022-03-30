@@ -10,7 +10,15 @@
 *.out
 *.pdf
 *.xml
-.Rproj.user
+*.Rproj.user
 *.png
 *.swp
-
+*.acn
+*.acr
+*.alg
+*.glg
+*.glo
+*.gls
+*.ist
+*.bbl
+*.blg
