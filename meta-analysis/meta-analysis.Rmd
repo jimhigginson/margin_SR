@@ -13,6 +13,7 @@ library(ellipse)
 library(mvmeta)
 library(meta)
 library(ggthemes)
+library(xtable) # allows export to latex
 
 ```
 
@@ -34,12 +35,12 @@ cols_to_keep <- c(
   "modality_group",
   "frozen_group",
 #   muting these columns whilst I work out the pivoting to keep it cleaner
-#  "Number of margins included",
-#  "Study design",
-#  "HNSCC sub-sites included in study",
+  "Number of margins included",
+  "Study design",
+  "HNSCC sub-sites included in study",
 #  "HPV status of participants",
-#  "Mean age",
-#  "Population description",
+  "Mean age",
+  "Population description",
 #  "What intraoperative margin tool is being evaluated in this study?",
   "Modality Diagnostic tool 1",
 #  "Modality Diagnostic tool 2",
@@ -149,7 +150,7 @@ DOR_model <- metabin(
   TP+FP,
   FN,
   FN+TN, 
-  sm='OR', 
+  sm='DOR', 
   comb.fixed=FALSE,
   comb.random=TRUE, 
   method='Inverse', 
@@ -178,7 +179,7 @@ forest(madauni(meta.data))
 
 Now create the bivariate model with the `reitsma' function
 ```{r}
-fit <- reitsma(meta.data, correction.control='single')
+fit <- reitsma(meta.data, correction.control='all')
 plot(fit, sroclwd = 2, xlim = c(0,1), ylim = c(0,1), main = "SROC curve (bivariate model) for Diagnostic Test Accuracy")
 points(fpr(meta.data), sens(meta.data), pch=20)
 legend("bottomright", c("data", "summary estimate", "AUC=?", "DOR=?", "Sensitivity=?", "Specificity=?"), pch = c(20,1,1000,1000,1000,1000) ) 
@@ -209,55 +210,58 @@ ggplot() +
 ```{r}
 stain.data <- meta.data %>% 
   filter(modality_group == 'Topical Staining')
-stain.fit <- reitsma(stain.data, correction.control='single')
+stain.fit <- reitsma(stain.data, correction.control='all')
 stain.confidence_region <- as_tibble(ROCellipse(stain.fit)$ROCellipse)
 stain.summary_data <- as_tibble(ROCellipse(stain.fit)$fprsens)
 stain.sroc_curve <- as_tibble(sroc(stain.fit)) %>% 
   add_row(fpr = 0, V2 = 0, .before = 1)
+stain.auc = AUC(stain.fit)$AUC
 
 
 frozen.data<- meta.data %>% 
   filter(modality_group == 'Frozen Section')
-frozen.fit <- reitsma(frozen.data, correction.control='single')
+frozen.fit <- reitsma(frozen.data, correction.control='all')
 frozen.confidence_region <- as_tibble(ROCellipse(frozen.fit)$ROCellipse)
 frozen.summary_data <- as_tibble(ROCellipse(frozen.fit)$fprsens)
 frozen.sroc_curve <- as_tibble(sroc(frozen.fit)) %>% 
   add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
-
+frozen.auc = AUC(frozen.fit)$AUC
 
 optical.data<- meta.data %>% 
   filter(modality_group == 'Optical Techniques')
-optical.fit <- reitsma(optical.data, correction.control='single')
+optical.fit <- reitsma(optical.data, correction.control='all')
 optical.confidence_region <- as_tibble(ROCellipse(optical.fit)$ROCellipse)
 optical.summary_data <- as_tibble(ROCellipse(optical.fit)$fprsens)
 optical.sroc_curve <- as_tibble(sroc(optical.fit)) %>% 
   add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
-
+optical.auc = AUC(optical.fit)$AUC
 
 chemo.data<- meta.data %>% 
   filter(modality_group == 'Chemiluminescence')
-chemo.fit <- reitsma(chemo.data, correction.control='single')
+chemo.fit <- reitsma(chemo.data, correction.control='all')
 chemo.confidence_region <- as_tibble(ROCellipse(chemo.fit)$ROCellipse)
 chemo.summary_data <- as_tibble(ROCellipse(chemo.fit)$fprsens)
 chemo.sroc_curve <- as_tibble(sroc(chemo.fit)) %>% 
   add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
+chemo.auc = AUC(chemo.fit)$AUC
 
 tic.data<- meta.data %>% 
   filter(modality_group == 'Touch Imprint Cytology')
-tic.fit <- reitsma(tic.data, correction.control='single')
+tic.fit <- reitsma(tic.data, correction.control='all')
 tic.confidence_region <- as_tibble(ROCellipse(tic.fit)$ROCellipse)
 tic.summary_data <- as_tibble(ROCellipse(tic.fit)$fprsens)
 tic.sroc_curve <- as_tibble(sroc(tic.fit)) %>% 
   add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
+tic.auc = AUC(tic.fit)$AUC
 
 auto.data<- meta.data %>% 
   filter(modality_group == 'Autofluorescence')
-auto.fit <- reitsma(auto.data, correction.control='single')
+auto.fit <- reitsma(auto.data, correction.control='all')
 auto.confidence_region <- as_tibble(ROCellipse(auto.fit)$ROCellipse)
 auto.summary_data <- as_tibble(ROCellipse(auto.fit)$fprsens)
 auto.sroc_curve <- as_tibble(sroc(auto.fit)) %>% 
   add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
-
+auto.auc = AUC(auto.fit)$AUC
 ```
 
 ```{r}
@@ -268,7 +272,8 @@ ggplot() +
   geom_point(data = stain.summary_data, aes(V1, V2), shape = 21) +
   labs(title = 'Summary ROC curve for stain studies') +
   xlab('False positive rate') +
-  ylab('Sensitivity')
+  ylab('Sensitivity') +
+  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{stain.auc}"))
 ggsave('stain_sroc.png')
 ```
 ```{r}
@@ -279,7 +284,8 @@ ggplot() +
   geom_point(data = frozen.summary_data, aes(V1, V2), shape = 21) +
   labs(title = 'Summary ROC curve for frozen studies') +
   xlab('False positive rate') +
-  ylab('Sensitivity')
+  ylab('Sensitivity')+
+  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{frozen.auc}"))
 ggsave('frozen_sroc.png')
 ```
 
@@ -291,7 +297,8 @@ ggplot() +
   geom_point(data = chemo.summary_data, aes(V1, V2), shape = 21) +
   labs(title = 'Summary ROC curve for chemo studies') +
   xlab('False positive rate') +
-  ylab('Sensitivity')
+  ylab('Sensitivity')+
+  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{chemo.auc}"))
 ggsave('chemo_sroc.png')
 ```
 
@@ -303,7 +310,8 @@ ggplot() +
   geom_point(data = tic.summary_data, aes(V1, V2), shape = 21) +
   labs(title = 'Summary ROC curve for tic studies') +
   xlab('False positive rate') +
-  ylab('Sensitivity')
+  ylab('Sensitivity')+
+  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{tic.auc}"))
 ggsave('tic_sroc.png')
 ```
 
@@ -315,7 +323,8 @@ ggplot() +
   geom_point(data = optical.summary_data, aes(V1, V2), shape = 21) +
   labs(title = 'Summary ROC curve for optical studies') +
   xlab('False positive rate') +
-  ylab('Sensitivity')
+  ylab('Sensitivity')+
+  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{optical.auc}"))
 ggsave('optical_sroc.png')
 ```
  
@@ -327,7 +336,8 @@ ggplot() +
   geom_point(data = auto.summary_data, aes(V1, V2), shape = 21) +
   labs(title = 'Summary ROC curve for auto studies') +
   xlab('False positive rate') +
-  ylab('Sensitivity')
+  ylab('Sensitivity') +
+  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{auto.auc}"))
 ggsave('auto_sroc.png')
 ```
 
@@ -336,6 +346,9 @@ Now to do the analysis separating specimen from defect driven frozen section.
 
 
 ```{r}
+library(meta)
+#reload meta package here for metaprop for analysis of defect v specimen driven frozen section
+
 frozen.data <- frozen.data %>% 
   filter(frozen_group == 'Specimen-driven' | frozen_group == 'Defect-driven')
 
@@ -363,6 +376,7 @@ frozen.spec.logit <- metaprop(
 ```
 
 ```{r}
+
 pdf('frozen_sensitivity_forest.pdf', width = 8, height = 6)
 forest(
   frozen.sens.logit,
@@ -396,7 +410,11 @@ forest(
 )
 dev.off()
 ```
- Should I do the heterogeneity analysis here? Ugh, can't be bothered
+ 
+ 
+ 
+ 
+ # Heterogeneity analysis here.
 
 
 
@@ -421,8 +439,67 @@ correlation = cor(diagnostic_heterogeneity$logit_sn, diagnostic_heterogeneity$lo
 Now the final metaregression analysis
 
 ```{r}
-library(meta)
+
 diagnostic_metaregression <- metareg(DOR_model, modality_group, method.tau = 'REML', digits = 3)
 ```
 
+# publication bias analysis
+
+Overall funnel plot
+```{r}
+
+funnel(DOR_model)
+
+```
+
+This basic plot is pretty ugly. Took me a while to work out how to get the DOR data out: the effect size in the model is accessible via `DOR_model$TE`, but this has been log transformed. To reverse it and get the plottable data out: `exp(DOR_model$TE`)
+
+```{r}
+funnel.data <- DOR_model$data %>% 
+  mutate(
+    DOR = exp(DOR_model$TE),
+    precision = DOR_model$seTE ^ -1
+  ) %>% 
+  ggplot() +
+  geom_point(aes(DOR, precision))
+```
+
+
+Now funnel plot for just frozen section
+
+```{r}
+frozen.DOR_model <- metabin(
+  TP,
+  TP+FP,
+  FN,
+  FN+TN, 
+  sm='DOR', 
+  comb.fixed=FALSE,
+  comb.random=TRUE, 
+  method='Inverse', 
+  studlab = `Study ID`, 
+  data=frozen.data)
+```
+
+This chunk will produce a nice table to export for the manuscript.
+
+```{r}
+export.meta.data <- meta.data %>% 
+  select(
+    !c(
+      `Covidence #`,
+      `Title`,
+      `First Author Name`,
+      `Year of publication`
+    )
+  )
+
+export.table <- xtable(
+  export.meta.data,
+  caption = c('short caption', 'full caption'),
+  label = 'tab:study_details'
+)
+
+print(export.table, file = '../manuscript/tables/study_details.tex')
+```
 
