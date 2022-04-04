@@ -474,23 +474,20 @@ funnel(DOR_model)
 This basic plot is pretty ugly. Took me a while to work out how to get the DOR data out: the effect size in the model is accessible via `DOR_model$TE`, but this has been log transformed. To reverse it and get the plottable data out: `exp(DOR_model$TE`)
 
 <<<<<<< HEAD
-```{r}
-funnel.data <- DOR_model$data %>% 
-=======
+
 ```{r funnel plot}
 DOR_model$data %>% 
->>>>>>> cdcfc75 (recommited all to correct git error)
   mutate(
     DOR = exp(DOR_model$TE),
     precision = DOR_model$seTE ^ -1
   ) %>% 
   ggplot() +
-<<<<<<< HEAD
-  geom_point(aes(DOR, precision))
-```
-=======
-  geom_point(aes(DOR, precision)) +
-  scale_x_log10()
+  geom_point(aes(DOR, precision, shape = modality_group, colour = modality_group)) +
+  geom_vline(xintercept = exp(DOR_model$TE.random), linetype='dotted') +
+  geom_abline()
+  scale_x_log10() +
+  theme_tufte()
+  ggsave('funnel_plot.png')
 ```
 This is similar to the inbuilt funnel, the main difference is the latter uses 'effective study size' (inverted) rather than precision:
 
