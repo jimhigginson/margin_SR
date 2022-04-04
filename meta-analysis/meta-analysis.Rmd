@@ -484,7 +484,6 @@ DOR_model$data %>%
   ggplot() +
   geom_point(aes(DOR, precision, shape = modality_group, colour = modality_group)) +
   geom_vline(xintercept = exp(DOR_model$TE.random), linetype='dotted') +
-  geom_abline()
   scale_x_log10() +
   theme_tufte()
   ggsave('funnel_plot.png')
