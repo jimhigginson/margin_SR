@@ -1,5 +1,8 @@
 *.xlsx
+<<<<<<< HEAD
 *.html
+=======
+>>>>>>> cdcfc75 (recommited all to correct git error)
 *.Rhistory
 *.DS_Store
 *.user
@@ -22,3 +25,7 @@
 *.ist
 *.bbl
 *.blg
+<<<<<<< HEAD
+=======
+.Rproj.user
+>>>>>>> cdcfc75 (recommited all to correct git error)

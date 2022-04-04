@@ -162,6 +162,25 @@ DOR_model <- metabin(
 forest(DOR_model, digits=3, rightcols=c('effect', 'ci'), xlab ='Diagnostic Odds Ratio')
 ```
 
+<<<<<<< HEAD
+=======
+```{r}
+pdf('dor_forest.pdf', width = 10, height = 14)
+forest(
+  DOR_model,
+   digits = 3,
+   rightcols = c('effect','ci'),
+   rightlabs = c('95% CI'),
+   leftcols = c('studlab'),
+   leftlabs = c('Study'),
+  print.subgroup.name = FALSE,
+  pooled.events = FALSE,
+  colgap.forest.left = '2cm',
+  addrows.below.overall = 2
+)
+dev.off()
+```
+>>>>>>> cdcfc75 (recommited all to correct git error)
 
 ```{r bivariate analysis}
 detach(package:meta)
@@ -454,15 +473,47 @@ funnel(DOR_model)
 
 This basic plot is pretty ugly. Took me a while to work out how to get the DOR data out: the effect size in the model is accessible via `DOR_model$TE`, but this has been log transformed. To reverse it and get the plottable data out: `exp(DOR_model$TE`)
 
+<<<<<<< HEAD
 ```{r}
 funnel.data <- DOR_model$data %>% 
+=======
+```{r funnel plot}
+DOR_model$data %>% 
+>>>>>>> cdcfc75 (recommited all to correct git error)
   mutate(
     DOR = exp(DOR_model$TE),
     precision = DOR_model$seTE ^ -1
   ) %>% 
   ggplot() +
+<<<<<<< HEAD
   geom_point(aes(DOR, precision))
 ```
+=======
+  geom_point(aes(DOR, precision)) +
+  scale_x_log10()
+```
+This is similar to the inbuilt funnel, the main difference is the latter uses 'effective study size' (inverted) rather than precision:
+
+```{r}
+funnel.meta(DOR_model)
+```
+
+Now, to quantify this, can use the duval and tweedie trimfill method as recommended by Burkner and Doebler.
+
+Note that the heterogeneity of the `DOR_model` is very high (`r DOR_model$I2`), so it may be worth trimming out the outliers at a second run as per https://bookdown.org/MathiasHarrer/Doing_Meta_Analysis_in_R/pub-bias.html, section 9.2.1.4.
+
+```{r}
+tf <- trimfill(DOR_model)
+```
+
+and plotted with the imputed `r tf$k0` studies:
+
+```{r}
+funnel.meta(tf)
+```
+
+
+>>>>>>> cdcfc75 (recommited all to correct git error)
 
 
 Now funnel plot for just frozen section
