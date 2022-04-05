@@ -500,7 +500,7 @@ DOR_model$data %>%
   theme_tufte()  
 ggsave('funnel_plot.png')
 ```
-This is similar to the inbuilt funnel, the main difference is the latter uses 'effective study size' (inverted) rather than precision:
+This is similar to, but in my view better than, the inbuilt funnel, the main difference is the latter uses 'effective study size' (inverted) rather than precision:
 
 ```{r}
 funnel.meta(DOR_model
@@ -519,6 +519,36 @@ and plotted with the imputed `r tf$k0` studies:
 
 ```{r}
 funnel.meta(tf)
+```
+
+Now doing the trimfill funnel myself using ggplot
+```{r trimfill funnel}
+tf.DOR = exp(tf$TE)
+tf.precision = tf$seTE ^ -1
+  
+  ggplot() +
+  geom_point(
+    aes(x = tf.DOR, 
+        y = tf.precision#, 
+        #shape = modality_group
+        )
+    ) +
+  geom_vline(xintercept = exp(tf$TE.random), linetype='dashed') +
+  geom_segment(aes(
+    x = exp(tf$lower.predict), 
+    y = 0, 
+    xend = exp(tf$TE.random), 
+    yend = 4
+    ), linetype='dotted') +
+    geom_segment(aes(
+    x = exp(tf$upper.predict), 
+    y = 0, 
+    xend = exp(tf$TE.random), 
+    yend = 4
+    ), linetype='dotted') +
+  scale_x_log10() +
+  theme_tufte()  
+ggsave('trim_filled_funnel_plot.png')
 ```
 
 
