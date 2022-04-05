@@ -230,6 +230,228 @@
       \verb /Users/jim/Zotero/storage/F6294U95/Ebell et al. - 2004 - Strength of Recommendation Taxonomy (SORT) A Pati.pdf
       \endverb
     \endentry
+    \entry{heidaria.e.UseOpticalCoherence2020}{article}{}
+      \name{author}{11}{}{%
+        {{un=0,uniquepart=base,hash=d39e6dcdc4ad4f8a89344b2295d3bf4c}{%
+           family={{Heidari A.E.}},
+           familyi={H\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=e054148b1b0bf09ecb035f79d56e7833}{%
+           family={{Pham T.T.}},
+           familyi={P\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=05a6313fd355c7fd5c35b72959296d3a}{%
+           family={{Ifegwu I.}},
+           familyi={I\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=9052c0e561b1114d3a5f5fb651af4e2e}{%
+           family={{Burwell R.}},
+           familyi={B\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=f343ae2898d29d5fe7eae800af7437ed}{%
+           family={{Armstrong W.B.}},
+           familyi={A\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=6cb40874289e759e1e665767984898b2}{%
+           family={{Tjoson T.}},
+           familyi={T\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=c36915c5d6c54ee3a8b92727430da6c1}{%
+           family={{Whyte S.}},
+           familyi={W\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=32cde71b61b74960531028e01f820b18}{%
+           family={{Giorgioni C.}},
+           familyi={G\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=98163e4a6e74053cdf200fd7ef8d0dcb}{%
+           family={{Wang B.}},
+           familyi={W\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=a2f6b6c3443ea2f0cd9aed62e36fd8a0}{%
+           family={{Wong B.J.F.}},
+           familyi={W\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=d90f53b6c47cfea3540b0fb9da23dbd7}{%
+           family={{Chen Z.}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Germany}%
+      }
+      \list{publisher}{1}{%
+        {NLM (Medline)}%
+      }
+      \strng{namehash}{0b284b23097ebcf56fa3c23c55255b16}
+      \strng{fullhash}{f9267dd33fc38da1ddfad98f9270034b}
+      \strng{bibnamehash}{0b284b23097ebcf56fa3c23c55255b16}
+      \strng{authorbibnamehash}{0b284b23097ebcf56fa3c23c55255b16}
+      \strng{authornamehash}{0b284b23097ebcf56fa3c23c55255b16}
+      \strng{authorfullhash}{f9267dd33fc38da1ddfad98f9270034b}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Incomplete surgical resection of head and neck squamous cell carcinoma (HNSCC) is the most common cause of local HNSCC recurrence. Currently, surgeons rely on preoperative imaging, direct visualization, palpation and frozen section to determine the extent of tissue resection. It has been demonstrated that optical coherence tomography (OCT), a minimally invasive, nonionizing near infrared mesoscopic imaging modality can resolve subsurface differences between normal and abnormal head and neck mucosa. Previous work has utilized two-dimensional OCT imaging which is limited to the evaluation of small regions of interest generated frame by frame. OCT technology is capable of performing rapid volumetric imaging, but the capacity and expertise to analyze this massive amount of image data is lacking. In this study, we evaluate the ability of a retrained convolutional neural network to classify three-dimensional OCT images of head and neck mucosa to differentiate normal and abnormal tissues with sensitivity and specificity of 100\% and 70\%, respectively. This method has the potential to serve as a real-time analytic tool in the assessment of surgical margins.Copyright © 2019 WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim.}
+      \field{journaltitle}{Journal of biophotonics}
+      \field{number}{3}
+      \field{title}{The Use of Optical Coherence Tomography and Convolutional Neural Networks to Distinguish Normal and Abnormal Oral Mucosa}
+      \field{volume}{13}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{e201900221}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/jbio.201900221
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/GJ7LQJMY/Heidari A.E. et al. - 2020 - The use of optical coherence tomography and convol.pdf
+      \endverb
+    \endentry
+    \entry{leey.-j.IntraoperativeFluorescenceGuidedSurgery2020}{article}{}
+      \name{author}{11}{}{%
+        {{un=0,uniquepart=base,hash=99304ba4aa4705989a15c78370e50e72}{%
+           family={{Lee Y.-J.}},
+           familyi={L\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=7c2d0df86769295245f0d7839f9e1c5e}{%
+           family={{Krishnan G.}},
+           familyi={K\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=72239a8296f6151dbae4e7bb9d0decc2}{%
+           family={{Nishio N.}},
+           familyi={N\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=a23ee3f77e074cedfc5700eecad4704b}{%
+           family={{van den Berg N.S.}},
+           familyi={v\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=c7a1bc7d12ea038e98bd9bb3de71e360}{%
+           family={{Lu G.}},
+           familyi={L\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=c335b3516fe925a9e314196cd13af597}{%
+           family={{Martin B.A.}},
+           familyi={M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=5eb98f284bbcff64edda53e772330d06}{%
+           family={{van Keulen S.}},
+           familyi={v\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=c9c9cac1384cfaef163bba1bd0bf7834}{%
+           family={{Colevas A.D.}},
+           familyi={C\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=e3c2e6810b2aac19ceb9ae58b1a32280}{%
+           family={{Kapoor S.}},
+           familyi={K\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=56d6d9aa105c34133bcb8d263593e3ba}{%
+           family={{Liu J.T.C.}},
+           familyi={L\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=c1c4764fde3662f0635876a8fdbeff38}{%
+           family={{Rosenthal E.L.}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {United States}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley and Sons Inc. (P.O.Box 18667, Newark NJ 07191-8667, United States)}%
+      }
+      \strng{namehash}{ecce89f87fd5b6ba991e5af05b82d19f}
+      \strng{fullhash}{a821141e162b52d63f906dc7e21cc7ab}
+      \strng{bibnamehash}{ecce89f87fd5b6ba991e5af05b82d19f}
+      \strng{authorbibnamehash}{ecce89f87fd5b6ba991e5af05b82d19f}
+      \strng{authornamehash}{ecce89f87fd5b6ba991e5af05b82d19f}
+      \strng{authorfullhash}{a821141e162b52d63f906dc7e21cc7ab}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The rate of positive margins in head and neck cancers has remained stagnant over the past three decades and is consistently associated with poor overall survival. This suggests that significant improvements must be made intraoperatively to ensure negative margins. We discuss the important role of fluorescence imaging to guide surgical oncology in head and neck cancer. This review includes a general overview of the principles of fluorescence, available fluorophores used for fluorescence imaging, and specific clinical applications of fluorescence-guided surgery, as well as challenges and future directions in head and neck surgical oncology. Laryngoscope, 2020.Copyright © 2020 The American Laryngological, Rhinological and Otological Society, Inc.}
+      \field{journaltitle}{Laryngoscope}
+      \field{title}{Intraoperative {{Fluorescence-Guided Surgery}} in {{Head}} and {{Neck Squamous Cell Carcinoma}}}
+      \field{volume}{131}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{529\bibrangedash 534}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1002/lary.28822
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/DNW2N26M/Lee Y.-J. et al. - 2020 - Intraoperative Fluorescence-Guided Surgery in Head.pdf
+      \endverb
+    \endentry
+    \entry{naveedDiagnosticAccuracyTouch2017}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=25cce806c1350793e410e8deb47e6bbd}{%
+           family={Naveed},
+           familyi={N\bibinitperiod},
+           given={Hania},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1de0a4679908cea0bc9dc8398a79b4ad}{%
+           family={Abid},
+           familyi={A\bibinitperiod},
+           given={Mariam},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c984618e18040bab4abd725cd25144b3}{%
+           family={Hashmi},
+           familyi={H\bibinitperiod},
+           given={Atif\bibnamedelima Ali},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=acaa3cd5b22f82ce4c988db178825087}{%
+           family={Edhi},
+           familyi={E\bibinitperiod},
+           given={Muhammad\bibnamedelima Muzammamil},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ebaddcf5dfff05a496f571b55c06beb7}{%
+           family={Sheikh},
+           familyi={S\bibinitperiod},
+           given={Ahmareen\bibnamedelima Khalid},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=82bbce832f51e8df58722ba2d46b7311}{%
+           family={Mudassir},
+           familyi={M\bibinitperiod},
+           given={Ghazala},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=05c9a0a539808e195a870fd7a27e6a55}{%
+           family={Khan},
+           familyi={K\bibinitperiod},
+           given={Amir},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {United Kingdom}%
+      }
+      \list{publisher}{1}{%
+        {BioMed Central Ltd. (E-mail: info@biomedcentral.com)}%
+      }
+      \strng{namehash}{482a73ed5eb2f181edb75c18b019fa16}
+      \strng{fullhash}{6e1041ae8883f80217d8ae1903859d5e}
+      \strng{bibnamehash}{482a73ed5eb2f181edb75c18b019fa16}
+      \strng{authorbibnamehash}{482a73ed5eb2f181edb75c18b019fa16}
+      \strng{authornamehash}{482a73ed5eb2f181edb75c18b019fa16}
+      \strng{authorfullhash}{6e1041ae8883f80217d8ae1903859d5e}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Background: Intraoperative consultation is an important tool for the evaluation of the upper aerodigestive tract (UAT) malignancies. Although frozen section analysis is a preferred method of intra-operative consultation, however in resource limited countries like Pakistan, this facility is not available in most institutes; therefore, we aimed to evaluate the diagnostic accuracy of touch imprint cytology for UAT malignancies using histopathology of the same tissue as gold standard. Methods: The study involved 70 cases of UAT lesions operated during the study period. Intraoperatively, after obtaining the fresh biopsy specimen and prior to placing them in fixative, each specimen was imprinted on 4-6 glass slides, fixed immediately in 95\% alcohol and stained with Hematoxylin and Eosin stain. After completion of the cytological procedure, the surgical biopsy specimen was processed. The slides of both touch Imprint cytology and histopathology were examined by two consultant histopathologists. Results: The result of touch imprint cytology showed that touch imprint cytology was diagnostic in 68 cases (97.1\%), 55 (78.6\%) being malignant, 2 cases (2.9\%) were suspicious for malignancy, 11 cases (15.7\%) were negative for malignancy while 2 cases (2.9\%) were false negative. Amongst the 70 cases, 55 cases (78.6\%) were malignant showing squamous cell carcinoma in 49 cases (70\%), adenoid cystic carcinoma in 2 cases (2.9\%), non-Hodgkin lymphoma 2 cases (2.9\%), Mucoepidermoid carcinoma 1 case (1.4\%), spindle cell sarcoma in 1 case (1.4\%). Two cases (2.9\%) were suspicious of malignancy showing atypical squamoid cells on touch imprint cytology, while 13 cases (18.6\%) were negative for malignancy, which also included 2 false negative cases. The overall diagnostic accuracy of touch imprint cytology came out to be 96.7\% with a sensitivity and specificity of 96 and 100\%, respectively while PPV and NPV of touch imprint cytology was found to be 100 and 84\%, respectively. Conclusion: Our experience in this study has demonstrated that touch imprint cytology provides reliable specific diagnoses and can be used as an adjunct to histopathology, particularly in developing countries, where the facility of frozen section is often not available, since a rapid preliminary diagnosis may help in the surgical management planning.}
+      \field{issn}{1472-6890}
+      \field{journaltitle}{BMC Clin Pathol}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{number}{1}
+      \field{shorttitle}{Diagnostic Accuracy of Touch Imprint Cytology for Head and Neck Malignancies}
+      \field{title}{Diagnostic Accuracy of Touch Imprint Cytology for Head and Neck Malignancies: A Useful Intra-Operative Tool in Resource Limited Countries}
+      \field{volume}{17}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{25}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/s12907-017-0063-y
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/WVHW3AXR/Naveed et al. - 2017 - Diagnostic accuracy of touch imprint cytology for .pdf
+      \endverb
+    \endentry
     \entry{r-core}{manual}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=dcdebb6b35bff7c0568bf8c50ef8626d}{%
