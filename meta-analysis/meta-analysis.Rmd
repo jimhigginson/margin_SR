@@ -482,16 +482,29 @@ DOR_model$data %>%
     precision = DOR_model$seTE ^ -1
   ) %>% 
   ggplot() +
-  geom_point(aes(DOR, precision, shape = modality_group, colour = modality_group)) +
-  geom_vline(xintercept = exp(DOR_model$TE.random), linetype='dotted') +
+  geom_point(aes(DOR, precision, shape = modality_group)) +
+  geom_vline(xintercept = exp(DOR_model$TE.random), linetype='dashed') +
+  geom_segment(aes(
+    x = exp(DOR_model$lower.predict), 
+    y = 0, 
+    xend = exp(DOR_model$TE.random), 
+    yend = 4
+    ), linetype='dotted') +
+    geom_segment(aes(
+    x = exp(DOR_model$upper.predict), 
+    y = 0, 
+    xend = exp(DOR_model$TE.random), 
+    yend = 4
+    ), linetype='dotted') +
   scale_x_log10() +
-  theme_tufte()
-  ggsave('funnel_plot.png')
+  theme_tufte()  
+ggsave('funnel_plot.png')
 ```
 This is similar to the inbuilt funnel, the main difference is the latter uses 'effective study size' (inverted) rather than precision:
 
 ```{r}
-funnel.meta(DOR_model)
+funnel.meta(DOR_model
+            )
 ```
 
 Now, to quantify this, can use the duval and tweedie trimfill method as recommended by Burkner and Doebler.
