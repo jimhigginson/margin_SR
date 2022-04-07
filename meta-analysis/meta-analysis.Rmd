@@ -482,7 +482,7 @@ DOR_model$data %>%
     precision = DOR_model$seTE ^ -1
   ) %>% 
   ggplot() +
-  geom_point(aes(DOR, precision, shape = modality_group)) +
+  geom_point(aes(DOR, precision, shape = modality_group, colour = modality_group)) +
   geom_vline(xintercept = exp(DOR_model$TE.random), linetype='dashed') +
   geom_segment(aes(
     x = exp(DOR_model$lower.predict), 
@@ -497,7 +497,8 @@ DOR_model$data %>%
     yend = 4
     ), linetype='dotted') +
   scale_x_log10() +
-  theme_tufte()  
+  scale_colour_colorblind() +
+  theme_classic()  
 ggsave('funnel_plot.png')
 ```
 This is similar to, but in my view better than, the inbuilt funnel, the main difference is the latter uses 'effective study size' (inverted) rather than precision:
@@ -529,8 +530,9 @@ tf.precision = tf$seTE ^ -1
   ggplot() +
   geom_point(
     aes(x = tf.DOR, 
-        y = tf.precision#, 
-        #shape = modality_group
+        y = tf.precision, 
+        shape = startsWith(tf$studlab,'Filled'),
+        colour = startsWith(tf$studlab,'Filled')
         )
     ) +
   geom_vline(xintercept = exp(tf$TE.random), linetype='dashed') +
@@ -547,7 +549,8 @@ tf.precision = tf$seTE ^ -1
     yend = 4
     ), linetype='dotted') +
   scale_x_log10() +
-  theme_tufte()  
+  scale_colour_colorblind() +
+  theme_classic()  
 ggsave('trim_filled_funnel_plot.png')
 ```
 
