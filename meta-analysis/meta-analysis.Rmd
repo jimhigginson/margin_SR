@@ -214,10 +214,16 @@ summary_data <- as_tibble(ROCellipse(fit)$fprsens)
 sroc_curve <- as_tibble(sroc(fit)) %>% 
   add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
 
-ggplot() +
+meta.data <- meta.data %>% 
+  mutate(
+    fpr = fpr(meta.data),
+    sens = sens(meta.data)
+  )
+
+ggplot(data = meta.data) +
   geom_line(data = sroc_curve, aes(fpr, V2)) +
   geom_polygon(data = confidence_region, aes(V1, V2), alpha = 0.3) +
-  geom_point(aes(fpr(meta.data), sens(meta.data)), size = 1) +
+  geom_point(aes(fpr, sens, size = `Number of margins included`), alpha = 0.3) +
   geom_point(data = summary_data, aes(V1, V2), shape = 21) +
   labs(title = 'Summary ROC curve for all studies') +
   xlab('False positive rate') +
@@ -594,5 +600,76 @@ export.table <- xtable(
 )
 
 print(export.table, file = '../manuscript/tables/study_details.tex')
+```
+
+
+# Now qualitative data
+
+```{r}
+
+qual_cols = c(
+"Was a consecutive or random sample of patients enrolled?",
+"Was a consecutive or random sample of patients enrolled? supporting text",
+"Was a case-control design avoided?",
+"Was a case-control design avoided? supporting text",
+"Did the study avoid inappropriate exclusions?",
+"Did the study avoid inappropriate exclusions? supporting text",
+"Could the selection of patients have introduced bias?",
+"Could the selection of patients have introduced bias? supporting text",
+"Is there concern that the included patients do not match the review question?",
+"Is there concern that the included patients do not match the review question? supporting text",
+"Were the index test results interpreted without knowledge of the results of the reference standard?",
+"Were the index test results interpreted without knowledge of the results of the reference standard? supporting text",
+"If a threshold was used, was it pre-specified?",
+"If a threshold was used, was it pre-specified? supporting text",
+"Could the conduct or interpretation of the index test have introduced bias?",
+"Could the conduct or interpretation of the index test have introduced bias? supporting text",
+"Is there concern that the index test, its conduct, or interpretation differ from the review question?",
+"Is there concern that the index test, its conduct, or interpretation differ from the review question? supporting text",
+"Is the reference standard likely to correctly classify the target condition?",
+"Is the reference standard likely to correctly classify the target condition? supporting text",
+"Were the reference standard results interpreted without knowledge of the results of the index test?",
+"Were the reference standard results interpreted without knowledge of the results of the index test? supporting text",
+"Could the reference standard, its conduct, or its interpretation have introduced bias?",
+"Could the reference standard, its conduct, or its interpretation have introduced bias? supporting text",
+"Is there concern that the target condition as defined by the reference standard does not match the review question?",
+"Is there concern that the target condition as defined by the reference standard does not match the review question? supporting text",
+"Was there an appropriate interval between index test(s) and reference standard?",
+"Was there an appropriate interval between index test(s) and reference standard? supporting text",
+"Did all patients have reference histopathology?",
+"Did all patients have reference histopathology? supporting text",
+"Were all patients included in the analysis?",
+"Were all patients included in the analysis? supporting text",
+"Could the patient flow have introduced bias?",
+"Could the patient flow have introduced bias? supporting text",
+"What SORT score is this ?",
+"What SORT score is this ? supporting text"                                                                              
+)
+
+qual.data <-  read_csv('all_data_unverified_for_testing.csv') %>% 
+# This produces a table of all the quality data
+  filter(`Reviewer Name` == 'James Higginson') %>% 
+  select(qual_cols)
+
+quadas.qs <- c(
+"Could the selection of patients have introduced bias?",
+"Is there concern that the included patients do not match the review question?",
+"Could the conduct or interpretation of the index test have introduced bias?",
+"Is there concern that the index test, its conduct, or interpretation differ from the review question?",
+"Could the reference standard, its conduct, or its interpretation have introduced bias?",
+"Is there concern that the target condition as defined by the reference standard does not match the review question?",
+"Could the patient flow have introduced bias?",
+"What SORT score is this ?"
+)
+final.qual <- qual.data %>% 
+  select(quadas.qs)
+
+export.qual.table <- xtable(
+  final.qual,
+  caption = c('short caption', 'full caption'),
+  label = 'tab:qual_scores'
+)
+
+print(export.qual.table, file = '../manuscript/tables/qual_scores.tex')
 ```
 
