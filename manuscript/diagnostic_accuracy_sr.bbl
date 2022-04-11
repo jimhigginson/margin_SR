@@ -1,5 +1,5 @@
 % $ biblatex auxiliary file $
-% $ biblatex bbl format version 3.1 $
+% $ biblatex bbl format version 3.2 $
 % Do not modify the above lines!
 %
 % This is an auxiliary file used by the 'biblatex' package.
@@ -86,10 +86,11 @@
       \field{labeltitlesource}{title}
       \field{day}{2}
       \field{issn}{0028-4793, 1533-4406}
-      \field{journaltitle}{N Engl J Med}
+      \field{journaltitle}{New England Journal of Medicine}
       \field{langid}{english}
       \field{month}{1}
       \field{number}{1}
+      \field{shortjournal}{N Engl J Med}
       \field{title}{Head and {{Neck Cancer}}}
       \field{volume}{382}
       \field{year}{2020}
@@ -216,6 +217,7 @@
       \field{langid}{english}
       \field{month}{1}
       \field{number}{1}
+      \field{shortjournal}{The Journal of the American Board of Family Medicine}
       \field{shorttitle}{Strength of {{Recommendation Taxonomy}} ({{SORT}})}
       \field{title}{Strength of {{Recommendation Taxonomy}} ({{SORT}}): {{A Patient-Centered Approach}} to {{Grading Evidence}} in the {{Medical Literature}}}
       \field{volume}{17}
@@ -287,6 +289,7 @@
       \field{abstract}{Incomplete surgical resection of head and neck squamous cell carcinoma (HNSCC) is the most common cause of local HNSCC recurrence. Currently, surgeons rely on preoperative imaging, direct visualization, palpation and frozen section to determine the extent of tissue resection. It has been demonstrated that optical coherence tomography (OCT), a minimally invasive, nonionizing near infrared mesoscopic imaging modality can resolve subsurface differences between normal and abnormal head and neck mucosa. Previous work has utilized two-dimensional OCT imaging which is limited to the evaluation of small regions of interest generated frame by frame. OCT technology is capable of performing rapid volumetric imaging, but the capacity and expertise to analyze this massive amount of image data is lacking. In this study, we evaluate the ability of a retrained convolutional neural network to classify three-dimensional OCT images of head and neck mucosa to differentiate normal and abnormal tissues with sensitivity and specificity of 100\% and 70\%, respectively. This method has the potential to serve as a real-time analytic tool in the assessment of surgical margins.Copyright © 2019 WILEY-VCH Verlag GmbH \& Co. KGaA, Weinheim.}
       \field{journaltitle}{Journal of biophotonics}
       \field{number}{3}
+      \field{shortjournal}{Journal of biophotonics}
       \field{title}{The Use of Optical Coherence Tomography and Convolutional Neural Networks to Distinguish Normal and Abnormal Oral Mucosa}
       \field{volume}{13}
       \field{year}{2020}
@@ -356,6 +359,7 @@
       \field{labeltitlesource}{title}
       \field{abstract}{The rate of positive margins in head and neck cancers has remained stagnant over the past three decades and is consistently associated with poor overall survival. This suggests that significant improvements must be made intraoperatively to ensure negative margins. We discuss the important role of fluorescence imaging to guide surgical oncology in head and neck cancer. This review includes a general overview of the principles of fluorescence, available fluorophores used for fluorescence imaging, and specific clinical applications of fluorescence-guided surgery, as well as challenges and future directions in head and neck surgical oncology. Laryngoscope, 2020.Copyright © 2020 The American Laryngological, Rhinological and Otological Society, Inc.}
       \field{journaltitle}{Laryngoscope}
+      \field{shortjournal}{Laryngoscope}
       \field{title}{Intraoperative {{Fluorescence-Guided Surgery}} in {{Head}} and {{Neck Squamous Cell Carcinoma}}}
       \field{volume}{131}
       \field{year}{2020}
@@ -434,10 +438,11 @@
       \field{labeltitlesource}{shorttitle}
       \field{abstract}{Background: Intraoperative consultation is an important tool for the evaluation of the upper aerodigestive tract (UAT) malignancies. Although frozen section analysis is a preferred method of intra-operative consultation, however in resource limited countries like Pakistan, this facility is not available in most institutes; therefore, we aimed to evaluate the diagnostic accuracy of touch imprint cytology for UAT malignancies using histopathology of the same tissue as gold standard. Methods: The study involved 70 cases of UAT lesions operated during the study period. Intraoperatively, after obtaining the fresh biopsy specimen and prior to placing them in fixative, each specimen was imprinted on 4-6 glass slides, fixed immediately in 95\% alcohol and stained with Hematoxylin and Eosin stain. After completion of the cytological procedure, the surgical biopsy specimen was processed. The slides of both touch Imprint cytology and histopathology were examined by two consultant histopathologists. Results: The result of touch imprint cytology showed that touch imprint cytology was diagnostic in 68 cases (97.1\%), 55 (78.6\%) being malignant, 2 cases (2.9\%) were suspicious for malignancy, 11 cases (15.7\%) were negative for malignancy while 2 cases (2.9\%) were false negative. Amongst the 70 cases, 55 cases (78.6\%) were malignant showing squamous cell carcinoma in 49 cases (70\%), adenoid cystic carcinoma in 2 cases (2.9\%), non-Hodgkin lymphoma 2 cases (2.9\%), Mucoepidermoid carcinoma 1 case (1.4\%), spindle cell sarcoma in 1 case (1.4\%). Two cases (2.9\%) were suspicious of malignancy showing atypical squamoid cells on touch imprint cytology, while 13 cases (18.6\%) were negative for malignancy, which also included 2 false negative cases. The overall diagnostic accuracy of touch imprint cytology came out to be 96.7\% with a sensitivity and specificity of 96 and 100\%, respectively while PPV and NPV of touch imprint cytology was found to be 100 and 84\%, respectively. Conclusion: Our experience in this study has demonstrated that touch imprint cytology provides reliable specific diagnoses and can be used as an adjunct to histopathology, particularly in developing countries, where the facility of frozen section is often not available, since a rapid preliminary diagnosis may help in the surgical management planning.}
       \field{issn}{1472-6890}
-      \field{journaltitle}{BMC Clin Pathol}
+      \field{journaltitle}{BMC Clinical Pathology}
       \field{langid}{english}
       \field{month}{12}
       \field{number}{1}
+      \field{shortjournal}{BMC Clin Pathol}
       \field{shorttitle}{Diagnostic Accuracy of Touch Imprint Cytology for Head and Neck Malignancies}
       \field{title}{Diagnostic Accuracy of Touch Imprint Cytology for Head and Neck Malignancies: A Useful Intra-Operative Tool in Resource Limited Countries}
       \field{volume}{17}
@@ -520,6 +525,7 @@
       \field{langid}{english}
       \field{month}{5}
       \field{number}{5}
+      \field{shortjournal}{Oral Oncology}
       \field{shorttitle}{Efficacy of Narrow Band Imaging for Detection and Surveillance of Potentially Malignant and Malignant Lesions in the Oral Cavity and Oropharynx}
       \field{title}{Efficacy of Narrow Band Imaging for Detection and Surveillance of Potentially Malignant and Malignant Lesions in the Oral Cavity and Oropharynx: {{A}} Systematic Review}
       \field{volume}{50}
@@ -610,10 +616,11 @@
       \field{day}{18}
       \field{eprinttype}{pmid}
       \field{issn}{1539-3704}
-      \field{journaltitle}{Ann Intern Med}
+      \field{journaltitle}{Annals of Internal Medicine}
       \field{langid}{english}
       \field{month}{10}
       \field{number}{8}
+      \field{shortjournal}{Ann Intern Med}
       \field{shorttitle}{{{QUADAS-2}}}
       \field{title}{{{QUADAS-2}}: A Revised Tool for the Quality Assessment of Diagnostic Accuracy Studies}
       \field{volume}{155}
