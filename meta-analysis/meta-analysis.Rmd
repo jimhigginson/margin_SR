@@ -158,12 +158,7 @@ DOR_model <- metabin(
   byvar=modality_group, 
   data=meta.data)
 ```
-```{r}
-forest(DOR_model, digits=3, rightcols=c('effect', 'ci'), xlab ='Diagnostic Odds Ratio')
-```
 
-<<<<<<< HEAD
-=======
 ```{r}
 pdf('dor_forest.pdf', width = 10, height = 14)
 forest(
@@ -180,7 +175,7 @@ forest(
 )
 dev.off()
 ```
->>>>>>> cdcfc75 (recommited all to correct git error)
+
 
 ```{r bivariate analysis}
 detach(package:meta)
@@ -223,11 +218,13 @@ meta.data <- meta.data %>%
 ggplot(data = meta.data) +
   geom_line(data = sroc_curve, aes(fpr, V2)) +
   geom_polygon(data = confidence_region, aes(V1, V2), alpha = 0.3) +
-  geom_point(aes(fpr, sens, size = `Number of margins included`), alpha = 0.3) +
-  geom_point(data = summary_data, aes(V1, V2), shape = 21) +
+  geom_point(aes(fpr, sens, size = `Number of margins included`), shape = 1, alpha = 0.5) +
+  geom_point(data = summary_data, aes(V1, V2), size = 3) +
   labs(title = 'Summary ROC curve for all studies') +
   xlab('False positive rate') +
-  ylab('Sensitivity')
+  ylab('Sensitivity') + 
+  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{AUC(fit)$AUC}")) +
+  theme_clean()
 
 
 ```
@@ -298,19 +295,21 @@ ggplot() +
   labs(title = 'Summary ROC curve for stain studies') +
   xlab('False positive rate') +
   ylab('Sensitivity') +
-  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{stain.auc}"))
+  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{stain.auc}")) +
+  theme_classic()
 ggsave('stain_sroc.png')
 ```
 ```{r}
 ggplot() +
   geom_line(data = frozen.sroc_curve, aes(fpr, V2)) +
   geom_polygon(data = frozen.confidence_region, aes(V1, V2), alpha = 0.3) +
-  geom_point(aes(fpr(frozen.data), sens(frozen.data)), size = 1) +
-  geom_point(data = frozen.summary_data, aes(V1, V2), shape = 21) +
+  geom_point(aes(fpr(frozen.data), sens(frozen.data)), shape = 1, alpha = 0.6) +
+  geom_point(data = frozen.summary_data, aes(V1, V2)) +
   labs(title = 'Summary ROC curve for frozen studies') +
   xlab('False positive rate') +
   ylab('Sensitivity')+
-  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{frozen.auc}"))
+  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{frozen.auc}")) +
+  theme_classic()
 ggsave('frozen_sroc.png')
 ```
 
@@ -323,7 +322,8 @@ ggplot() +
   labs(title = 'Summary ROC curve for chemo studies') +
   xlab('False positive rate') +
   ylab('Sensitivity')+
-  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{chemo.auc}"))
+  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{chemo.auc}")) +
+  theme_classic()
 ggsave('chemo_sroc.png')
 ```
 
@@ -336,7 +336,8 @@ ggplot() +
   labs(title = 'Summary ROC curve for tic studies') +
   xlab('False positive rate') +
   ylab('Sensitivity')+
-  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{tic.auc}"))
+  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{tic.auc}")) +
+  theme_classic()
 ggsave('tic_sroc.png')
 ```
 
@@ -349,7 +350,8 @@ ggplot() +
   labs(title = 'Summary ROC curve for optical studies') +
   xlab('False positive rate') +
   ylab('Sensitivity')+
-  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{optical.auc}"))
+  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{optical.auc}")) +
+  theme_classic()
 ggsave('optical_sroc.png')
 ```
  
@@ -362,7 +364,8 @@ ggplot() +
   labs(title = 'Summary ROC curve for auto studies') +
   xlab('False positive rate') +
   ylab('Sensitivity') +
-  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{auto.auc}"))
+  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{auto.auc}")) +
+  theme_classic()
 ggsave('auto_sroc.png')
 ```
 
@@ -589,17 +592,21 @@ export.meta.data <- meta.data %>%
       `Covidence #`,
       `Title`,
       `First Author Name`,
-      `Year of publication`
+      `Year of publication`,
+      `frozen_group`,
+      `fpr`,
+      `sens`
     )
   )
 
 export.table <- xtable(
   export.meta.data,
   caption = c('short caption', 'full caption'),
-  label = 'tab:study_details'
+  label = 'tab:study_details',
+  booktabs=TRUE
 )
 
-print(export.table, file = '../manuscript/tables/study_details.tex')
+print(export.table, size="\\tiny", file = '../manuscript/tables/study_details.tex')
 ```
 
 
@@ -608,6 +615,7 @@ print(export.table, file = '../manuscript/tables/study_details.tex')
 ```{r}
 
 qual_cols = c(
+"Study ID",
 "Was a consecutive or random sample of patients enrolled?",
 "Was a consecutive or random sample of patients enrolled? supporting text",
 "Was a case-control design avoided?",
@@ -652,6 +660,7 @@ qual.data <-  read_csv('all_data_unverified_for_testing.csv') %>%
   select(qual_cols)
 
 quadas.qs <- c(
+"Study ID",
 "Could the selection of patients have introduced bias?",
 "Is there concern that the included patients do not match the review question?",
 "Could the conduct or interpretation of the index test have introduced bias?",
@@ -667,9 +676,10 @@ final.qual <- qual.data %>%
 export.qual.table <- xtable(
   final.qual,
   caption = c('short caption', 'full caption'),
-  label = 'tab:qual_scores'
+  label = 'tab:qual_scores',
+  booktabs = TRUE
 )
 
-print(export.qual.table, file = '../manuscript/tables/qual_scores.tex')
+print(export.qual.table, size="\\tiny", file = '../manuscript/tables/qual_scores.tex')
 ```
 
