@@ -564,7 +564,6 @@ ggsave('trim_filled_funnel_plot.png')
 ```
 
 
->>>>>>> cdcfc75 (recommited all to correct git error)
 
 
 Now funnel plot for just frozen section
