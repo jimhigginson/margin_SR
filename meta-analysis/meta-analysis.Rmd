@@ -163,7 +163,7 @@ DOR_model <- metabin(
 pdf('dor_forest.pdf', width = 10, height = 14)
 forest(
   DOR_model,
-   digits = 3,
+   digits = 1,
    rightcols = c('effect','ci'),
    rightlabs = c('95% CI'),
    leftcols = c('studlab'),
@@ -303,7 +303,7 @@ ggsave('stain_sroc.png')
 ggplot() +
   geom_line(data = frozen.sroc_curve, aes(fpr, V2)) +
   geom_polygon(data = frozen.confidence_region, aes(V1, V2), alpha = 0.3) +
-  geom_point(aes(fpr(frozen.data), sens(frozen.data)), shape = 1, alpha = 0.6) +
+  geom_point(aes(fpr(frozen.data), sens(frozen.data), size = frozen.data$`Number of margins included`), shape = 1, alpha = 0.6) +
   geom_point(data = frozen.summary_data, aes(V1, V2)) +
   labs(title = 'Summary ROC curve for frozen studies') +
   xlab('False positive rate') +
