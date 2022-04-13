@@ -276,14 +276,14 @@ tic.sroc_curve <- as_tibble(sroc(tic.fit)) %>%
   add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
 tic.auc = AUC(tic.fit)$AUC
 
-auto.data<- meta.data %>% 
-  filter(modality_group == 'Autofluorescence')
-auto.fit <- reitsma(auto.data, correction.control='all')
-auto.confidence_region <- as_tibble(ROCellipse(auto.fit)$ROCellipse)
-auto.summary_data <- as_tibble(ROCellipse(auto.fit)$fprsens)
-auto.sroc_curve <- as_tibble(sroc(auto.fit)) %>% 
-  add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
-auto.auc = AUC(auto.fit)$AUC
+# auto.data<- meta.data %>% 
+#   filter(modality_group == 'Autofluorescence')
+# auto.fit <- reitsma(auto.data, correction.control='all')
+# auto.confidence_region <- as_tibble(ROCellipse(auto.fit)$ROCellipse)
+# auto.summary_data <- as_tibble(ROCellipse(auto.fit)$fprsens)
+# auto.sroc_curve <- as_tibble(sroc(auto.fit)) %>% 
+#   add_row(fpr = 0, V2 = 0, .before = 1) # this line adds a 0,0 point on the line to make the graph look better
+# auto.auc = AUC(auto.fit)$AUC
 ```
 
 ```{r}
@@ -356,17 +356,17 @@ ggsave('optical_sroc.png')
 ```
  
 ```{r}
-ggplot() +
-  geom_line(data = auto.sroc_curve, aes(fpr, V2)) +
-  geom_polygon(data = auto.confidence_region, aes(V1, V2), alpha = 0.3) +
-  geom_point(aes(fpr(auto.data), sens(auto.data)), size = 1) +
-  geom_point(data = auto.summary_data, aes(V1, V2), shape = 21) +
-  labs(title = 'Summary ROC curve for auto studies') +
-  xlab('False positive rate') +
-  ylab('Sensitivity') +
-  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{auto.auc}")) +
-  theme_classic()
-ggsave('auto_sroc.png')
+# ggplot() +
+#   geom_line(data = auto.sroc_curve, aes(fpr, V2)) +
+#   geom_polygon(data = auto.confidence_region, aes(V1, V2), alpha = 0.3) +
+#   geom_point(aes(fpr(auto.data), sens(auto.data)), size = 1) +
+#   geom_point(data = auto.summary_data, aes(V1, V2), shape = 21) +
+#   labs(title = 'Summary ROC curve for auto studies') +
+#   xlab('False positive rate') +
+#   ylab('Sensitivity') +
+#   annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{auto.auc}")) +
+#   theme_classic()
+# ggsave('auto_sroc.png')
 ```
 
 
