@@ -143,6 +143,54 @@
       \verb 10.1136/ebmental-2019-300117
       \endverb
     \endentry
+    \entry{burknerTestingPublicationBias2014}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=ec69dfaa36b99b02d1d9a3733eae1d23}{%
+           family={Bürkner},
+           familyi={B\bibinitperiod},
+           given={Paul-Christian},
+           giveni={P\bibinithyphendelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=496bf5d78535ad3ff84fa6e108686058}{%
+           family={Doebler},
+           familyi={D\bibinitperiod},
+           given={Philipp},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d104aabcb8bcefe756a778947527af03}
+      \strng{fullhash}{d104aabcb8bcefe756a778947527af03}
+      \strng{bibnamehash}{d104aabcb8bcefe756a778947527af03}
+      \strng{authorbibnamehash}{d104aabcb8bcefe756a778947527af03}
+      \strng{authornamehash}{d104aabcb8bcefe756a778947527af03}
+      \strng{authorfullhash}{d104aabcb8bcefe756a778947527af03}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{day}{15}
+      \field{issn}{02776715}
+      \field{journaltitle}{Statistics in Medicine}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{18}
+      \field{shortjournal}{Statist. Med.}
+      \field{shorttitle}{Testing for Publication Bias in Diagnostic Meta-Analysis}
+      \field{title}{Testing for Publication Bias in Diagnostic Meta-Analysis: A Simulation Study}
+      \field{volume}{33}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{3061\bibrangedash 3077}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1002/sim.6177
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/FH36QV5R/Bürkner and Doebler - 2014 - Testing for publication bias in diagnostic meta-an.pdf
+      \endverb
+    \endentry
     \entry{chowHeadNeckCancer2020}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=e92a8060f908b42483986c8fde0e9b8e}{%
@@ -233,6 +281,56 @@
       \verb{url}
       \verb https://CRAN.R-project.org/package=mada
       \endverb
+    \endentry
+    \entry{duvalTrimFillSimple2000}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e954a0a942c9b9d8f74f8a73135901a4}{%
+           family={Duval},
+           familyi={D\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fe2c878e46350d3ebe127f7e9d6056a6}{%
+           family={Tweedie},
+           familyi={T\bibinitperiod},
+           given={R.},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f9356d5fb6ddbd1f0eee160972af6120}
+      \strng{fullhash}{f9356d5fb6ddbd1f0eee160972af6120}
+      \strng{bibnamehash}{f9356d5fb6ddbd1f0eee160972af6120}
+      \strng{authorbibnamehash}{f9356d5fb6ddbd1f0eee160972af6120}
+      \strng{authornamehash}{f9356d5fb6ddbd1f0eee160972af6120}
+      \strng{authorfullhash}{f9356d5fb6ddbd1f0eee160972af6120}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We study recently developed nonparametric methods for estimating the number of missing studies that might exist in a meta-analysis and the effect that these studies might have had on its outcome. These are simple rank-based data augmentation techniques, which formalize the use of funnel plots. We show that they provide effective and relatively powerful tests for evaluating the existence of such publication bias. After adjusting for missing studies, we find that the point estimate of the overall effect size is approximately correct and coverage of the effect size confidence intervals is substantially improved, in many cases recovering the nominal confidence levels entirely. We illustrate the trim and fill method on existing meta-analyses of studies in clinical trials and psychometrics.}
+      \field{eprinttype}{pmid}
+      \field{issn}{0006-341X}
+      \field{journaltitle}{Biometrics}
+      \field{langid}{english}
+      \field{month}{6}
+      \field{number}{2}
+      \field{shortjournal}{Biometrics}
+      \field{shorttitle}{Trim and Fill}
+      \field{title}{Trim and Fill: {{A}} Simple Funnel-Plot-Based Method of Testing and Adjusting for Publication Bias in Meta-Analysis}
+      \field{volume}{56}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{pages}{455\bibrangedash 463}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1111/j.0006-341x.2000.00455.x
+      \endverb
+      \verb{eprint}
+      \verb 10877304
+      \endverb
+      \keyw{Analysis of Variance,Bias,Biometry,Clinical Trials as Topic,Humans,Meta-Analysis as Topic,Psychometrics,Publishing,Statistics; Nonparametric}
     \endentry
     \entry{ebellStrengthRecommendationTaxonomy2004}{article}{}
       \name{author}{7}{}{%
