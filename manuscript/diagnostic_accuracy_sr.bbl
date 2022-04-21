@@ -19,6 +19,86 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{amitImprovingRateNegative2016}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=2b9e1792bad0052fb0f8da8206c7afea}{%
+           family={Amit},
+           familyi={A\bibinitperiod},
+           given={Moran},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=11cad1f324dbc501e9f2cc0bff438505}{%
+           family={Na'ara},
+           familyi={N\bibinitperiod},
+           given={Shorook},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7ba72497cfd3a38344a4065941ec9a6}{%
+           family={Leider-Trejo},
+           familyi={L\bibinithyphendelim T\bibinitperiod},
+           given={Leonor},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ce2be9daa9b9d03f7b92a7186d56d29b}{%
+           family={Akrish},
+           familyi={A\bibinitperiod},
+           given={Sharon},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=63bc78906a7580f30e0ffc63de6a4894}{%
+           family={Cohen},
+           familyi={C\bibinitperiod},
+           given={Jacob\bibnamedelima T},
+           giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=54dcba54ed1727633763c0b5b1ac763b}{%
+           family={Billan},
+           familyi={B\bibinitperiod},
+           given={Salem},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0c4d120815fdd46c58d8e8beec4d254e}{%
+           family={Gil},
+           familyi={G\bibinitperiod},
+           given={Ziv},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {United States}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley and Sons Inc. (P.O.Box 18667, Newark NJ 07191-8667, United States)}%
+      }
+      \strng{namehash}{27e0606818dff7f062e12ed23598487a}
+      \strng{fullhash}{b79d1c2e47cf8f881c09638f0bc05bc5}
+      \strng{bibnamehash}{27e0606818dff7f062e12ed23598487a}
+      \strng{authorbibnamehash}{27e0606818dff7f062e12ed23598487a}
+      \strng{authornamehash}{27e0606818dff7f062e12ed23598487a}
+      \strng{authorfullhash}{b79d1c2e47cf8f881c09638f0bc05bc5}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{BACKGROUND: A positive margin is among the most significant factors that affects the outcome in head and neck squamous cell carcinoma (SCC). The purpose of this study was to compare the negative margin rates between 2 methods of intraoperative margin assessment in patients with oral cavity SCC., METHODS: A prospective, randomized controlled trial comparing 2 methods of intraoperative margin assessment: specimen-driven margins and patient-driven margins., RESULTS: The final analysis included 71 patients, 20 (29\%) in the patient-driven margin arm. Frozen section analysis revealed positive/close surgical margins that led to an extension of the surgical resection in 22 of 51 patients (43\%) in the specimen-driven margin arm, and 2 of 20 patients (10\%) in the patient-driven margin arm (p = .01). After final pathological analysis, the wide negative margin rate was 84\% in the specimen-driven margin arm, compared to 55\% in the patient-driven margin arm (p = .02). Extension of the surgical resection prevented escalation of adjuvant treatment in 19 patients (38\%) in the specimen-driven margin arm and 10\% in the patient-driven margin arm., CONCLUSION: Specimen derived margin assessment led to significant improvement in the rate of negative margins. © 2015 Wiley Periodicals, Inc. Head Neck 38: E1803-E1809, 2016. Copyright © 2015 Wiley Periodicals, Inc.}
+      \field{issue}{g1p, 8902541}
+      \field{journaltitle}{Head \& neck}
+      \field{shortjournal}{Head \& neck}
+      \field{title}{Improving the Rate of Negative Margins after Surgery for Oral Cavity Squamous Cell Carcinoma: {{A}} Prospective Randomized Controlled Study.}
+      \field{volume}{38 Suppl 1}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{E1803\bibrangedash 9}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1002/hed.24320
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/DTUIE575/Amit et al. - 2016 - Improving the rate of negative margins after surge.pdf
+      \endverb
+    \endentry
     \entry{balduzziHowPerformMetaanalysis2019}{article}{}
       \name{author}{3}{}{%
         {{un=0,uniquepart=base,hash=461f09c33a9865acd82f8dc37260753e}{%
