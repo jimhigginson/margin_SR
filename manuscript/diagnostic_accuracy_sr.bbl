@@ -551,6 +551,86 @@
       \verb /Users/jim/Zotero/storage/DNW2N26M/Lee Y.-J. et al. - 2020 - Intraoperative Fluorescence-Guided Surgery in Head.pdf
       \endverb
     \endentry
+    \entry{mooreTransoralRoboticSurgery2018}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=d7bd9aa29771e873293e8b57801b52f1}{%
+           family={Moore},
+           familyi={M\bibinitperiod},
+           given={Eric\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=55712a87172f42f3316241b59607b92d}{%
+           family={Van\bibnamedelima Abel},
+           familyi={V\bibinitperiod\bibinitdelim A\bibinitperiod},
+           given={Kathryn\bibnamedelima M.},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6451d22be3f75a6ae448701be19722af}{%
+           family={Price},
+           familyi={P\bibinitperiod},
+           given={Daniel\bibnamedelima L.},
+           giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bad435d2fe347ce9bf32e8022d81cbdd}{%
+           family={Lohse},
+           familyi={L\bibinitperiod},
+           given={Christine\bibnamedelima M.},
+           giveni={C\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2a7ba9c193f8cb6b6236b3342e844682}{%
+           family={Olsen},
+           familyi={O\bibinitperiod},
+           given={Kerry\bibnamedelima D.},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=62845c1f2599582e3c153cfac4109544}{%
+           family={Jackson},
+           familyi={J\bibinitperiod},
+           given={Ryan\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=bc3c19100dd8d7c369a36875c7494854}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Eliot\bibnamedelima J.},
+           giveni={E\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5641ca6acaef3c7af751de29fac91b9e}
+      \strng{fullhash}{19ef0ecb2d644021b1e3ac1e4f87f1a6}
+      \strng{bibnamehash}{5641ca6acaef3c7af751de29fac91b9e}
+      \strng{authorbibnamehash}{5641ca6acaef3c7af751de29fac91b9e}
+      \strng{authornamehash}{5641ca6acaef3c7af751de29fac91b9e}
+      \strng{authorfullhash}{19ef0ecb2d644021b1e3ac1e4f87f1a6}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{BACKGROUND: This study presents oncologic outcomes after transoral robotic surgery (TORS) ± adjuvant therapy for oropharyngeal squamous cell carcinoma (SCC). METHODS: Three hundred fourteen patients undergoing TORS ± adjuvant therapy for oropharyngeal SCC from May 1, 2007, to May 31, 2015, are analyzed. RESULTS: Median follow-up was 3.3 years (interquartile range [IQR] 1.8-5.3 years; range 1 day to 9.3 years). Estimated locoregional recurrence-free survival, distant metastasis-free survival (DMFS), overall survival (OS), and cancer-specific survival (CSS) rates (95\% confidence interval [CI] number still at risk) at 5 years after surgery were 92\% (88-95; 92), 90\% (86-94; 92), 86\% (82-92; 98), and 94\% (91-97; 98), respectively. Negative margins were achieved in 98\% of cases. The adult comorbidity evaluation (ACE)-27 comorbidity index, human papillomavirus (HPV) status, pathologic N classification, and number of attempts to clear margins were associated with death due to cancer (P = .003, P = .002, P = .030, and P = .002, respectively). CONCLUSION: The need to take ≥2 margins to achieve resection portends an increased risk of locoregional recurrence and death due to disease in oropharyngeal SCC.}
+      \field{eprinttype}{pmid}
+      \field{issn}{1097-0347}
+      \field{journaltitle}{Head \& Neck}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{4}
+      \field{shortjournal}{Head Neck}
+      \field{shorttitle}{Transoral Robotic Surgery for Oropharyngeal Carcinoma}
+      \field{title}{Transoral Robotic Surgery for Oropharyngeal Carcinoma: {{Surgical}} Margins and Oncologic Outcomes}
+      \field{volume}{40}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{747\bibrangedash 755}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1002/hed.25055
+      \endverb
+      \verb{eprint}
+      \verb 29327784
+      \endverb
+      \keyw{Adult,base of tongue,Carcinoma; Squamous Cell,Chemoradiotherapy; Adjuvant,Cohort Studies,Disease-Free Survival,Female,human papillomavirus,Humans,Male,Margins of Excision,Middle Aged,Mouth,Multivariate Analysis,Natural Orifice Endoscopic Surgery,Neoplasm Invasiveness,Neoplasm Recurrence; Local,Neoplasm Staging,oropharyngeal cancer,Oropharyngeal Neoplasms,Prognosis,Proportional Hazards Models,Retrospective Studies,Risk Assessment,Robotic Surgical Procedures,Survival Analysis,tonsils,transoral robotic surgery}
+    \endentry
     \entry{naveedDiagnosticAccuracyTouch2017}{article}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=25cce806c1350793e410e8deb47e6bbd}{%
