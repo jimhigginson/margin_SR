@@ -1,0 +1,17 @@
+2344 references imported for screening as 2342 studies
+	260 duplicates removed
+2082 studies screened against title and abstract
+	1911 studies excluded
+169 studies assessed for full-text eligibility
+	134 studies excluded
+		55  No sensitivity/specificity data presented
+		45  Abstract only
+		8  Wrong patient population
+		7  Not intraoperative
+		5  Bone margins only
+		5  No comparator
+		5  Review
+		2  Manuscript not available
+		2  No margin outcome data presented
+	0 studies awaiting classification
+35 studies includeD
