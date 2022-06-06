@@ -108,4 +108,12 @@ citestyle=authoryear
 
 \usepackage{pdflscape}
 
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, calc}
+\tikzstyle{box} = [rectangle, rounded corners, text width = 5cm, minimum height=1cm,text centered, draw=black, fill=white]
+\tikzstyle{arrow} = [thick,->,>=stealth]
+\tikzset{every picture/.style={font issue=\footnotesize},
+         font issue/.style={execute at begin picture={#1\selectfont}}
+        }
+% for prisma diagram.
 % \setlength{\parskip}{1em} % Changes paragraph formatting so each starts after a space
