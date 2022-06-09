@@ -974,6 +974,53 @@
       \verb /Users/jim/Zotero/storage/WVHW3AXR/Naveed et al. - 2017 - Diagnostic accuracy of touch imprint cytology for .pdf
       \endverb
     \endentry
+    \entry{ordAccuracyFrozenSections1997}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=729b49d544786771fea87bc06d7dd6fb}{%
+           family={Ord},
+           familyi={O\bibinitperiod},
+           given={Robert\bibnamedelima A},
+           giveni={R\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=32b15c499bae754bf8fe3662cd1dca5d}{%
+           family={Aisner},
+           familyi={A\bibinitperiod},
+           given={Seena},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{98165cf257914a0d94fdba2c799b83ca}
+      \strng{fullhash}{98165cf257914a0d94fdba2c799b83ca}
+      \strng{bibnamehash}{98165cf257914a0d94fdba2c799b83ca}
+      \strng{authorbibnamehash}{98165cf257914a0d94fdba2c799b83ca}
+      \strng{authornamehash}{98165cf257914a0d94fdba2c799b83ca}
+      \strng{authorfullhash}{98165cf257914a0d94fdba2c799b83ca}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Purpose: This study examined the accuracy of frozen section diagnosis of tissue samples from surgical margins compared with the final histologic diagnosis of the same tissue. The total resection specimen was also examined to see whether frozen sections were helpful in predicting negative margins for the entire cancer. The nature of positive and negative margins and their implications for the surgeon are discussed. Patients and Methods: The records of 49 consecutive patients with previously untreated squamous carcinoma of the mouth were reviewed. All frozen and permanent sections were evaluated by one pathologist. Margins involved by carcinoma, carcinoma in situ, dysplasia, or with carcinoma within 5 mm were defined as positive. Histologic findings were compared with the patient's clinical course to define the relationship between positive margins and local recurrence. Patients were followed for 17 to 45 months or until death. Results: Three hundred four of 307 frozen sections showed concordance with the permanent section of the same tissue sample (two false negative and one false positive), an accuracy rate of 99\%. When the final margins of the resected surgical specimen were compared with the frozen section diagnoses, ten patients had positive final margins. In three patients, these were diagnosed by frozen section. Seven patients had final margins that were positive when the surgical resection specimen was examined but were not diagnosed by frozen section. A greater local recurrence note was found in patients with invasive carcinoma at the margin, dysplastic margins, and margins within 5 mm of the cancer. Conclusions: Although frozen sections are extremely accurate, they are not as reliable in eliminating positive margins in the final specimen as the surgeon might hope.}
+      \field{day}{1}
+      \field{issn}{0278-2391}
+      \field{journaltitle}{Journal of Oral and Maxillofacial Surgery}
+      \field{month}{7}
+      \field{number}{7}
+      \field{shortjournal}{Journal of Oral and Maxillofacial Surgery}
+      \field{title}{Accuracy of Frozen Sections in Assessing Margins in Oral Cancer Resection}
+      \field{volume}{55}
+      \field{year}{1997}
+      \field{dateera}{ce}
+      \field{pages}{663\bibrangedash 669}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/S0278-2391(97)90570-X
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/L27IZ34M/Ord and Aisner - 1997 - Accuracy of frozen sections in assessing margins i.pdf
+      \endverb
+    \endentry
     \entry{r-core}{manual}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=dcdebb6b35bff7c0568bf8c50ef8626d}{%
@@ -1323,6 +1370,8 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{PositiveFrozenSection2016}
+  \missing{RefiningUtilityRole2016}
 \endrefsection
 \endinput
 
