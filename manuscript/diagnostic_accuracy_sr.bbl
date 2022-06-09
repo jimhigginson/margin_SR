@@ -191,6 +191,68 @@
       \verb /Users/jim/Zotero/storage/FH36QV5R/Bürkner and Doebler - 2014 - Testing for publication bias in diagnostic meta-an.pdf
       \endverb
     \endentry
+    \entry{chaturvedip.GrossExaminationSurgeon2014}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=4bc185a308ab389b33d6c501625d05aa}{%
+           family={{Chaturvedi P.}},
+           familyi={C\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=d58519b0e0b88ef0ba06c11515cb43a9}{%
+           family={{Datta S.}},
+           familyi={D\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=df02fed690b29cfcc8d30c35814bf659}{%
+           family={{Nair S.}},
+           familyi={N\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=9943fd2d1728aa7cd0c1282f5262e536}{%
+           family={{Nair D.}},
+           familyi={N\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=ace3234ca8b1cf851e5dcb37d87669a2}{%
+           family={{Pawar P.}},
+           familyi={P\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=dc1f8975c0cec37eafda3b0cca320985}{%
+           family={{Vaishampayan S.}},
+           familyi={V\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=671ed4b24ba5b81f54e96bb06bcece6a}{%
+           family={{Patil A.}},
+           familyi={P\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=a5820d1c2b95320d977ea9db5c021aee}{%
+           family={{Kane S.}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {United States}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley and Sons Inc. (P.O.Box 18667, Newark NJ 07191-8667, United States)}%
+      }
+      \strng{namehash}{fd9c626c2e2649be5a308bf679aee2a2}
+      \strng{fullhash}{01d101f508dfa04d190cb45e8e88a383}
+      \strng{bibnamehash}{fd9c626c2e2649be5a308bf679aee2a2}
+      \strng{authorbibnamehash}{fd9c626c2e2649be5a308bf679aee2a2}
+      \strng{authornamehash}{fd9c626c2e2649be5a308bf679aee2a2}
+      \strng{authorfullhash}{01d101f508dfa04d190cb45e8e88a383}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Background The cost-effectiveness of the frozen section for assessment of margin in head and neck squamous cell carcinoma (HNSCC) is still contentious. The purpose of this study was to evaluate whether gross examination of margin is an alternative to frozen section. Methods It was a prospective observational study in 145 consecutive patients undergoing surgery for HNSCC. Surgical margins were first assessed by the surgeons with a metallic scale. All specimens were then examined using frozen section and permanent section. Results Overall, 83\% of inadequate margins were detected by frozen section. The chances of inadequate margin were very low if gross surgical margin were 7 mm or more. Gross examination alone (with 7 mm as cutoff) predicted 88\% of the inadequate surgical margin. There was no difference in precision of frozen section vis-a-vis gross examination with 7 mm cut off (p {$<$}=.8). Conclusion Achievement of 7 mm surgical margin measured by a surgeon obviates the need for frozen section. © 2013 Wiley Periodicals, Inc.}
+      \field{journaltitle}{Head and Neck}
+      \field{number}{4}
+      \field{shortjournal}{Head and Neck}
+      \field{title}{Gross Examination by the Surgeon as an Alternative to Frozen Section for Assessment of Adequacy of Surgical Margin in Head and Neck Squamous Cell Carcinoma}
+      \field{volume}{36}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{pages}{557\bibrangedash 563}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1002/hed.23313
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/GU45HIII/Chaturvedi P. et al. - 2014 - Gross examination by the surgeon as an alternative.pdf
+      \endverb
+    \endentry
     \entry{chowHeadNeckCancer2020}{article}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=e92a8060f908b42483986c8fde0e9b8e}{%
@@ -249,6 +311,72 @@
       \endverb
       \verb{url}
       \verb Available%20at%20www.covidence.org
+      \endverb
+    \endentry
+    \entry{dinardoAccuracyUtilityCost2000}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=ab0eb72ec8e07cb451719ad3a72ab92f}{%
+           family={DiNardo},
+           familyi={D\bibinitperiod},
+           given={Laurence\bibnamedelima J.},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8922cd001cbc5a0ab70bbc9214a25ee0}{%
+           family={Lin},
+           familyi={L\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c3cce3e77a2a2af112db1b33f78a0edb}{%
+           family={Karageorge},
+           familyi={K\bibinitperiod},
+           given={Lampros\bibnamedelima S.},
+           giveni={L\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=60cadfdb674c27798a19ea7a4317ae2c}{%
+           family={Powers},
+           familyi={P\bibinitperiod},
+           given={Celeste\bibnamedelima N.},
+           giveni={C\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {United States}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley and Sons Inc. (P.O.Box 18667, Newark NJ 07191-8667, United States)}%
+      }
+      \strng{namehash}{0941da49bd64a056a124f1a20b874267}
+      \strng{fullhash}{291f211c9c96e465b6c6b196ff01c171}
+      \strng{bibnamehash}{0941da49bd64a056a124f1a20b874267}
+      \strng{authorbibnamehash}{0941da49bd64a056a124f1a20b874267}
+      \strng{authornamehash}{0941da49bd64a056a124f1a20b874267}
+      \strng{authorfullhash}{291f211c9c96e465b6c6b196ff01c171}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Objectives: Intraoperative frozen section analysis of surgical margins is widely used in head and neck cancer surgery. This study evaluates frozen section accuracy relative to permanent controls and final margins from the entire specimen, the rate at which frozen sections impact intraoperative management, and the resultant cost. Study Design: Retrospective. Method(s): From 1997 to 1999 the frozen section results, permanent controls, and final tumor margins from 80 consecutive patients undergoing 420 intraoperative frozen section margins for head and neck malignancy were reviewed. Result(s): A 98.3\% accuracy rate (sensitivity, 88.8\%; specificity, 98.9\%) was found compared with permanent sections of the same tissue. However, 40\% (8 of 20) of patients with positive final margins on the resection specimen, and 100\% (15 of 15) with close ({$<$}5 mm) margins were not detected by frozen section analysis. The overall accuracy of frozen section in the evaluation of close or positive final margins was 71.3\% (sensitivity, 34.3\%; specificity, 100\%). In addition, 5\% (4 of 80) of patients potentially benefited from intraoperative frozen section by virtue of immediate margin revision. The estimated cost of intraoperative frozen section averaged as much as \$3123 per patient, with a cost-benefit ratio of 20:1. Conclusion(s): Intraoperative frozen section margins are accurate, but they are costly and cannot reliably eradicate positive final margins. Patients with early-stage lesions and those undergoing re-resection for recurrence or salvage surgery after radiation failure derived the greatest potential benefit from frozen section margins.}
+      \field{issn}{0023-852X}
+      \field{journaltitle}{Laryngoscope}
+      \field{langid}{english}
+      \field{month}{10}
+      \field{number}{10}
+      \field{shortjournal}{The Laryngoscope}
+      \field{shorttitle}{Accuracy, {{Utility}}, and {{Cost}} of {{Frozen Section Margins}} in {{Head}} and {{Neck Cancer Surgery}}}
+      \field{title}{Accuracy, {{Utility}}, and {{Cost}} of {{Frozen Section Margins}} in {{Head}} and {{Neck Cancer Surgery}}:}
+      \field{volume}{110}
+      \field{year}{2000}
+      \field{dateera}{ce}
+      \field{pages}{1773\bibrangedash 1776}
+      \range{pages}{4}
+      \verb{doi}
+      \verb 10.1097/00005537-200010000-00039
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/BLSS2Q5Y/DiNardo et al. - 2000 - Accuracy, Utility, and Cost of Frozen Section Marg.pdf
       \endverb
     \endentry
     \entry{doeblerMadaMetaAnalysisDiagnostic2020}{book}{}
@@ -410,6 +538,52 @@
       \verb /Users/jim/Zotero/storage/F6294U95/Ebell et al. - 2004 - Strength of Recommendation Taxonomy (SORT) A Pati.pdf
       \endverb
     \endentry
+    \entry{gorpheSystematicReviewMetaanalysis2019}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=22bc00c161396c3e174774a3e5aae217}{%
+           family={Gorphe},
+           familyi={G\bibinitperiod},
+           given={Philippe},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2559ff5a8441cb72f25f3169aca691dc}{%
+           family={Simon},
+           familyi={S\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{396d7205c9ca3f83250c4482c91793c3}
+      \strng{fullhash}{396d7205c9ca3f83250c4482c91793c3}
+      \strng{bibnamehash}{396d7205c9ca3f83250c4482c91793c3}
+      \strng{authorbibnamehash}{396d7205c9ca3f83250c4482c91793c3}
+      \strng{authornamehash}{396d7205c9ca3f83250c4482c91793c3}
+      \strng{authorfullhash}{396d7205c9ca3f83250c4482c91793c3}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Background: The objective of this study was to conduct a systematic review and meta-analysis of the incidence of positive surgical margins after transoral surgery for oropharyngeal carcinoma, as well as the factors associated with positive margins and their impact on local tumor control. Method: An electronic search of English-language literature databases was conducted, and a systematic review was performed in accordance with the PRISMA guidelines. Results: A total of 42 articles were included in the analysis. The overall rate of positive margins using transoral conventional surgery (CTS), transoral laser microsurgery (TLM), or transoral robotic surgery (TORS) was 7.8\% in a cumulative total of 3619 patients. A positive margin status was associated with a reduction in local control. Assessment of intraoperative frozen sections was associated with a reduced risk of definitive positive margins, whereas a T4 classification was associated with an increased risk of definitive positive margins. Neither the primary site (the tonsillar fossa versus the base of the tongue), nor the HPV status, were associated with the margin status. The level of heterogeneity between the various studies was very high. Conclusion: The currently used transoral procedures are safe in regard to proper tumor resection and they should continue to be part of the armamentarium of surgical techniques used in head and neck surgery. The very high level of heterogeneity between studies calls for a definition consensus for margin status assessments in transoral surgery.}
+      \field{issn}{13688375}
+      \field{journaltitle}{Oral Oncology}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{shortjournal}{Oral Oncology}
+      \field{title}{A Systematic Review and Meta-Analysis of Margins in Transoral Surgery for Oropharyngeal Carcinoma}
+      \field{volume}{98}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{69\bibrangedash 77}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1016/j.oraloncology.2019.09.017
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/9ZV98U99/Gorphe and Simon - 2019 - A systematic review and meta-analysis of margins i.pdf
+      \endverb
+    \endentry
     \entry{heidaria.e.UseOpticalCoherence2020}{article}{}
       \name{author}{11}{}{%
         {{un=0,uniquepart=base,hash=d39e6dcdc4ad4f8a89344b2295d3bf4c}{%
@@ -549,6 +723,91 @@
       \endverb
       \verb{file}
       \verb /Users/jim/Zotero/storage/DNW2N26M/Lee Y.-J. et al. - 2020 - Intraoperative Fluorescence-Guided Surgery in Head.pdf
+      \endverb
+    \endentry
+    \entry{machtayFactorsAssociatedSevere2008}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=3bb805fafb09c87b543de2da0c2e43e0}{%
+           family={Machtay},
+           familyi={M\bibinitperiod},
+           given={Mitchell},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=64cf17da259812987b057bbd3e7b93b8}{%
+           family={Moughan},
+           familyi={M\bibinitperiod},
+           given={Jennifer},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ee8e8f0ebff4bfe6e9cd9a9746588424}{%
+           family={Trotti},
+           familyi={T\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6abbbceb3fd84736ecd4fe4a9ae7f60e}{%
+           family={Garden},
+           familyi={G\bibinitperiod},
+           given={Adam\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=42b4479afef8a548f03cf1539c8a6b6d}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Randal\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9d42b6ee1082cf2ddb9b0c92358219c1}{%
+           family={Cooper},
+           familyi={C\bibinitperiod},
+           given={Jay\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=092b9c9d6bd1feeb759330d6a25dd818}{%
+           family={Forastiere},
+           familyi={F\bibinitperiod},
+           given={Arlene},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c087a3c8366f20bb0aa94f09b3d56ff}{%
+           family={Ang},
+           familyi={A\bibinitperiod},
+           given={K.\bibnamedelimi Kian},
+           giveni={K\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f2b1ed19da9ebde8b076720efc1a8ac2}
+      \strng{fullhash}{66179dde7ec4b70a872a27472ae36f47}
+      \strng{bibnamehash}{f2b1ed19da9ebde8b076720efc1a8ac2}
+      \strng{authorbibnamehash}{f2b1ed19da9ebde8b076720efc1a8ac2}
+      \strng{authornamehash}{f2b1ed19da9ebde8b076720efc1a8ac2}
+      \strng{authorfullhash}{66179dde7ec4b70a872a27472ae36f47}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Purpose Concurrent chemoradiotherapy (CCRT) for squamous cell carcinoma of the head and neck (SCCHN) increases both local tumor control and toxicity. This study evaluates clinical factors that are associated with and might predict severe late toxicity after CCRT. Methods Patients were analyzed from a subset of three previously reported Radiation Therapy Oncology Group (RTOG) trials of CCRT for locally advanced SCCHN (RTOG 91-11, 97-03, and 99-14). Severe late toxicity was defined in this secondary analysis as chronic grade 3 to 4 pharyngeal/laryngeal toxicity (RTOG/European Organisation for the Research and Treatment of Cancer late toxicity scoring system) and/or requirement for a feeding tube Ն 2 years after registration and/or potential treatment-related death (eg, pneumonia) within 3 years. Case-control analysis was performed, with a multivariable logistic regression model that included pretreatment and treatment potential factors. Results A total of 230 patients were assessable for this analysis: 99 patients with severe late toxicities and 131 controls; thus, 43\% of assessable patients had a severe late toxicity. On multivariable analysis, significant variables correlated with the development of severe late toxicity were older age (odds ratio 1.05 per year; P ϭ .001); advanced T stage (odds ratio, 3.07; P ϭ .0036); larynx/hypopharynx primary site (odds ratio, 4.17; P ϭ .0041); and neck dissection after CRT (odds ratio, 2.39; P ϭ .018). Conclusion Severe late toxicity after CCRT is common. Older age, advanced T-stage, and larynx/hypopharynx primary site were strong independent risk factors. Neck dissection after CCRT was associated with an increased risk of these complications.}
+      \field{day}{20}
+      \field{issn}{0732-183X, 1527-7755}
+      \field{journaltitle}{Journal of Clinical Oncology}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{21}
+      \field{shortjournal}{JCO}
+      \field{shorttitle}{Factors {{Associated With Severe Late Toxicity After Concurrent Chemoradiation}} for {{Locally Advanced Head}} and {{Neck Cancer}}}
+      \field{title}{Factors {{Associated With Severe Late Toxicity After Concurrent Chemoradiation}} for {{Locally Advanced Head}} and {{Neck Cancer}}: {{An RTOG Analysis}}}
+      \field{volume}{26}
+      \field{year}{2008}
+      \field{dateera}{ce}
+      \field{pages}{3582\bibrangedash 3589}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1200/JCO.2007.14.8841
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/22ISLFQU/Machtay et al. - 2008 - Factors Associated With Severe Late Toxicity After.pdf
       \endverb
     \endentry
     \entry{mooreTransoralRoboticSurgery2018}{article}{}
@@ -798,6 +1057,71 @@
       \verb /Users/jim/Zotero/storage/QNUI5BNL/Vu and Farah - 2014 - Efficacy of narrow band imaging for detection and .pdf
       \endverb
     \endentry
+    \entry{wangPharyngoesophagealStrictureTreatment2012}{article}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=1f844855e7e7c2fe954e6cd23cb6d696}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Jing\bibnamedelima Jing},
+           giveni={J\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8119558e2fa918ac6b99961c0b4d98b2}{%
+           family={Goldsmith},
+           familyi={G\bibinitperiod},
+           given={Tessa\bibnamedelima A.},
+           giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=668051c876335b9ef67ab64bfc337edb}{%
+           family={Holman},
+           familyi={H\bibinitperiod},
+           given={Allison\bibnamedelima S.},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=12f952b9d079a47822499eeb582bcaa5}{%
+           family={Cianchetti},
+           familyi={C\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8345feb9005172e144bb1af20e91d75}{%
+           family={Chan},
+           familyi={C\bibinitperiod},
+           given={Annie\bibnamedelima W.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{7840ea8aa611019dd3330645e3e405b6}
+      \strng{fullhash}{ea66a252bc48a2d174faf085b8fb1006}
+      \strng{bibnamehash}{7840ea8aa611019dd3330645e3e405b6}
+      \strng{authorbibnamehash}{7840ea8aa611019dd3330645e3e405b6}
+      \strng{authornamehash}{7840ea8aa611019dd3330645e3e405b6}
+      \strng{authorfullhash}{ea66a252bc48a2d174faf085b8fb1006}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Background. The purpose of this study was to report the risk of pharyngoesophageal stricture after treatment for head and neck cancer.}
+      \field{issn}{10433074}
+      \field{journaltitle}{Head \& Neck}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{7}
+      \field{shortjournal}{Head Neck}
+      \field{title}{Pharyngoesophageal Stricture after Treatment for Head and Neck Cancer}
+      \field{volume}{34}
+      \field{year}{2012}
+      \field{dateera}{ce}
+      \field{pages}{967\bibrangedash 973}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1002/hed.21842
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/D6L28HTW/Wang et al. - 2012 - Pharyngoesophageal stricture after treatment for h.pdf;/Users/jim/Zotero/storage/YREI9JS9/Wang et al. - 2012 - Pharyngoesophageal stricture after treatment for h.pdf
+      \endverb
+    \endentry
     \entry{whitingQUADAS2RevisedTool2011}{article}{}
       \name{author}{10}{}{%
         {{un=0,uniquepart=base,hash=6f85f3ef83e91aedcfe723186979a745}{%
@@ -896,6 +1220,107 @@
       \verb /Users/jim/Zotero/storage/PBR45444/Whiting et al. - 2011 - QUADAS-2 a revised tool for the quality assessmen.pdf
       \endverb
       \keyw{Bias,Diagnosis,Evidence-Based Medicine,Humans,Patient Selection,Quality Control,Reference Standards,Review Literature as Topic,Surveys and Questionnaires,Time Factors}
+    \endentry
+    \entry{wilsonDysphagiaNonsurgicalHead2011}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=159869d2b89004acd022a1ee40deb508}{%
+           family={Wilson},
+           familyi={W\bibinitperiod},
+           given={Janet\bibnamedelima A.},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6fe80dd5a4c30f77379999b40e740d35}{%
+           family={Carding},
+           familyi={C\bibinitperiod},
+           given={Paul\bibnamedelima N.},
+           giveni={P\bibinitperiod\bibinitdelim N\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=165a6468544c98754b5b07dd24aea01a}{%
+           family={Patterson},
+           familyi={P\bibinitperiod},
+           given={Joanne\bibnamedelima M.},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{257f6742957777a37a9c78359c46c9bc}
+      \strng{fullhash}{257f6742957777a37a9c78359c46c9bc}
+      \strng{bibnamehash}{257f6742957777a37a9c78359c46c9bc}
+      \strng{authorbibnamehash}{257f6742957777a37a9c78359c46c9bc}
+      \strng{authornamehash}{257f6742957777a37a9c78359c46c9bc}
+      \strng{authorfullhash}{257f6742957777a37a9c78359c46c9bc}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Objective. Assess patients’ perspectives on the severity, time course, and relative importance of swallowing deficit before and after (chemo)radiotherapy for head and neck cancer. Study Design. Before-and-after cohort study. Setting. Head and neck cancer UK multidisciplinary clinic. Subjects and Methods. A total of 167 patients with a primary cancer, mostly laryngopharyngeal, completed the MD Anderson Dysphagia Index (MDADI) and the University of Washington Quality of Life Questionnaire (UWQOL) before treatment and at 3, 6, and 12 months. Pretreatment swallowing, age, gender, and tumor site and stage were assessed. Statistical methods used were Mann-Whitney, analysis of variance, and logistic regression. Results. There was a sharp deterioration in swallowing on average by 18\%, from before treatment to 3 months post treatment (mean difference in MDADI score = 14.5; P {$<$} .001). Treatment schedule, pretreatment score, and age accounted for 37\% of the variance in 3-month posttreatment MDADI scores. There was then little improvement from 3 to 12 months. Patients treated with only 50-Gy radiotherapy reported significantly less dysphagia at 1 year than patients receiving higher doses or combined chemoradiation ( P {$<$} .001). Swallowing was the most commonly prioritized of the 12 UWQOL domains both before and after therapy. The MDADI and UWQOL scores were strongly correlated: ρ {$>$} 0.69. Conclusion. Swallowing is a top priority before and after treatment for the vast majority of patients with head and neck cancer. Swallowing deteriorates significantly posttreatment ( P {$<$} .001). Treatment intensity, younger age, and lower pretreatment scores predict long-term dysphagia. After chemoradiation, there is little improvement from 3 to 12 months.}
+      \field{issn}{0194-5998, 1097-6817}
+      \field{journaltitle}{Otolaryngology–Head and Neck Surgery}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{5}
+      \field{shortjournal}{Otolaryngol Head Neck Surg}
+      \field{shorttitle}{Dysphagia after {{Nonsurgical Head}} and {{Neck Cancer Treatment}}}
+      \field{title}{Dysphagia after {{Nonsurgical Head}} and {{Neck Cancer Treatment}}: {{Patients}}’ {{Perspectives}}}
+      \field{volume}{145}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{pages}{767\bibrangedash 771}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1177/0194599811414506
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/JUM2BZM6/Wilson et al. - Dysphagia after Nonsurgical Head and Neck Cancer T.pdf
+      \endverb
+    \endentry
+    \entry{woolgarHistopathologicalAppraisalSurgical2005}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=1fc2608d1ffb90d8dda3e8a11624b48d}{%
+           family={Woolgar},
+           familyi={W\bibinitperiod},
+           given={Julia\bibnamedelima Anne},
+           giveni={J\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21e1aa531cba38b401e8842930708423}{%
+           family={Triantafyllou},
+           familyi={T\bibinitperiod},
+           given={Asterios},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{f7737305f9c611db13973bfee1796f04}
+      \strng{fullhash}{f7737305f9c611db13973bfee1796f04}
+      \strng{bibnamehash}{f7737305f9c611db13973bfee1796f04}
+      \strng{authorbibnamehash}{f7737305f9c611db13973bfee1796f04}
+      \strng{authornamehash}{f7737305f9c611db13973bfee1796f04}
+      \strng{authorfullhash}{f7737305f9c611db13973bfee1796f04}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Standardised reporting of head and neck cancer resections according to guidelines issued by the UK Royal College of Pathologists was introduced as a routine procedure in 1998. The guidelines include definitions of ‘‘mucosal’’, ‘‘deep’’, ‘‘clear’’, ‘‘close’’ and ‘‘involved’’ surgical margins. This study of routine diagnostic material describes the frequency, type and morphological features of involved margins, and assesses the influence of tumour site and pathological T and N stage. 301 consecutive radical resection specimens for oral/oropharyngeal squamous cell carcinoma assessed according to the guidelines were appraised. 70 resections (23\%) had involved margins. The frequency was related to primary tumour site, and pathological T and N stage. Mucosal involvement was evident in 11 resections, bone in 10, and deep soft tissue in 61–12 resections had multiple category involvement. Both anatomical factors and histological ‘‘markers’’ of tumour characteristics influence the status of surgical resection margins.}
+      \field{issn}{13688375}
+      \field{journaltitle}{Oral Oncology}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{10}
+      \field{shortjournal}{Oral Oncology}
+      \field{title}{A Histopathological Appraisal of Surgical Margins in Oral and Oropharyngeal Cancer Resection Specimens}
+      \field{volume}{41}
+      \field{year}{2005}
+      \field{dateera}{ce}
+      \field{pages}{1034\bibrangedash 1043}
+      \range{pages}{10}
+      \verb{doi}
+      \verb 10.1016/j.oraloncology.2005.06.008
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/VH8VMZ7K/Woolgar and Triantafyllou - 2005 - A histopathological appraisal of surgical margins .pdf
+      \endverb
     \endentry
   \enddatalist
 \endrefsection
