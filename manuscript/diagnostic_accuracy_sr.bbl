@@ -655,6 +655,47 @@
       \verb /Users/jim/Zotero/storage/GJ7LQJMY/Heidari A.E. et al. - 2020 - The use of optical coherence tomography and convol.pdf
       \endverb
     \endentry
+    \entry{irwigGuidelinesMetaanalysesEvaluating1994}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=908a00bbcbad41606e42a5e73e2bbb37}{%
+           family={Irwig},
+           familyi={I\bibinitperiod},
+           given={Les},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{908a00bbcbad41606e42a5e73e2bbb37}
+      \strng{fullhash}{908a00bbcbad41606e42a5e73e2bbb37}
+      \strng{bibnamehash}{908a00bbcbad41606e42a5e73e2bbb37}
+      \strng{authorbibnamehash}{908a00bbcbad41606e42a5e73e2bbb37}
+      \strng{authornamehash}{908a00bbcbad41606e42a5e73e2bbb37}
+      \strng{authorfullhash}{908a00bbcbad41606e42a5e73e2bbb37}
+      \field{sortinit}{I}
+      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{issn}{0003-4819}
+      \field{journaltitle}{Annals of Internal Medicine}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{8}
+      \field{shortjournal}{Ann Intern Med}
+      \field{title}{Guidelines for {{Meta-analyses Evaluating Diagnostic Tests}}}
+      \field{volume}{120}
+      \field{year}{1994}
+      \field{dateera}{ce}
+      \field{pages}{667}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.7326/0003-4819-120-8-199404150-00008
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/NZSWU7M6/Irwig - 1994 - Guidelines for Meta-analyses Evaluating Diagnostic.pdf
+      \endverb
+    \endentry
     \entry{leey.-j.IntraoperativeFluorescenceGuidedSurgery2020}{article}{}
       \name{author}{11}{}{%
         {{un=0,uniquepart=base,hash=99304ba4aa4705989a15c78370e50e72}{%
@@ -1054,6 +1095,89 @@
       \endverb
       \verb{url}
       \verb https://www.R-project.org/
+      \endverb
+    \endentry
+    \entry{stjohnDiagnosticAccuracyIntraoperative2017}{article}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=bfad244f51f1518817f05a27c947344f}{%
+           family={St\bibnamedelima John},
+           familyi={S\bibinitperiod\bibinitdelim J\bibinitperiod},
+           given={Edward\bibnamedelima Robert},
+           giveni={E\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5df6ba9ca0cc83756bb7795098e68137}{%
+           family={Al-Khudairi},
+           familyi={A\bibinithyphendelim K\bibinitperiod},
+           given={Rashed},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1e68fafd7bdaef4e83ad1edfc6521f77}{%
+           family={Ashrafian},
+           familyi={A\bibinitperiod},
+           given={Hutan},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=14c646b08ada79ab7514bbb431e7a331}{%
+           family={Athanasiou},
+           familyi={A\bibinitperiod},
+           given={Thanos},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40b99d0ec6b7cf25cf145fe1be9c9ac2}{%
+           family={Takats},
+           familyi={T\bibinitperiod},
+           given={Zoltan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=79b28096a1069e3a4e3a3fd55c9c0ee2}{%
+           family={Hadjiminas},
+           familyi={H\bibinitperiod},
+           given={Dimitri\bibnamedelima John},
+           giveni={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcf0c58bc302d6877e4b774444a94569}{%
+           family={Darzi},
+           familyi={D\bibinitperiod},
+           given={Ara},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=177cc6e070b5e22269c859925d34ca83}{%
+           family={Leff},
+           familyi={L\bibinitperiod},
+           given={Daniel\bibnamedelima Richard},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{b8a9470f5ee127f3498c15f9d876130a}
+      \strng{fullhash}{76b41faabd427e25888f6b309acebfc7}
+      \strng{bibnamehash}{b8a9470f5ee127f3498c15f9d876130a}
+      \strng{authorbibnamehash}{b8a9470f5ee127f3498c15f9d876130a}
+      \strng{authornamehash}{b8a9470f5ee127f3498c15f9d876130a}
+      \strng{authorfullhash}{76b41faabd427e25888f6b309acebfc7}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Objective: The aim of this study was to conduct a systematic review and meta-analysis to clarify the diagnostic accuracy of intraoperative breast margin assessment (IMA) techniques against which the performance of emerging IMA technologies may be compared. Summary of Background Data: IMA techniques have failed to penetrate routine practice due to limitations, including slow reporting times, technical demands, and logistics. Emerging IMA technologies are being developed to reduce positive margin and re-excision rates and will be compared with the diagnostic accuracy of existing techniques. Method: Studies were identified using electronic bibliographic searches up to January 2016. MESH terms and all-field search terms included ‘‘Breast CancerÃ’’ AND ‘‘IntraoperativeÃ’’ AND ‘‘MarginÃ.’’ Only clinical studies with raw diagnostic accuracy data as compared with final permanent section histopathology were included. A bivariate model for diagnostic meta-analysis was used to attain overall pooled sensitivity and specificity. Results: Eight hundred thirty-eight unique studies revealed 35 studies for meta-analysis. Pooled sensitivity (Sens), specificity (Spec), and area under the receiver operating characteristic curve (AUROC) values were calculated per group (Sens, Spec, AUROC): frozen section ¼ 86\%, 96\%, 0.96 (n ¼ 9); cytology ¼ 91\%, 95\%, 0.98 (n ¼ 11); intraoperative ultrasound ¼ 59\%, 81\%, 0.78 (n ¼ 4); specimen radiography ¼ 53\%, 84\%, 0.73 (n ¼ 9); optical spectroscopy ¼ 85\%, 87\%, 0.88 (n ¼ 3). Conclusions: Pooled data suggest that frozen section and cytology have the greatest diagnostic accuracy. However, these methods are resource intensive}
+      \field{issn}{0003-4932}
+      \field{journaltitle}{Annals of Surgery}
+      \field{langid}{english}
+      \field{month}{2}
+      \field{number}{2}
+      \field{shorttitle}{Diagnostic {{Accuracy}} of {{Intraoperative Techniques}} for {{Margin Assessment}} in {{Breast Cancer Surgery}}}
+      \field{title}{Diagnostic {{Accuracy}} of {{Intraoperative Techniques}} for {{Margin Assessment}} in {{Breast Cancer Surgery}}: {{A Meta-analysis}}}
+      \field{volume}{265}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{pages}{300\bibrangedash 310}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1097/SLA.0000000000001897
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/EA56T2YE/St John et al. - 2017 - Diagnostic Accuracy of Intraoperative Techniques f.pdf
       \endverb
     \endentry
     \entry{vuEfficacyNarrowBand2014}{article}{}
