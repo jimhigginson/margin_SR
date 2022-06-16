@@ -51,10 +51,10 @@ cols_to_keep <- c(
 )
 
 
-meta.data <- read_csv('all_data_unverified_for_testing.csv') %>% 
+meta.data <- read_csv('2022-06-13_final_consensus_data.csv') %>% 
 # This produces a very wide table, with repeated column titles for four diagnostic modalitiies, even though most papers will only discuss one. 
   select_if(drop_empty) %>% 
-  filter(`Reviewer Name` == 'James Higginson') %>% 
+  filter(`Reviewer Name` == 'Consensus') %>% 
   select(cols_to_keep) %>% 
   rename(
   "TN" = "True negatives Diagnostic tool 1",
@@ -223,7 +223,9 @@ ggplot(data = meta.data) +
   labs(title = 'Summary ROC curve for all studies') +
   xlab('False positive rate') +
   ylab('Sensitivity') + 
-  annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{AUC(fit)$AUC}")) +
+  annotate('text', x = 0.8, y = 0, label = str_interp("AUC = $[.3f]{AUC(fit)$AUC}")) +
+  annotate('text', x = 0.8, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - summary_data$V1}")) +
+  annotate('text', x = 0.8, y = 0.2, label = str_interp("Sensitivity = $[.3f]{summary_data$V2}")) +
   theme_clean()
 
 
@@ -296,6 +298,8 @@ ggplot() +
   xlab('False positive rate') +
   ylab('Sensitivity') +
   annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{stain.auc}")) +
+   annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - stain.summary_data$V1}")) +
+  annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{stain.summary_data$V2}")) +
   theme_classic()
 ggsave('stain_sroc.png')
 ```
@@ -303,12 +307,14 @@ ggsave('stain_sroc.png')
 ggplot() +
   geom_line(data = frozen.sroc_curve, aes(fpr, V2)) +
   geom_polygon(data = frozen.confidence_region, aes(V1, V2), alpha = 0.3) +
-  geom_point(aes(fpr(frozen.data), sens(frozen.data), size = frozen.data$`Number of margins included`), shape = 1, alpha = 0.6) +
+  geom_point(aes(fpr(frozen.data), sens(frozen.data))) +
   geom_point(data = frozen.summary_data, aes(V1, V2)) +
   labs(title = 'Summary ROC curve for frozen studies') +
   xlab('False positive rate') +
   ylab('Sensitivity')+
   annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{frozen.auc}")) +
+   annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - frozen.summary_data$V1}")) +
+  annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{frozen.summary_data$V2}")) +
   theme_classic()
 ggsave('frozen_sroc.png')
 ```
@@ -323,6 +329,8 @@ ggplot() +
   xlab('False positive rate') +
   ylab('Sensitivity')+
   annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{chemo.auc}")) +
+  annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - chemo.summary_data$V1}")) +
+  annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{chemo.summary_data$V2}")) +
   theme_classic()
 ggsave('chemo_sroc.png')
 ```
@@ -337,6 +345,8 @@ ggplot() +
   xlab('False positive rate') +
   ylab('Sensitivity')+
   annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{tic.auc}")) +
+   annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - tic.summary_data$V1}")) +
+  annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{tic.summary_data$V2}")) +
   theme_classic()
 ggsave('tic_sroc.png')
 ```
@@ -351,6 +361,8 @@ ggplot() +
   xlab('False positive rate') +
   ylab('Sensitivity')+
   annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{optical.auc}")) +
+  annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - optical.summary_data$V1}")) +
+  annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{optical.summary_data$V2}")) +
   theme_classic()
 ggsave('optical_sroc.png')
 ```
@@ -558,8 +570,12 @@ tf.precision = tf$seTE ^ -1
     yend = 4
     ), linetype='dotted') +
   scale_x_log10() +
-  scale_colour_colorblind() +
-  theme_classic()  
+  labs(shape = '', colour = '') +
+  scale_shape_discrete(labels = c('Real studies', 'Predicted studies')) +
+  scale_colour_colorblind(labels = c('Real studies', 'Predicted studies')) +
+  theme_classic() +
+  xlab('Diagnostic Odds Ratio') +
+  ylab('Study precision')  # note that precision is 1/standard error here - add to caption.
 ggsave('trim_filled_funnel_plot.png')
 ```
 
