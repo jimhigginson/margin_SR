@@ -7,7 +7,7 @@
 \node (abstractexclude) [box, right of = abstract, xshift = 4cm, yshift = -1.5cm] {1911 records excluded based on title and abstract};
 \node (fulltext) [box, below of = abstract] {169 full-text articles assessed for eligibility};
 \node (fulltextexclude) [box, right of = fulltext, xshift = 4cm, yshift = -4cm, text width = 5cm] {\begin{minipage}{\textwidth}134 full-text articles excluded with reasons: \begin{itemize}
-\item 	55  No sensitivity/specificity data presented
+\item 	57  No raw diagnostic data presented
 \item	45  Abstract only
 \item	8  Wrong patient population
 \item	7  Not intraoperative
@@ -15,9 +15,8 @@
 \item	5  No comparator
 \item	5  Review
 \item	2  Manuscript not available
-\item	2  No margin outcome data presented
 \end{itemize}\end{minipage}};
-\node (studiesincluded) [box, below of = fulltext, yshift = -4cm] {Studies included in quantitative synthesis:};
+\node (studiesincluded) [box, below of = fulltext, yshift = -4cm] {Studies included in quantitative synthesis: 35};
 
 \draw [arrow] (import) -- (abstract);
 \draw [arrow] (abstract) -- (fulltext);
