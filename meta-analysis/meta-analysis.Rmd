@@ -54,15 +54,15 @@ cols_to_keep <- c(
 meta.data <- read_csv('2022-06-13_final_consensus_data.csv') %>% 
 # This produces a very wide table, with repeated column titles for four diagnostic modalitiies, even though most papers will only discuss one. 
   select_if(drop_empty) %>% 
-  filter(`Reviewer Name` == 'Consensus') %>% 
-  select(cols_to_keep) %>% 
-  rename(
-  "TN" = "True negatives Diagnostic tool 1",
-  "TP" = "True positives Diagnostic tool 1",
-  "FN" = "False negatives Diagnostic tool 1",
-  "FP" = "False positives Diagnostic tool 1"
-  ) %>% 
-  drop_na(TP)
+   filter(`Reviewer Name` == 'Consensus') %>% 
+   select(cols_to_keep) %>% 
+   rename(
+   "TN" = "True negatives Diagnostic tool 1",
+   "TP" = "True positives Diagnostic tool 1",
+   "FN" = "False negatives Diagnostic tool 1",
+   "FP" = "False positives Diagnostic tool 1"
+   ) %>% 
+   drop_na(TP)
 
 
 
