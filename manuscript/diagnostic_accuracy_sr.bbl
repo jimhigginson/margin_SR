@@ -410,6 +410,65 @@
       \verb https://CRAN.R-project.org/package=mada
       \endverb
     \endentry
+    \entry{due.RefiningUtilityRole2016}{article}{}
+      \name{author}{7}{}{%
+        {{un=0,uniquepart=base,hash=2aa0375d14e138cb8cb05032c7afafab}{%
+           family={{Du E.}},
+           familyi={D\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=6828045075d20700a223bb33fba8f8d7}{%
+           family={{Ow T.J.}},
+           familyi={O\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=8d0db7b6fc508a42aa7400c00fbbf179}{%
+           family={{Lo Y.-T.}},
+           familyi={L\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=311caeca3dfef4644e5b440483c89300}{%
+           family={{Gersten A.}},
+           familyi={G\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=f830491e3a9592dbb00ea41093bdfeb0}{%
+           family={{Schiff B.A.}},
+           familyi={S\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=8f54fb3a6a5fa3f9306401277fe03880}{%
+           family={{Tassler A.B.}},
+           familyi={T\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=a68d5d8df597a2aa7d7c12b6b51fa5ca}{%
+           family={{Smith R.V.}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {United States}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley and Sons Inc. (P.O.Box 18667, Newark NJ 07191-8667, United States)}%
+      }
+      \strng{namehash}{1d859b6926c8ebbf467a2ce1246f2a46}
+      \strng{fullhash}{a7cbba80987e6726955181d9fc3067ea}
+      \strng{bibnamehash}{1d859b6926c8ebbf467a2ce1246f2a46}
+      \strng{authorbibnamehash}{1d859b6926c8ebbf467a2ce1246f2a46}
+      \strng{authornamehash}{1d859b6926c8ebbf467a2ce1246f2a46}
+      \strng{authorfullhash}{a7cbba80987e6726955181d9fc3067ea}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Objectives/Hypothesis: Previous studies report high-accuracy rates for intraoperative frozen sections, but reliability of frozen sections in predicting the ultimate final margin status is unknown. We compared frozen and permanent reads to identify risk factors for overall discrepancies between intraoperative and final margin status. Study Design: Retrospective chart review. Method(s): Pathology reports of 437 surgical resections between 2010 and 2013 were retrospectively reviewed. A total of 253 cases, generating 1,109 individual specimens, met inclusion criteria. Patient demographics, treatment, recurrence, and survival, as well as pathology data pertaining to the specimen, were recorded. Result(s): Frozen read accuracy was 96.7\% (83.1\% sensitivity, 97.9\% specificity) relative to permanent evaluation. However, 4.3\% of cases had a final positive margin not detected by frozen section; 17.8\% had a close margin not detected by frozen section. In eight of 11 cases with missed positive margins, the involved margin was never sampled intraoperatively. Cases where intraoperative margins were only taken from surrounding tissue had a higher risk of missing a close or positive final margin when compared to cases where some or all margins were taken from the specimen (odds ratio = 5.05, 95\% confidence interval [2.31, 11.07], P {$<$}0.0001). Disease subsite, risk score, prior radiation, staging, and p16 expression were not significantly associated with the likelihood of missing a close or positive final margin. Conclusion(s): Individual frozen section reads are highly accurate. However, negative intraoperative margins do not guarantee margin-negative resections. The process of selecting representative margins for intraoperative analysis, specifically the practice of sampling the resection bed, should be refined. Level of Evidence: N/A. Laryngoscope, 126:1768-1775, 2016.Copyright © 2016 The American Laryngological, Rhinological and Otological Society, Inc.}
+      \field{journaltitle}{Laryngoscope}
+      \field{number}{8}
+      \field{shortjournal}{Laryngoscope}
+      \field{title}{Refining the Utility and Role of {{Frozen}} Section in Head and Neck Squamous Cell Carcinoma Resection}
+      \field{volume}{126}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{1768\bibrangedash 1775}
+      \range{pages}{8}
+      \verb{doi}
+      \verb 10.1002/lary.25899
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/HUVGTHV5/Du E. et al. - 2016 - Refining the utility and role of Frozen section in.pdf
+      \endverb
+    \endentry
     \entry{duvalTrimFillSimple2000}{article}{}
       \name{author}{2}{}{%
         {{un=0,uniquepart=base,hash=e954a0a942c9b9d8f74f8a73135901a4}{%
@@ -536,6 +595,74 @@
       \endverb
       \verb{file}
       \verb /Users/jim/Zotero/storage/F6294U95/Ebell et al. - 2004 - Strength of Recommendation Taxonomy (SORT) A Pati.pdf
+      \endverb
+    \endentry
+    \entry{ettlt.PositiveFrozenSection2016}{article}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=f27a77f631502ec9323a5e10038ad6cb}{%
+           family={{Ettl T.}},
+           familyi={E\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=269c829c9f623e28a8558b7470427d4f}{%
+           family={{El-Gindi A.}},
+           familyi={E\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=e054792d3bb34e2028493bd58e77788b}{%
+           family={{Hautmann M.}},
+           familyi={H\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=b0c32f8d76aed25913145e4729971c2e}{%
+           family={{Gosau M.}},
+           familyi={G\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=d6b015f571e1f4175a775996db3b6774}{%
+           family={{Weber F.}},
+           familyi={W\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=bdf517e733f4038c0d4be433c46b6354}{%
+           family={{Rohrmeier C.}},
+           familyi={R\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=25ee7e61cd1b7fecb6d051301f8f3103}{%
+           family={{Gerken M.}},
+           familyi={G\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=0fccee7e33b83ae7e556cc20dbb12f5f}{%
+           family={{Muller S.}},
+           familyi={M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=cc659681e9aa4b99345fa35ec9745313}{%
+           family={{Reichert T.}},
+           familyi={R\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=dd6a60e93bd52eaa8e0bb2ee5eb1e358}{%
+           family={{Klingelhoffer C.}},
+           familyi={K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {United Kingdom}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier Ltd}%
+      }
+      \strng{namehash}{352075ef9f45b8192cb02db628b60a09}
+      \strng{fullhash}{3a882bac3dc4377833a55373bbbd7ad7}
+      \strng{bibnamehash}{352075ef9f45b8192cb02db628b60a09}
+      \strng{authorbibnamehash}{352075ef9f45b8192cb02db628b60a09}
+      \strng{authornamehash}{352075ef9f45b8192cb02db628b60a09}
+      \strng{authorfullhash}{3a882bac3dc4377833a55373bbbd7ad7}
+      \field{sortinit}{E}
+      \field{sortinithash}{8da8a182d344d5b9047633dfc0cc9131}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Objectives: The purpose of this study was to analyse the impact of surgical margins on tumour recurrence and survival of patients with carcinomas of the head and neck. Material(s) and Method(s): A cohort of 156 patients with primary squamous cell carcinoma of the head and neck treated by local resection with negative margins and neck dissection between 2004 and 2012 was investigated. Margin status in frozen sections and permanent paraffin tissues were analysed and compared to clinical and histopathological parameters as well as to tumour recurrence (local, regional and distant) and disease-specific survival (DSS). Result(s): Close margins ({$<$}5 mm) on permanent sections were correlated to high-grade differentiation (p = 0.070), lymphangiosis (p = 0.009) and positive neck nodes (p = 0.025) implicating regional and distant recurrence (p = 0.001) as well as unfavorable DSS (p = 0.002). Positive margins on initial frozen section analysis revised into negative margins during further surgery were the strongest predictor for local recurrence in uni- and multivariate analysis (p {$<$} 0.001, hazard ratio 3.34). However, positive frozen section margins were not significantly predictive for DSS (p = 0.150). Significant predictors for DSS in univariate analysis were local recurrence (p = 0.026), T-stage (p = 0.02), N-stage (p {$<$} 0.001), grading (p = 0.02) and lymphangiosis (p = 0.001). Multivariate DSS analysis revealed lymph node metastasis (p = 0.005) and local recurrence (p = 0.017) as significant negative predictors. Conclusion(s): Close margins on permanent sections are associated with aggressive tumour characteristics, regional and distant metastasis implicating worse DSS. The accuracy of frozen section analysis seems limited as positive frozen section margins revised into negative margins bear a high risk of local recurrence.Copyright © 2016, Elsevier Ltd. All rights reserved.}
+      \field{issue}{(Ettl, El-Gindi, Muller, Reichert, Klingelhoffer) Department of Oral and Maxillofacial Surgery, University Hospital Regensburg, Franz-Josef-Straus-Allee 11, Regensburg 93053, Germany(Hautmann) Department of Radiotherapy, University Hospital Regensburg, Fr}
+      \field{journaltitle}{Oral Oncology}
+      \field{shortjournal}{Oral Oncology}
+      \field{title}{Positive Frozen Section Margins Predict Local Recurrence in {{R0-resected}} Squamous Cell Carcinoma of the Head and Neck}
+      \field{volume}{55}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{17\bibrangedash 23}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1016/j.oraloncology.2016.02.012
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/26RM5YX4/Ettl T. et al. - 2016 - Positive frozen section margins predict local recu.pdf
       \endverb
     \endentry
     \entry{gorpheSystematicReviewMetaanalysis2019}{article}{}
@@ -1494,8 +1621,6 @@
       \endverb
     \endentry
   \enddatalist
-  \missing{PositiveFrozenSection2016}
-  \missing{RefiningUtilityRole2016}
 \endrefsection
 \endinput
 
