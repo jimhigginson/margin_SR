@@ -56,6 +56,7 @@ meta.data <- read_csv('2022-06-13_final_consensus_data.csv') %>%
   select_if(drop_empty) %>% 
    filter(`Reviewer Name` == 'Consensus') %>% 
    select(cols_to_keep) %>% 
+   mutate(modality_group = str_replace_all(modality_group, pattern = 'Chemiluminescence', replacement = 'Tumour-targeted fluorescence')) %>% 
    rename(
    "TN" = "True negatives Diagnostic tool 1",
    "TP" = "True positives Diagnostic tool 1",
@@ -294,12 +295,12 @@ ggplot() +
   geom_polygon(data = stain.confidence_region, aes(V1, V2), alpha = 0.3) +
   geom_point(aes(fpr(stain.data), sens(stain.data)), size = 1) +
   geom_point(data = stain.summary_data, aes(V1, V2), shape = 21) +
-  labs(title = 'Summary ROC curve for stain studies') +
+  labs(title = 'Summary ROC curve for studies of topical staining techniques') +
   xlab('False positive rate') +
   ylab('Sensitivity') +
   annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{stain.auc}")) +
-   annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - stain.summary_data$V1}")) +
-  annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{stain.summary_data$V2}")) +
+  #  annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - stain.summary_data$V1}")) +
+  # annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{stain.summary_data$V2}")) +
   theme_classic()
 ggsave('stain_sroc.png')
 ```
@@ -309,12 +310,12 @@ ggplot() +
   geom_polygon(data = frozen.confidence_region, aes(V1, V2), alpha = 0.3) +
   geom_point(aes(fpr(frozen.data), sens(frozen.data))) +
   geom_point(data = frozen.summary_data, aes(V1, V2)) +
-  labs(title = 'Summary ROC curve for frozen studies') +
+  labs(title = 'Summary ROC curve for studies of frozen section') +
   xlab('False positive rate') +
   ylab('Sensitivity')+
   annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{frozen.auc}")) +
-   annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - frozen.summary_data$V1}")) +
-  annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{frozen.summary_data$V2}")) +
+  #  annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - frozen.summary_data$V1}")) +
+  # annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{frozen.summary_data$V2}")) +
   theme_classic()
 ggsave('frozen_sroc.png')
 ```
@@ -325,12 +326,12 @@ ggplot() +
   geom_polygon(data = chemo.confidence_region, aes(V1, V2), alpha = 0.3) +
   geom_point(aes(fpr(chemo.data), sens(chemo.data)), size = 1) +
   geom_point(data = chemo.summary_data, aes(V1, V2), shape = 21) +
-  labs(title = 'Summary ROC curve for chemo studies') +
+  labs(title = 'Summary ROC curve for studies of tumour-targeted fluorescence') +
   xlab('False positive rate') +
   ylab('Sensitivity')+
   annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{chemo.auc}")) +
-  annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - chemo.summary_data$V1}")) +
-  annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{chemo.summary_data$V2}")) +
+  # annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - chemo.summary_data$V1}")) +
+  # annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{chemo.summary_data$V2}")) +
   theme_classic()
 ggsave('chemo_sroc.png')
 ```
@@ -341,12 +342,12 @@ ggplot() +
   geom_polygon(data = tic.confidence_region, aes(V1, V2), alpha = 0.3) +
   geom_point(aes(fpr(tic.data), sens(tic.data)), size = 1) +
   geom_point(data = tic.summary_data, aes(V1, V2), shape = 21) +
-  labs(title = 'Summary ROC curve for tic studies') +
+  labs(title = 'Summary ROC curve for studies of touch imprint cytology') +
   xlab('False positive rate') +
   ylab('Sensitivity')+
   annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{tic.auc}")) +
-   annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - tic.summary_data$V1}")) +
-  annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{tic.summary_data$V2}")) +
+  #  annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - tic.summary_data$V1}")) +
+  # annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{tic.summary_data$V2}")) +
   theme_classic()
 ggsave('tic_sroc.png')
 ```
@@ -357,12 +358,12 @@ ggplot() +
   geom_polygon(data = optical.confidence_region, aes(V1, V2), alpha = 0.3) +
   geom_point(aes(fpr(optical.data), sens(optical.data)), size = 1) +
   geom_point(data = optical.summary_data, aes(V1, V2), shape = 21) +
-  labs(title = 'Summary ROC curve for optical studies') +
+  labs(title = 'Summary ROC curve for studies of optical diagnostic techniques') +
   xlab('False positive rate') +
   ylab('Sensitivity')+
   annotate('text', x = 0.9, y = 0, label = str_interp("AUC = $[.3f]{optical.auc}")) +
-  annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - optical.summary_data$V1}")) +
-  annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{optical.summary_data$V2}")) +
+  # annotate('text', x = 0.9, y = 0.1, label = str_interp("Specificity = $[.3f]{1 - optical.summary_data$V1}")) +
+  # annotate('text', x = 0.9, y = 0.2, label = str_interp("Sensitivity = $[.3f]{optical.summary_data$V2}")) +
   theme_classic()
 ggsave('optical_sroc.png')
 ```
