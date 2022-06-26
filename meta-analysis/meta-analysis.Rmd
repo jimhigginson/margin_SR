@@ -602,7 +602,7 @@ frozen.DOR_model <- metabin(
 This chunk will produce a nice table to export for the manuscript.
 
 ```{r}
-export.meta.data <- meta.data %>% 
+table.data <- meta.data %>% 
   select(
     !c(
       `Covidence #`,
@@ -611,18 +611,27 @@ export.meta.data <- meta.data %>%
       `Year of publication`,
       `frozen_group`,
       `fpr`,
-      `sens`
-    )
-  )
+      `sens`,
+      `Population description`,
+      `Mean age`,
+      `Modality Diagnostic tool 1`
+    ) # a? add back in age, modality diagnostic tool, 
+  ) %>% 
+  rename(
+    'No. patients' = `Number of patients included`,
+    'No. specimens' = `Number of margins included`,
+    'Subsites' = `HNSCC sub-sites included in study`
+  ) 
+ 
 
 export.table <- xtable(
-  export.meta.data,
+  table.data,
   caption = c('short caption', 'full caption'),
   label = 'tab:study_details',
   booktabs=TRUE
 )
 
-print(export.table, size="\\tiny", file = '../manuscript/tables/study_details.tex')
+print(export.table, size="\\tiny", include.rownames = FALSE, file = '../manuscript/tables/study_details.tex')
 ```
 
 
