@@ -626,6 +626,7 @@ table.data <- meta.data %>%
 
 export.table <- xtable(
   table.data,
+  # display = 'd',
   caption = c('short caption', 'full caption'),
   label = 'tab:study_details',
   booktabs=TRUE
