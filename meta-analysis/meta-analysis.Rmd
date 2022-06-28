@@ -262,7 +262,7 @@ optical.sroc_curve <- as_tibble(sroc(optical.fit)) %>%
 optical.auc = AUC(optical.fit)$AUC
 
 chemo.data<- meta.data %>% 
-  filter(modality_group == 'Chemiluminescence')
+  filter(modality_group == 'Tumour-targeted fluorescence')
 chemo.fit <- reitsma(chemo.data, correction.control='all')
 chemo.confidence_region <- as_tibble(ROCellipse(chemo.fit)$ROCellipse)
 chemo.summary_data <- as_tibble(ROCellipse(chemo.fit)$fprsens)
@@ -608,7 +608,6 @@ table.data <- meta.data %>%
       `Covidence #`,
       `Title`,
       `First Author Name`,
-      `Year of publication`,
       `frozen_group`,
       `fpr`,
       `sens`,
@@ -621,13 +620,16 @@ table.data <- meta.data %>%
     'No. patients' = `Number of patients included`,
     'No. specimens' = `Number of margins included`,
     'Subsites' = `HNSCC sub-sites included in study`
-  ) 
+  ) %>% 
+  group_by(modality_group) %>% 
+  arrange(.by_group=TRUE, `Year of publication`) %>% 
+  select(!`Year of publication`)
  
 
 export.table <- xtable(
   table.data,
   # display = 'd',
-  caption = c('short caption', 'full caption'),
+  caption = c('short caption', 'Study details, demographics and outcome data'),
   label = 'tab:study_details',
   booktabs=TRUE
 )
@@ -643,6 +645,8 @@ print(export.table, size="\\tiny", include.rownames = FALSE, file = '../manuscri
 
 quadas.qs <- c(
 "Study ID",
+"Year of publication",
+"modality_group",
 "Could the selection of patients have introduced bias?",
 "Is there concern that the included patients do not match the review question?",
 "Could the conduct or interpretation of the index test have introduced bias?",
@@ -652,11 +656,14 @@ quadas.qs <- c(
 "Could the patient flow have introduced bias?",
 "What SORT score is this ?"
 )
-final.qual <-  read_csv('2022-06-13_final_consensus_data.csv') %>% 
+final.qual <-  read_csv('2022-06-13_final_consensus_data.csv') %>%   
   filter(`Reviewer Name` == 'Consensus') %>% 
+  mutate(modality_group = str_replace_all(modality_group, pattern = 'Chemiluminescence', replacement = 'Tumour-targeted fluorescence')) %>% 
   select(quadas.qs) %>% 
-   transmute(
+  transmute(
+     "Treatment group" = .$modality_group,
      "Study ID" = .$`Study ID`,
+     "Year of publication" = .$`Year of publication`, 
        "Risk of patient selection introducing bias?" = word(.$`Could the selection of patients have introduced bias?`, 1) ,
      "Concern that participants do not match the review question?" = word(.$`Is there concern that the included patients do not match the review question?`, 1),
     "Risk of index test introducing bias?" = word(.$`Could the conduct or interpretation of the index test have introduced bias?`, 1),
@@ -665,7 +672,10 @@ final.qual <-  read_csv('2022-06-13_final_consensus_data.csv') %>%
     "Concern that the target condition does not match review question?" = word(.$`Is there concern that the target condition as defined by the reference standard does not match the review question?`, 1),
     "Risk of timings introducing bias?" = word(.$`Could the patient flow have introduced bias?`, 1),
     "SORT score" = word(.$`What SORT score is this ?`, 1)
-   )
+   ) %>% 
+  group_by(`Treatment group`) %>% 
+  arrange(.by_group=TRUE, `Year of publication`) %>% 
+  select(!`Year of publication`)
 
 export.qual.table <- xtable(
   unique(final.qual),
