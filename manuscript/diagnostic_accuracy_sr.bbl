@@ -19,6 +19,177 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{allegraEarlyGlotticCancer2020}{article}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=1fc47fc6bd73c9fb9ec1bac282f1cc9d}{%
+           family={Allegra},
+           familyi={A\bibinitperiod},
+           given={Eugenia},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d0c82fe5c2d77c2db13aca802adc311b}{%
+           family={Bianco},
+           familyi={B\bibinitperiod},
+           given={Maria\bibnamedelima Rita},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0aabdacf6aae74374e9216917a6cbccc}{%
+           family={Mignogna},
+           familyi={M\bibinitperiod},
+           given={Chiara},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=41f2d369b66ad73a91e0bd419515815a}{%
+           family={Drago},
+           familyi={D\bibinitperiod},
+           given={Gaetano\bibnamedelima Davide},
+           giveni={G\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2605223d6229cd5b423787748c8ea591}{%
+           family={Modica},
+           familyi={M\bibinitperiod},
+           given={Domenico\bibnamedelima Michele},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3df4ed8776cef8c6908216df69559526}{%
+           family={Puzzo},
+           familyi={P\bibinitperiod},
+           given={Lidia},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {Switzerland}%
+      }
+      \list{publisher}{1}{%
+        {NLM (Medline)}%
+      }
+      \strng{namehash}{3a2381a07ec0be7d8889032685faa01b}
+      \strng{fullhash}{44daeceaa3d036cc56ea3d69fcaf1435}
+      \strng{bibnamehash}{3a2381a07ec0be7d8889032685faa01b}
+      \strng{authorbibnamehash}{3a2381a07ec0be7d8889032685faa01b}
+      \strng{authornamehash}{3a2381a07ec0be7d8889032685faa01b}
+      \strng{authorfullhash}{44daeceaa3d036cc56ea3d69fcaf1435}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Background and objectives: Transoral laser microsurgery (TLM) is widely accepted for its advantages, which consist of a brief hospital stay, rapid functional recovery, low management costs and the fact that it can be easily repeated in cases of recurrence. However, a high incidence of positive or narrow surgical margins has been reported in the literature, even if controversy still exists on the prognostic significance of positive resection margins. The aim of the study was to evaluate the utility of toluidine blue staining in defining the resection margins of early glottic cancer (T1a–T2) treated with TLM. Materials and Methods: This retrospective study was conducted on patients with early glottic cancer (T1a–T2) managed by TLM. A group of patients treated between 2010 and 2014 underwent toluidine blue staining (TB group) of the lesions before starting the cordectomy by TLM, and a group of patients treated by TLM between 2006 and 2009 was considered the control group. Results: A total of 44 subjects were included in this study: 41 were men, and 3 were women. The mean age was 58 ± 9.0 years (median 59.0, range 41–77). Twenty-three of the 44 patients were included in the TB group and 21 in the case control group. In the TB group, only the positivity of the deep margin was a predictor of local recurrence (p = 0.037), while in the control group, positive or close margins and the type of cordectomy were predictive factors of local recurrence (p = 0.049). Considering the TB group and control cases, the 5-year local recurrence-free survival was 95.6\% and 80.9\%, respectively (p = 0.14). Conclusions: From this first study, toluidine blue staining seems to be a useful modality to improve the rate of the negative resection margins of early glottic cancer (T1a–T2) treated by TLM.}
+      \field{day}{3}
+      \field{issn}{1648-9144}
+      \field{journaltitle}{Medicina}
+      \field{langid}{english}
+      \field{month}{7}
+      \field{number}{7}
+      \field{shortjournal}{Medicina}
+      \field{shorttitle}{Early {{Glottic Cancer Treated}} by {{Transoral Laser Surgery Using Toluidine Blue}} for the {{Definition}} of the {{Surgical Margins}}}
+      \field{title}{Early {{Glottic Cancer Treated}} by {{Transoral Laser Surgery Using Toluidine Blue}} for the {{Definition}} of the {{Surgical Margins}}: {{A Pilot Study}}}
+      \field{volume}{56}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{334}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/medicina56070334
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/HCF6C3IP/Allegra et al. - 2020 - Early Glottic Cancer Treated by Transoral Laser Su.pdf;/Users/jim/Zotero/storage/XS6MRTNE/Allegra E. et al. - 2020 - Early Glottic Cancer Treated by Transoral Laser Su.pdf
+      \endverb
+    \endentry
+    \entry{balogIntraoperativeTissueIdentification2013}{article}{}
+      \name{author}{10}{}{%
+        {{un=0,uniquepart=base,hash=fcf6c38dba8f64a82bb0e28b33bc1bae}{%
+           family={Balog},
+           familyi={B\bibinitperiod},
+           given={Júlia},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=702af799a06e2fdaedd7309c7f2d7928}{%
+           family={Sasi-Szabó},
+           familyi={S\bibinithyphendelim S\bibinitperiod},
+           given={László},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=21a2cebfb5a9ddd5fb0dbb6cf06de303}{%
+           family={Kinross},
+           familyi={K\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f8884c98194addff956def175acc5626}{%
+           family={Lewis},
+           familyi={L\bibinitperiod},
+           given={Matthew\bibnamedelima R},
+           giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46bfbc1cf289b8ae2b3d80ef0cc12aa1}{%
+           family={Muirhead},
+           familyi={M\bibinitperiod},
+           given={Laura\bibnamedelima J},
+           giveni={L\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=97b652308195ecbbff6a7384637ffce0}{%
+           family={Veselkov},
+           familyi={V\bibinitperiod},
+           given={Kirill},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8eec153a82d55ac2267c8d9f9631eeb4}{%
+           family={Mirnezami},
+           familyi={M\bibinitperiod},
+           given={Reza},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=44d470a4f50fc75d7c6992496f17c930}{%
+           family={Dezs},
+           familyi={D\bibinitperiod},
+           given={Balázs},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=93a441f852cce43d84ae47659b2b8a58}{%
+           family={Nicholson},
+           familyi={N\bibinitperiod},
+           given={Jeremy\bibnamedelima K},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=63f2894433a31e17a5aa2e3a720a40d9}{%
+           family={Takáts},
+           familyi={T\bibinitperiod},
+           given={Zoltán},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2ed6e2e556d7cd643635090f3eaca155}
+      \strng{fullhash}{49f9feaa60fceba664553ab90a790bf4}
+      \strng{bibnamehash}{2ed6e2e556d7cd643635090f3eaca155}
+      \strng{authorbibnamehash}{2ed6e2e556d7cd643635090f3eaca155}
+      \strng{authornamehash}{2ed6e2e556d7cd643635090f3eaca155}
+      \strng{authorfullhash}{49f9feaa60fceba664553ab90a790bf4}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Rapid evaporative ionization mass spectrometry (REIMS) is an emerging technique that allows near-real-time characterization of human tissue in vivo by analysis of the aerosol ("smoke") released during electrosurgical dissection. The coupling of REIMS technology with electrosurgery for tissue diagnostics is known as the intelligent knife (iKnife). This study aimed to validate the technique by applying it to the analysis of fresh human tissue samples ex vivo and to demonstrate the translation to real-time use in vivo in a surgical environment. A variety of tissue samples from 302 patients were analyzed in the laboratory, resulting in 1624 cancerous and 1309 noncancerous database entries. The technology was then transferred to the operating theater, where the device was coupled to existing electrosurgical equipment to collect data during a total of 81 resections. Mass spectrometric data were analyzed using multivariate statistical methods, including principal components analysis (PCA) and linear discriminant analysis (LDA), and a spectral identification algorithm using a similar approach was implemented. The REIMS approach differentiated accurately between distinct histological and histopathological tissue types, with malignant tissues yielding chemical characteristics specific to their histopathological subtypes. Tissue identification via intraoperative REIMS matched the postoperative histological diagnosis in 100\% (all 81) of the cases studied. The mass spectra reflected lipidomic profiles that varied between distinct histological tumor types and also between primary and metastatic tumors. Thus, in addition to real-time diagnostic information, the spectra provided additional information on divergent tumor biochemistry that may have mechanistic importance in cancer.}
+      \field{journaltitle}{SCIENCE TRANSLATIONAL MEDICINE}
+      \field{langid}{english}
+      \field{number}{194}
+      \field{title}{Intraoperative {{Tissue Identification Using Rapid Evaporative Ionization Mass Spectrometry}}}
+      \field{volume}{5}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{13}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1126/scitranslmed.3005623
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/2WUL2QEJ/Balog et al. - Intraoperative Tissue Identification Using Rapid E.pdf
+      \endverb
+    \endentry
     \entry{chaturvedip.GrossExaminationSurgeon2014}{article}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=4bc185a308ab389b33d6c501625d05aa}{%
@@ -122,6 +293,258 @@
       \verb /Users/jim/Zotero/storage/JFKUFX29/Chow - 2020 - Head and Neck Cancer.pdf
       \endverb
     \endentry
+    \entry{helliwellPathologicalAspectsAssessment2016}{article}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=e628df455fcfdf677e218f52595abdd4}{%
+           family={Helliwell},
+           familyi={H\bibinitperiod},
+           given={T\bibnamedelima R},
+           giveni={T\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a0c26ecb88b65a6ecf9b28e648c21b48}{%
+           family={Giles},
+           familyi={G\bibinitperiod},
+           given={T\bibnamedelima E},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{ed48fd512000021ef468e6dab3a26abf}
+      \strng{fullhash}{ed48fd512000021ef468e6dab3a26abf}
+      \strng{bibnamehash}{ed48fd512000021ef468e6dab3a26abf}
+      \strng{authorbibnamehash}{ed48fd512000021ef468e6dab3a26abf}
+      \strng{authornamehash}{ed48fd512000021ef468e6dab3a26abf}
+      \strng{authorfullhash}{ed48fd512000021ef468e6dab3a26abf}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This is the official guideline endorsed by the specialty associations involved in the care of head and neck cancer patients in the UK. It introduces the current best practice in histopathology and cytopathology as it pertains to head and neck and thyroid cancers.}
+      \field{issn}{0022-2151, 1748-5460}
+      \field{journaltitle}{The Journal of Laryngology \& Otology}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{S2}
+      \field{shortjournal}{J. Laryngol. Otol.}
+      \field{shorttitle}{Pathological Aspects of the Assessment of Head and Neck Cancers}
+      \field{title}{Pathological Aspects of the Assessment of Head and Neck Cancers: {{United Kingdom National Multidisciplinary Guidelines}}}
+      \field{volume}{130}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{S59\bibrangedash S65}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1017/S0022215116000451
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/KNLC5MKH/Helliwell and Giles - 2016 - Pathological aspects of the assessment of head and.pdf
+      \endverb
+    \endentry
+    \entry{hinniSurgicalMarginsHead2013a}{article}{}
+      \name{author}{18}{}{%
+        {{un=0,uniquepart=base,hash=0f741fc7abc0d947474d94662ab0f4e3}{%
+           family={Hinni},
+           familyi={H\bibinitperiod},
+           given={Michael\bibnamedelima L.},
+           giveni={M\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fba873030ed45c983de7624090628365}{%
+           family={Ferlito},
+           familyi={F\bibinitperiod},
+           given={Alfio},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=81d88b23e1ae14b385e0069688d738cf}{%
+           family={Brandwein-Gensler},
+           familyi={B\bibinithyphendelim G\bibinitperiod},
+           given={Margaret\bibnamedelima S.},
+           giveni={M\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cd3d814e7eeccd833ab2d166c71a5913}{%
+           family={Takes},
+           familyi={T\bibinitperiod},
+           given={Robert\bibnamedelima P.},
+           giveni={R\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16ad92652d7dfebb7bd812a56a9638b7}{%
+           family={Silver},
+           familyi={S\bibinitperiod},
+           given={Carl\bibnamedelima E.},
+           giveni={C\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b4c111900cbcb079f9c4b5f3ab27d5ce}{%
+           family={Westra},
+           familyi={W\bibinitperiod},
+           given={William\bibnamedelima H.},
+           giveni={W\bibinitperiod\bibinitdelim H\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=a2d282fcf7fea0a3f8d54ba925645965}{%
+           family={Seethala},
+           familyi={S\bibinitperiod},
+           given={Raja\bibnamedelima R.},
+           giveni={R\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5455a8c81e9df47ee9d67f3102450b68}{%
+           family={Rodrigo},
+           familyi={R\bibinitperiod},
+           given={Juan\bibnamedelima P.},
+           giveni={J\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=665f1be7282089929d5d186d93fe8366}{%
+           family={Corry},
+           familyi={C\bibinitperiod},
+           given={June},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f3bae45dd547d847fb002acd2967e54a}{%
+           family={Bradford},
+           familyi={B\bibinitperiod},
+           given={Carol\bibnamedelima R.},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4f5b64584a4a22f40770e722ef9167e8}{%
+           family={Hunt},
+           familyi={H\bibinitperiod},
+           given={Jennifer\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8e9a1b704e7e731ae51d5cacb77b6aa}{%
+           family={Strojan},
+           familyi={S\bibinitperiod},
+           given={Primož},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=20f4b47b146f45fd5e3b5c57dd854a32}{%
+           family={Devaney},
+           familyi={D\bibinitperiod},
+           given={Kenneth\bibnamedelima O.},
+           giveni={K\bibinitperiod\bibinitdelim O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7d79f203f70b0aab24a3ca3a557cae31}{%
+           family={Gnepp},
+           familyi={G\bibinitperiod},
+           given={Douglas\bibnamedelima R.},
+           giveni={D\bibinitperiod\bibinitdelim R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2819e815ffd12e310ae2740824321028}{%
+           family={Hartl},
+           familyi={H\bibinitperiod},
+           given={Dana\bibnamedelima M.},
+           giveni={D\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=04602416786778d5efd8b453b44482c6}{%
+           family={Kowalski},
+           familyi={K\bibinitperiod},
+           given={Luiz\bibnamedelima P.},
+           giveni={L\bibinitperiod\bibinitdelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8975e0c0594c93d267154db974ea24a3}{%
+           family={Rinaldo},
+           familyi={R\bibinitperiod},
+           given={Alessandra},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=99a9640643ffb9e61c88fcebadb2a3a6}{%
+           family={Barnes},
+           familyi={B\bibinitperiod},
+           given={Leon},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{93ddb8162e7beb0ab7af7a9d4bf6d959}
+      \strng{fullhash}{d8a463039322fbda06fdc655fd1cce9c}
+      \strng{bibnamehash}{93ddb8162e7beb0ab7af7a9d4bf6d959}
+      \strng{authorbibnamehash}{93ddb8162e7beb0ab7af7a9d4bf6d959}
+      \strng{authornamehash}{93ddb8162e7beb0ab7af7a9d4bf6d959}
+      \strng{authorfullhash}{d8a463039322fbda06fdc655fd1cce9c}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Adequate resection margins are critical to the treatment decisions and prognosis of patients with head and neck squamous cell carcinoma (HNSCC). However, there are numerous controversies regarding reporting and interpretation of the status of resection margins. Fundamental issues relating to the basic definition of margin adequacy, uniform reporting standards for margins, optimal method of specimen dissection, and the role of intraoperative frozen section evaluation, all require further clarification and standardization. Future horizons for margin surveillance offer the possible use of novel methods such as “molecular margins” and contact microscopic endoscopy, However, the limitations of these approaches need to be understood. The goal of this review was to evaluate these issues to define a more rational, standardized approach for achieving resection margin adequacy for patients with HNSCC undergoing curative resection. © 2012 Wiley Periodicals, Inc. Head Neck, 2013}
+      \field{annotation}{\_eprint: https://onlinelibrary.wiley.com/doi/pdf/10.1002/hed.23110}
+      \field{issn}{1097-0347}
+      \field{journaltitle}{Head \& Neck}
+      \field{langid}{english}
+      \field{number}{9}
+      \field{shorttitle}{Surgical Margins in Head and Neck Cancer}
+      \field{title}{Surgical Margins in Head and Neck Cancer: {{A}} Contemporary Review}
+      \field{volume}{35}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{1362\bibrangedash 1370}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1002/hed.23110
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/RBKGY4V9/Hinni et al. - 2013 - Surgical margins in head and neck cancer A contem.pdf;/Users/jim/Zotero/storage/C4VE3BFD/hed.html
+      \endverb
+      \keyw{frozen section,head neck cancer,molecular factors,pattern of invasion,surgical margins}
+    \endentry
+    \entry{kerawalaOralCavityLip2016}{article}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=20e119b963335cbfdd993e38294fbc9e}{%
+           family={Kerawala},
+           familyi={K\bibinitperiod},
+           given={C},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=107d40d7c945de43256e73d85670c6d5}{%
+           family={Roques},
+           familyi={R\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9e94ccc8d09fb1b7c7b482d752bb3577}{%
+           family={Jeannon},
+           familyi={J\bibinitperiod},
+           given={J-P},
+           giveni={J\bibinithyphendelim P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=be0e73f33d62461ecb3b4ca0553ef9cb}{%
+           family={Bisase},
+           familyi={B\bibinitperiod},
+           given={B},
+           giveni={B\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{2b7bbfd1c328eba2c78d8ca8d85fd135}
+      \strng{fullhash}{4bd0414b28b7d36efdc7e768d83b8212}
+      \strng{bibnamehash}{2b7bbfd1c328eba2c78d8ca8d85fd135}
+      \strng{authorbibnamehash}{2b7bbfd1c328eba2c78d8ca8d85fd135}
+      \strng{authornamehash}{2b7bbfd1c328eba2c78d8ca8d85fd135}
+      \strng{authorfullhash}{4bd0414b28b7d36efdc7e768d83b8212}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This is the official guideline endorsed by the specialty associations involved in the care of head and neck cancer patients in the UK. It provides recommendations on the assessment and management of patients with cancer of the oral cavity and the lip.}
+      \field{issn}{0022-2151, 1748-5460}
+      \field{journaltitle}{The Journal of Laryngology \& Otology}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{S2}
+      \field{shortjournal}{J. Laryngol. Otol.}
+      \field{shorttitle}{Oral Cavity and Lip Cancer}
+      \field{title}{Oral Cavity and Lip Cancer: {{United Kingdom National Multidisciplinary Guidelines}}}
+      \field{volume}{130}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{S83\bibrangedash S89}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1017/S0022215116000499
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/BLAHVZUM/Kerawala et al. - 2016 - Oral cavity and lip cancer United Kingdom Nationa.pdf
+      \endverb
+    \endentry
     \entry{machtayFactorsAssociatedSevere2008}{article}{}
       \name{author}{8}{}{%
         {{un=0,uniquepart=base,hash=3bb805fafb09c87b543de2da0c2e43e0}{%
@@ -207,6 +630,180 @@
       \verb /Users/jim/Zotero/storage/22ISLFQU/Machtay et al. - 2008 - Factors Associated With Severe Late Toxicity After.pdf
       \endverb
     \endentry
+    \entry{masonLipidomicProfilingColorectal2021}{article}{}
+      \name{author}{13}{}{%
+        {{un=0,uniquepart=base,hash=2c5e8904bcd5376829e76b6953660e86}{%
+           family={Mason},
+           familyi={M\bibinitperiod},
+           given={Sam\bibnamedelima E.},
+           giveni={S\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f61165d1a92ea67cbce6a64c3b459367}{%
+           family={Manoli},
+           familyi={M\bibinitperiod},
+           given={Eftychios},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=df2d70ca6f8f46889a9bf90e84f61462}{%
+           family={Alexander},
+           familyi={A\bibinitperiod},
+           given={James\bibnamedelima L.},
+           giveni={J\bibinitperiod\bibinitdelim L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=46c92833d521ffb00271106b0803b8d5}{%
+           family={Poynter},
+           familyi={P\bibinitperiod},
+           given={Liam},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e028aef5ca45cca0d3557ed8a8818eb4}{%
+           family={Ford},
+           familyi={F\bibinitperiod},
+           given={Lauren},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0de877ae6c659d93f9c24b8d1ed4851b}{%
+           family={Paizs},
+           familyi={P\bibinitperiod},
+           given={Petra},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1287e2bd75a33d4e77cb61dc4a5d58c0}{%
+           family={Adebesin},
+           familyi={A\bibinitperiod},
+           given={Afeez},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4c40e9b539cfe74462c49df6db4f4b94}{%
+           family={McKenzie},
+           familyi={M\bibinitperiod},
+           given={James\bibnamedelima S.},
+           giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea73ef96fcb60538c00a431adfeb281f}{%
+           family={Rosini},
+           familyi={R\bibinitperiod},
+           given={Francesca},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dc7cb582eb74bd490e27fd98ec2cf844}{%
+           family={Goldin},
+           familyi={G\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fcf0c58bc302d6877e4b774444a94569}{%
+           family={Darzi},
+           familyi={D\bibinitperiod},
+           given={Ara},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40b99d0ec6b7cf25cf145fe1be9c9ac2}{%
+           family={Takats},
+           familyi={T\bibinitperiod},
+           given={Zoltan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c81218f5850b7ea092c137cafdef4f91}{%
+           family={Kinross},
+           familyi={K\bibinitperiod},
+           given={James\bibnamedelima M},
+           giveni={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{28e7cacc5b6f1ea7f96d94de387d8846}
+      \strng{fullhash}{cd46c97049888572c006787a4636b146}
+      \strng{bibnamehash}{28e7cacc5b6f1ea7f96d94de387d8846}
+      \strng{authorbibnamehash}{28e7cacc5b6f1ea7f96d94de387d8846}
+      \strng{authornamehash}{28e7cacc5b6f1ea7f96d94de387d8846}
+      \strng{authorfullhash}{cd46c97049888572c006787a4636b146}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{13}
+      \field{issn}{0003-4932}
+      \field{journaltitle}{Annals of Surgery}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{title}{Lipidomic {{Profiling}} of {{Colorectal Lesions}} for {{Real-Time Tissue Recognition}} and {{Risk-Stratification}} Using {{Rapid Evaporative Ionisation Mass Spectrometry}}}
+      \field{volume}{Publish Ahead of Print}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1097/SLA.0000000000005164
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/2NABG8Y4/Mason et al. - 2021 - Lipidomic Profiling of Colorectal Lesions for Real.pdf
+      \endverb
+    \endentry
+    \entry{mccaulj.a.LIHNCSLugolIodine2013}{article}{}
+      \name{author}{9}{}{%
+        {{un=0,uniquepart=base,hash=5de6f1a2148078a6b694009fb2769cd9}{%
+           family={{McCaul J.A.}},
+           familyi={M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=036e950a9fe009d24b3942080a79b521}{%
+           family={{Cymerman J.A.}},
+           familyi={C\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=5f6a2861c6ae6fe9dbc173734718668a}{%
+           family={{Hislop S.}},
+           familyi={H\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=d18690337632d540f2c94614fec8df2c}{%
+           family={{McConkey C.}},
+           familyi={M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=448c06218c6b6e877439b743e93cd947}{%
+           family={{McMahon J.}},
+           familyi={M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=85d60a9db046b3c39527798a63813372}{%
+           family={{Mehanna H.}},
+           familyi={M\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=a3f896a275f902fd913abce767f5c399}{%
+           family={{Shaw R.}},
+           familyi={S\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=43200c856371a39887e048bec64b73fa}{%
+           family={{Sutton D.N.}},
+           familyi={S\bibinitperiod}}}%
+        {{un=0,uniquepart=base,hash=a25005252958814634791362caec4957}{%
+           family={{Dunn J.}},
+           familyi={D\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {United Kingdom}%
+      }
+      \list{publisher}{1}{%
+        {BioMed Central Ltd. (Floor 6, 236 Gray's Inn Road, London WC1X 8HB, United Kingdom)}%
+      }
+      \strng{namehash}{6522fbee7e90eface8eec85a7a3875f1}
+      \strng{fullhash}{729ed7c3fc23009f5a4dc94b8dcd38a9}
+      \strng{bibnamehash}{6522fbee7e90eface8eec85a7a3875f1}
+      \strng{authorbibnamehash}{6522fbee7e90eface8eec85a7a3875f1}
+      \strng{authornamehash}{6522fbee7e90eface8eec85a7a3875f1}
+      \strng{authorfullhash}{729ed7c3fc23009f5a4dc94b8dcd38a9}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Background: Oral cavity and oropharynx cancer are increasing in incidence worldwide but survival outcomes have not significantly improved over the last three decades. The presence of dysplasia or carcinoma in situ at surgical margins following resection of squamous carcinoma of the mucosal surfaces of the head and neck has been shown to be associated with a higher incidence of local recurrence and reduced survival. While invasive carcinoma in mucosal surfaces can usually be distinguished from adjacent normal mucous membrane, pre-malignant disease is much less readily distinguished at operation. We describe a protocol for a randomised, controlled trial in which we will assess the effectiveness of Lugol's iodine staining in allowing visualisation and excision of cancer margin dysplasia at time of primary surgery. Methods/Design: We will recruit 300 patients diagnosed with oral cavity or oropharynx squamous cell carcinoma. All participants will be planned for primary surgery with curative intent. After completion of baseline assessment participants will be randomised into either a standard surgical treatment arm or surgical treatment including Lugol's iodine staining. Discussion(s): This paper describes the rationale and design of a unique trial in head and neck surgical oncology. If margin dysplasia visualisation with Lugol's iodine allows complete excision of high-risk, pre-cancer mucosa at time of primary surgery, this may lead to a reduction in local recurrence and improved survival. Trial registration: Current Controlled Trials ISRCTN03712770. © 2013 McCaul et al.; licensee BioMed Central Ltd.}
+      \field{journaltitle}{Trials}
+      \field{number}{1}
+      \field{shortjournal}{Trials}
+      \field{title}{{{LIHNCS}} - {{Lugol}}'s Iodine in Head and Neck Cancer Surgery: {{A}} Multicentre, Randomised Controlled Trial Assessing the Effectiveness of {{Lugol}}'s Iodine to Assist Excision of Moderate Dysplasia, Severe Dysplasia and Carcinoma in Situ at Mucosal Resection Margins}
+      \field{volume}{14}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{pages}{310}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1186/1745-6215-14-310
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/ZDCPGCJ2/McCaul J.A. et al. - 2013 - LIHNCS - Lugol's iodine in head and neck cancer su.pdf
+      \endverb
+    \endentry
     \entry{naveedDiagnosticAccuracyTouch2017}{article}{}
       \name{author}{7}{}{%
         {{un=0,uniquepart=base,hash=25cce806c1350793e410e8deb47e6bbd}{%
@@ -290,6 +887,292 @@
       \verb{file}
       \verb /Users/jim/Zotero/storage/WVHW3AXR/Naveed et al. - 2017 - Diagnostic accuracy of touch imprint cytology for .pdf
       \endverb
+    \endentry
+    \entry{niceCancerUpperAerodigestive2018}{article}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=99df5bd357117615d75315f590990b3a}{%
+           family={NICE},
+           familyi={N\bibinitperiod}}}%
+      }
+      \strng{namehash}{99df5bd357117615d75315f590990b3a}
+      \strng{fullhash}{99df5bd357117615d75315f590990b3a}
+      \strng{bibnamehash}{99df5bd357117615d75315f590990b3a}
+      \strng{authorbibnamehash}{99df5bd357117615d75315f590990b3a}
+      \strng{authornamehash}{99df5bd357117615d75315f590990b3a}
+      \strng{authorfullhash}{99df5bd357117615d75315f590990b3a}
+      \field{sortinit}{N}
+      \field{sortinithash}{22369a73d5f88983a108b63f07f37084}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{Cancer of the Upper Aerodigestive Tract: Assessment and Management in People Aged 16 and Over}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{25}
+      \range{pages}{1}
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/ZJ7FUIF3/2018 - Cancer of the upper aerodigestive tract assessmen.pdf
+      \endverb
+      \verb{urlraw}
+      \verb www.nice.org.uk/guidance/ng36
+      \endverb
+      \verb{url}
+      \verb www.nice.org.uk/guidance/ng36
+      \endverb
+    \endentry
+    \entry{tzafetasIntelligentKnifeIKnife2020}{article}{}
+      \name{author}{19}{}{%
+        {{un=0,uniquepart=base,hash=01d75e7f6c07e8fae6202879424c5a0b}{%
+           family={Tzafetas},
+           familyi={T\bibinitperiod},
+           given={Menelaos},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cbdd1e0ad984bc7bdff94795fd07e9c1}{%
+           family={Mitra},
+           familyi={M\bibinitperiod},
+           given={Anita},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=16d81b86c8aa50d8570818403fa81e8c}{%
+           family={Paraskevaidi},
+           familyi={P\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=328656adc9ee5fcc2da3aa798daa3331}{%
+           family={Bodai},
+           familyi={B\bibinitperiod},
+           given={Zsolt},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4fe41c6df96448218a45f2e725af99dc}{%
+           family={Kalliala},
+           familyi={K\bibinitperiod},
+           given={Ilkka},
+           giveni={I\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c6cb56173693919e75e3a81737b39ca9}{%
+           family={Bowden},
+           familyi={B\bibinitperiod},
+           given={Sarah},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6451f231b526233fd864118cbf2dfd0b}{%
+           family={Lathouras},
+           familyi={L\bibinitperiod},
+           given={Konstantinos},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ea73ef96fcb60538c00a431adfeb281f}{%
+           family={Rosini},
+           familyi={R\bibinitperiod},
+           given={Francesca},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=265ae6107aaf54843ac5a329868f629f}{%
+           family={Szasz},
+           familyi={S\bibinitperiod},
+           given={Marcell},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b522ab7dc1f5c738411a2625eb6a4c40}{%
+           family={Savage},
+           familyi={S\bibinitperiod},
+           given={Adele},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f61165d1a92ea67cbce6a64c3b459367}{%
+           family={Manoli},
+           familyi={M\bibinitperiod},
+           given={Eftychios},
+           giveni={E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3bf72c35db736e63f742edb78b17e1bb}{%
+           family={Balog},
+           familyi={B\bibinitperiod},
+           given={Julia},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=1323e25626d543dadda7147d9135649f}{%
+           family={McKenzie},
+           familyi={M\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fc556154fd78d63b13d459453a1f4a97}{%
+           family={Lyons},
+           familyi={L\bibinitperiod},
+           given={Deirdre},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d4bbd34a11c446fe569e7ec80e601aa2}{%
+           family={Bennett},
+           familyi={B\bibinitperiod},
+           given={Phillip},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=da418b03816019d3bd599452dc679d49}{%
+           family={MacIntyre},
+           familyi={M\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c4bdbc7992489c0af72cd7ba5f82da78}{%
+           family={Ghaem-Maghami},
+           familyi={G\bibinithyphendelim M\bibinitperiod},
+           given={Sadaf},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=40b99d0ec6b7cf25cf145fe1be9c9ac2}{%
+           family={Takats},
+           familyi={T\bibinitperiod},
+           given={Zoltan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d289d5e5adeba6e163f7dcbbb6399346}{%
+           family={Kyrgiou},
+           familyi={K\bibinitperiod},
+           given={Maria},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{5f110c3386891f7f832b7a35ddc42333}
+      \strng{fullhash}{5387c7f59d0b9eb36e8e546772bea51a}
+      \strng{bibnamehash}{5f110c3386891f7f832b7a35ddc42333}
+      \strng{authorbibnamehash}{5f110c3386891f7f832b7a35ddc42333}
+      \strng{authornamehash}{5f110c3386891f7f832b7a35ddc42333}
+      \strng{authorfullhash}{5387c7f59d0b9eb36e8e546772bea51a}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Clearance of surgical margins in cervical cancer prevents the need for adjuvant chemoradiation and allows fertility preservation. In this study, we determined the capacity of the rapid evaporative ionization mass spectrometry (REIMS), also known as intelligent knife (iKnife), to discriminate between healthy, preinvasive, and invasive cervical tissue. Cervical tissue samples were collected from women with healthy, human papilloma virus (HPV) ± cervical intraepithelial neoplasia (CIN), or cervical cancer. A handheld diathermy device generated surgical aerosol, which was transferred into a mass spectrometer for subsequent chemical analysis. Combination of principal component and linear discriminant analysis and least absolute shrinkage and selection operator was employed to study the spectral differences between groups. Significance of discriminatory m/z features was tested using univariate statistics and tandem MS performed to elucidate the structure of the significant peaks allowing separation of the two classes. We analyzed 87 samples (normal = 16, HPV ± CIN = 50, cancer = 21 patients). The iKnife discriminated with 100\% accuracy normal (100\%) vs. HPV ± CIN (100\%) vs. cancer (100\%) when compared to histology as the gold standard. When comparing normal vs. cancer samples, the accuracy was 100\% with a sensitivity of 100\% (95\% CI 83.9 to 100) and specificity 100\% (79.4 to 100). Univariate analysis revealed significant MS peaks in the cancer-to-normal separation belonging to various classes of complex lipids. The iKnife discriminates healthy from premalignant and invasive cervical lesions with high accuracy and can improve oncological outcomes and fertility preservation of women treated surgically for cervical cancer. Larger in vivo research cohorts are required to validate these findings.}
+      \field{day}{31}
+      \field{issn}{0027-8424, 1091-6490}
+      \field{journaltitle}{Proceedings of the National Academy of Sciences}
+      \field{langid}{english}
+      \field{month}{3}
+      \field{number}{13}
+      \field{shortjournal}{Proc Natl Acad Sci USA}
+      \field{title}{The Intelligent Knife ({{iKnife}}) and Its Intraoperative Diagnostic Advantage for the Treatment of Cervical Disease}
+      \field{volume}{117}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{pages}{7338\bibrangedash 7346}
+      \range{pages}{9}
+      \verb{doi}
+      \verb 10.1073/pnas.1916960117
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/SE8W4WK7/Tzafetas et al. - 2020 - The intelligent knife (iKnife) and its intraoperat.pdf
+      \endverb
+    \endentry
+    \entry{upileUncertaintySurgicalMargin2007}{article}{}
+      \name{author}{11}{}{%
+        {{un=0,uniquepart=base,hash=aa16e5879a1ed92ce066c0c4bd4e09b7}{%
+           family={Upile},
+           familyi={U\bibinitperiod},
+           given={T.},
+           giveni={T\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8e9a95837c249723083b6866aff7561c}{%
+           family={Fisher},
+           familyi={F\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c4ed7704ae57489a89deb705e3218d6}{%
+           family={Jerjes},
+           familyi={J\bibinitperiod},
+           given={W.},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d2dc2b75ee3df3e3ece5b3a5d4017c65}{%
+           family={El\bibnamedelima Maaytah},
+           familyi={E\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=6ce8cd132c10fff560672d19b9311524}{%
+           family={Searle},
+           familyi={S\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=cc8b68462a4e5645a68c58eb87dc957d}{%
+           family={Archer},
+           familyi={A\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d8bb901acd011c357aa8c4604143e1d4}{%
+           family={Michaels},
+           familyi={M\bibinitperiod},
+           given={L.},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=27405229d913b9b7334c0a37ba2dcda0}{%
+           family={Rhys-Evans},
+           familyi={R\bibinithyphendelim E\bibinitperiod},
+           given={P.},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=942dbb4efb787286bc56205fbdfc4b22}{%
+           family={Hopper},
+           familyi={H\bibinitperiod},
+           given={C.},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=fb72e25260acf24c44ddf00e255c9ec7}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={D.},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d1f894cdb362d687b78c64d26eb290f9}{%
+           family={Wright},
+           familyi={W\bibinitperiod},
+           given={A.},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{4a9d9060ef2907766f9b309d6c22f127}
+      \strng{fullhash}{83cc4d0f85e90a7defebb8a4feba2ac3}
+      \strng{bibnamehash}{4a9d9060ef2907766f9b309d6c22f127}
+      \strng{authorbibnamehash}{4a9d9060ef2907766f9b309d6c22f127}
+      \strng{authornamehash}{4a9d9060ef2907766f9b309d6c22f127}
+      \strng{authorfullhash}{83cc4d0f85e90a7defebb8a4feba2ac3}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We discuss our surgical philosophy concerning the subtle interplay between the size of the surgical margin taken and the resultant morbidity from ablative oncological procedures, which is ever more evident in the treatment of head and neck malignancy. The extent of tissue resection is determined by the ‘‘trade off’’ between cancer control and the perioperative, functional and aesthetic morbidity and mortality of the surgery. We also discuss our dilemmas concerning recent minimally invasive endoscopic microsurgical techniques for the trans-oral laser removal or co-ablation of aero-digestive tract tumours, which result in a minimal surgical margin of oncological clearance. By a process of inductive argument as to the nature of the surgical margin, we consider whether the risks of taking a lesser margin with adjuvant therapy is justified by the attendant gain in reduced surgical morbidity and the possible costs in tumour control.}
+      \field{issn}{13688375}
+      \field{journaltitle}{Oral Oncology}
+      \field{langid}{english}
+      \field{month}{4}
+      \field{number}{4}
+      \field{shortjournal}{Oral Oncology}
+      \field{title}{The Uncertainty of the Surgical Margin in the Treatment of Head and Neck Cancer}
+      \field{volume}{43}
+      \field{year}{2007}
+      \field{dateera}{ce}
+      \field{pages}{321\bibrangedash 326}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1016/j.oraloncology.2006.08.002
+      \endverb
+      \verb{file}
+      \verb /Users/jim/Zotero/storage/W2ABVPB3/Upile et al. - 2007 - The uncertainty of the surgical margin in the trea.pdf
+      \endverb
+      \keyw{Margins,Margins of Excision}
     \endentry
     \entry{wangPharyngoesophagealStrictureTreatment2012}{article}{}
       \name{author}{5}{}{%
