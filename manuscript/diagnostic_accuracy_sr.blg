@@ -1,15 +1,9 @@
 [0] Config.pm:307> INFO - This is Biber 2.17
-[0] Config.pm:310> INFO - Logfile is 'diagnostic_accuracy_sr.blg'
-[75] biber-darwin:340> INFO - === Fri Jul 29, 2022, 17:11:41
-[101] Biber.pm:418> INFO - Reading 'diagnostic_accuracy_sr.bcf'
-[187] Biber.pm:972> INFO - Found 7 citekeys in bib section 0
-[201] Biber.pm:4383> INFO - Processing section 0
-[216] Biber.pm:4574> INFO - Looking for bibtex file '/Users/jim/Library/CloudStorage/Box-Box/PhD/thesis/support/references.bib' for section 0
-[415] bibtex.pm:1713> INFO - LaTeX decoding ...
-[3046] bibtex.pm:1518> INFO - Found BibTeX data source '/Users/jim/Library/CloudStorage/Box-Box/PhD/thesis/support/references.bib'
-[3358] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[3358] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[3358] Biber.pm:4203> INFO - Sorting list 'nyt/global//global/global' of type 'entry' with template 'nyt' and locale 'en-US'
-[3358] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
-[3368] bbl.pm:654> INFO - Writing 'diagnostic_accuracy_sr.bbl' with encoding 'UTF-8'
-[3382] bbl.pm:757> INFO - Output to diagnostic_accuracy_sr.bbl
+[1] Config.pm:310> INFO - Logfile is 'diagnostic_accuracy_sr.blg'
+[89] biber-darwin:340> INFO - === Wed Aug  3, 2022, 18:55:46
+[106] Biber.pm:418> INFO - Reading 'diagnostic_accuracy_sr.bcf'
+[194] Biber.pm:972> INFO - Found 28 citekeys in bib section 0
+[209] Biber.pm:4383> INFO - Processing section 0
+[223] Biber.pm:4574> INFO - Looking for bibtex file '/Users/jim/Library/CloudStorage/Box-Box/PhD/thesis/support/references.bib' for section 0
+[424] bibtex.pm:1713> INFO - LaTeX decoding ...
+[3411] bibtex.pm:1518> INFO - Found BibTeX data source '/Users/jim/Library/CloudStorage/Box-Box/PhD/thesis/support/references.bib'
