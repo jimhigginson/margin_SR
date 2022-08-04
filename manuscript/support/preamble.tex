@@ -3,7 +3,6 @@
     paper=a4, 
     10pt,
     headings=small,
-    twocolumn
 ]{scrartcl} % report more appropriate, allows abstract
 
 %%% --- Packages to load --- %%%
@@ -27,6 +26,7 @@ hidelinks
 ]{hyperref}
 %%% Allows hyperlinks for all cross-references. 'hidelinks' turns off the off-putting colour boxes 
 %% If i want the text to be coloured, but to make this attractive I need to use the xcolor package and adjust them otherwise they'll be red/lime green :-/
+
 
 \usepackage{siunitx}
 %%% to allow nice presentation of units 
@@ -60,7 +60,7 @@ expansion=alltext,
 protrusion=true,
 ]{microtype}
 
-
+\usepackage[moderate]{savetrees}
 %%% from page 52 of LaTeX and friends - does better kerning and smallcaps spacing
 
 %\usepackage{chngcntr}
@@ -89,6 +89,7 @@ citestyle=authoryear
 % Allows todo notes scattered throughout, with a todolist automatically generated at the start.
 % can be slow when compiling a big doc so might be worth changing later on?
 
+\usepackage{amsmath}
 \usepackage[noabbrev]{cleveref}
 % An automated referencing package, looks good.
 
@@ -102,6 +103,7 @@ citestyle=authoryear
 %\usepackage{lscape}
 %\usetikzlibrary{shapes,arrows}
 %From irp to allow gantt chart
+
 
 \addbibresource{/Users/jim/Library/CloudStorage/Box-Box/PhD/thesis/support/references.bib}
 \let\cite\parencite
