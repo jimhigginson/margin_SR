@@ -17,7 +17,31 @@ The results we provide act as a benchmark for comparison with emerging technique
 The rising incidence of \gls{hnscc}, driven by \gls{hpv}, and the clear desire from patient preference data to avoid recurrence and morbidity associated with adjuvant treatment means that there is a pressing need to develop \gls{ima} techniques with satisfactory metrics for widespread adoption into surgical workflow.
 
 Here is where Omar suggests that I introduce the concept of sensitivity and specificity for greater clarity in the subsequent discussions
+
+
+Standardised metrics of diagnostic performance are important for fair comparison of diagnostic tests.
 Sensitivity and specificity are important metrics for understanding the performance of a diagnostic test.
+They are widely used, and useful.
+Sensitivitiy measures the rate at which the presence of disease is accurately diagnosed. 
+A sensitivity of \SI{100}{\percent} implies that the disease will always correctly identify a patient who has the disease.
+Conversely, specificity measures the rate at which the \emph{absence} of disease is correctly diagnosed. 
+A test with \SI{100}{\percent} specificity would never identify a healthy patient as having the disease.
+\footnote{should I create a sidebox/table showing the formulae for sens/spec/fpr/fnr/accuracy?}
+
+In practical usage, no tests have \SI{100}{\percent} specificity and sensitivity.
+Adjusting the diagnostic threshold to improve one frequently worsens the other.
+This relationship is demonstrated in the \gls{roc} curve.
+A test that performs better overall will have a \gls{roc} curve approaching the top left corner, with an \gls{auc} approaching 1.
+A test that performs no better than random will have an \gls){auc} of $0.5$.
+
+It is worth noting that, unlike false positive rate and false negative rate, sensitivity and specificity do not take into account the prevalance of disease. 
+In the context of \gls{ima} techniques, the patient is known to have cancer, the question is whether the tissue sampled contains cancer or not. 
+The rate at which these contain disease is highly variable, and depends on many complex factors, including the skill of the operating surgeon, the ability of the test to provide rapid results, and whether the disease has an aggressive, infiltrative pattern.
+Evaluating sensitivity and specificity allows more standardised comparison.
+
+When evaluating the diagnostic performance of \gls{ima} techniques, the purpose of the techniques should be borne in mind. 
+The aim of \gls{ima} is to allow surgeons to remove disease entirely, to reduce risks of recurrence and the need for morbid adjuvant treatment.
+
 
 Our data suggests that the two best \gls{ima} techniques are frozen section, with pooled sensitivity \SI{79.5}{\percent} and specificity \SI{99.1}{\percent}, and tumour-targeted fluorescence techniques, with pooled sensitivity \SI{95.7}{\percent} and specificity \SI{82.7}{\percent}.
 with an AUC of 0.976 and 0.944 respectively.
